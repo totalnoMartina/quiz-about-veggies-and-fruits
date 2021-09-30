@@ -2,6 +2,86 @@
 /* color palette:   #5d4648 for a rose ebony background
                     #234328 for green quiz area background
                     #f9db6d for text and some shades
-                    #234328 for text and shades
+                    #fae1df for text and shades
 */
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    font-family: 'Play', sans-serif;
+}
+
+body {
+    background-color: #5d4648;
+    color: #f9db6d;
+}
+
+.quiz-name {
+    font-size: 60px;
+    margin: 25px;
+}
+
+h2 {
+    font-size: 45px;
+    margin-bottom: 60px;
+}
+
+.quiz-area {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70%;
+    margin: 0;
+    padding: 30px;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.btn {
+    font-size: 50px;
+    padding: 40px;
+    width: 500px;
+    text-align: center;
+    margin: 25px;
+    text-decoration: none;
+    color: #f9db6d;
+    background-color: #254d32;
+    border-radius: 15px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 1rem 1.5rem #fae1df;
+    transition: transform 150ms;
+    transform: scale(1.03);
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+.fa-chess-queen, .fa-chess, .fa-carrot, .fa-lemon {
+    margin: 0 20px 0 20px;
+    color: #fae1df;
+}
