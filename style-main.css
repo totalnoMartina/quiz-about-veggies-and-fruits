@@ -36,6 +36,7 @@ h2 {
     max-width: 70%;
     margin: 0;
     padding: 30px;
+
 }
 
 .flex-column {
@@ -81,7 +82,82 @@ h2 {
     transform: none;
 }
 
-.fa-chess-queen, .fa-chess, .fa-carrot, .fa-lemon {
+.fa-chess-queen,
+.fa-chess,
+.fa-carrot,
+.fa-lemon {
     margin: 0 20px 0 20px;
     color: #fae1df;
+}
+
+#highscores-btn {
+    background: #d33f04d3;
+}
+
+/* End page style */
+
+.end-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 80%;
+    width: 600px;
+}
+
+#end {
+    margin: 0 0 0 350px;
+}
+
+input {
+    margin-bottom: 20px;
+    width: 200px;
+    padding: 20px;
+    font-size: 22px;
+    border: none;
+    box-shadow: 0 5px 16px 0 #f9db6d;
+}
+
+input::placeholder {
+    color: #234328;
+}
+
+#username {
+    margin-bottom: 20px;
+    width: 60%;
+    outline: none;
+}
+
+#end-text {
+    font-size: 35px;
+    color: #f9db6d;
+    text-align: center;
+}
+
+#save-score-btn {
+    border: none;
+}
+
+
+.btn-end {
+    font-size: 1rem;
+    padding: 2rem;
+    width: 15rem;
+    text-align: center;
+    margin: 25px;
+    text-decoration: none;
+    color: #f9db6d;
+    background-color: #234328;
+    border-radius: 15px;
+}
+
+.btn-end:hover {
+    cursor: pointer;
+    box-shadow: 0 1rem 1.5rem #f9db6d;
+    transition: transform 150ms;
+    transform: scale(1.03);
+}
+
+.fa-laptop-house {
+    margin-left: 20px;
+    color: #247ba0;
 }

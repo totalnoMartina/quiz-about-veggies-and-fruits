@@ -61,7 +61,7 @@ let questions = [{
     {
         question: 'Which vegetable is declared the "most hated vegetable" according to many studies?',
         choice1: 'Brussel Sprouts',
-        choice2: 'Broccolli',
+        choice2: 'Beetroot',
         choice3: 'Cabbage',
         choice4: 'Kale',
         answer: 1,
@@ -90,7 +90,7 @@ function getNewQuestion() {
     if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
 
-        return window.location.assign('/end.html');
+        return window.location.assign('/end-quiz.html');
     }
 
     questionCounter++;
