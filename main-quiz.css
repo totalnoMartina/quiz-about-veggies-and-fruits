@@ -1,0 +1,86 @@
+/* color palette:   #5d4648 for a rose ebony background
+                    #234328 for green quiz area background
+                    #f9db6d for text and some shades
+                    #fae1df for text and shades
+*/
+
+body {
+    text-align: center;
+    color: #f9db6d;
+}
+
+.choice-display {
+    display: flex;
+    height: 55px;
+    margin: 15px auto;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    border-radius: 4px;
+    background: #234328;
+    font-size: 40px;
+    min-width: 400px;
+}
+
+.choice-display:hover {
+    cursor: pointer;
+    box-shadow: 0 8px 16px #f9db6d;
+    transform: scale(1.02);
+    transform: transform 100ms;
+}
+
+.choice-prefix {
+    padding: 40px 40px;
+}
+
+.choice-text {
+    padding: 20px;
+    width: 90%;
+}
+
+.correct {
+    background-color: #fae1df;
+    color: black;
+}
+
+.incorrect {
+    background-color: #5d4648;
+    color: #f9db6d;
+}
+
+.display-quiz {
+    display: flex;
+    justify-content: space-between;
+}
+
+.display-prefix {
+    padding-top: 30px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.display-text-main {
+    text-align: center;
+
+}
+
+#progress-bar {
+    width: 360px;
+    height: 50px;
+    border: 3px solid #7ac2e1;
+    margin: 30px 0 0 10px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#progress-bar-full {
+    height: 90%;
+    background: #7ac2e1;
+    width: 0%;
+}
+
+@media screen and (max-width: 800px) {
+    .choice-display {
+        min-width: 640px;
+    }
+}
