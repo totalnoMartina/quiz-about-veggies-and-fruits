@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="quiz.css">
+
+    <title>Quiz Page</title>
+</head>
+
+<body>
+    <div id="quiz-area">
+        <div id="quiz" class="justify-center flex-column">
+            <div id="display-quiz">
+                <div class="display-item">
+                    <p id="progress-text" class="display-prefix">Question</p>
+                    <div id="progress-bar">
+                        <div id="progress-bar-full"></div>
+                    </div>
+                </div>
+                <div class="display-item">
+                    <p class="display-prefix">Score <i class="fas fa-star-half-alt"></i></p>
+                    <h1 class="display-main-text" id="score">0</h1>
+                </div>
+            </div>
+            <h1 id="question"></h1>
+            <div class="choice-display">
+                <p class="choice-prefix">A</p>
+                <p class="choice-text" data-number="1">answer</p>
+            </div>
+            <div class="choice-display">
+                <p class="choice-prefix">B</p>
+                <p class="choice-text" data-number="2">answer</p>
+            </div>
+            <div class="choice-display">
+                <p class="choice-prefix">C</p>
+                <p class="choice-text" data-number="3">answer</p>
+            </div>
+            <div class="choice-display">
+                <p class="choice-prefix">D</p>
+                <p class="choice-text" data-number="4">answer</p>
+            </div>
+        </div>
+    </div>
+    <script src="main-quiz.js"></script>
+</body>
+
+</html>
