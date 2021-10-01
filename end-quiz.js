@@ -3,6 +3,8 @@ const saveScoreBtn = document.querySelector('#save-score-btn');
 const finalScore = document.querySelector('#final-score');
 const mostRecentScore = localStorage.getItem('mostRecentScore');
 
+const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
+
 const MAX_HIGHSCORES = 8;
 
 finalScore.innerText = mostRecentScore;
