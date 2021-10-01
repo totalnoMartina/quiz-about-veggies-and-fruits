@@ -67,7 +67,7 @@ let questions = [{
         answer: 1,
     },
     {
-        question: 'Which one of these is considered "nutraceutical",meaning it can prevent and treat disease?',
+        question: 'Which one of these is considered "nutraceutical", meaning it can prevent and treat disease?',
         choice1: 'Grapefruit',
         choice2: 'Pear',
         choice3: 'Mandarin',
@@ -119,19 +119,26 @@ choices.forEach(choice => {
         const selectedChoice = e.target;
         const selectedAnswer = selectedChoice.dataset['number'];
 
-        let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
+        let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
+
+        let correctAnswer = "";
 
         if (classToApply === 'correct') {
             incrementScore(SCORE_POINTS);
+        } else {
+            correctAnswer = document.querySelector(`.choice-text[data-number="${currentQuestion.answer}"]`);
+            correctAnswer.parentElement.classList.add('correct');
         }
 
         selectedChoice.parentElement.classList.add(classToApply);
 
         setTimeout(() => {
             selectedChoice.parentElement.classList.remove(classToApply);
-            getNewQuestion()
+            if(classToApply == 'incorrect') {
+            correctAnswer.parentElement.classList.remove('correct')};
+            getNewQuestion();
 
-        }, 1000)
+        }, 3000);
     })
 })
 
