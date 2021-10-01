@@ -16,18 +16,18 @@
 
 <body>
     <div class="quiz-area">
-        <div id="end" class="flex-center flex-column">
+        <section id="end" class="flex-center flex-column">
             <h1 id="final-score">0</h1>
             <form class="end-form">
                 <h2 id="end-text">Enter name to save your score</h2>
                 <input type="text" name="name" id="username" placeholder="Enter your name / nickname">
                 <button class="btn-end" id="save-score-btn" type="submit" onclick="saveHighScore(event)"
                     disabled>Save</button>
+                <a href="main-quiz.html" class="btn-end">Play again</a>
+                <a href="index.html" class="btn-end">Go Home<i class="fas fa-laptop-house"></i></a>
             </form>
-            <a href="main-quiz.html" class="btn-end">Play again</a>
-            <a href="index.html" class="btn-end">Go Home<i class="fas fa-laptop-house"></i></a>
-        </div>
-        <script src="assets/script/end-quiz.js"></script>
+        </section>
+        <script src="assets/script/save-score.js"></script>
     </div>
 </body>
 

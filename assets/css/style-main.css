@@ -100,6 +100,10 @@ h2 {
 
 /* End page style */
 
+#end {
+    padding: 50px 0 0 200px;
+}
+
 .end-form {
     display: flex;
     flex-direction: column;
