@@ -101,7 +101,7 @@ h2 {
 /* End page style */
 
 #end {
-    padding: 50px 0 0 200px;
+    padding: 50px 0 0 250px;
 }
 
 .end-form {
@@ -110,6 +110,7 @@ h2 {
     align-items: center;
     max-width: 80%;
     width: 600px;
+    padding-top: 20px;
 }
 
 input {
@@ -118,7 +119,6 @@ input {
     padding: 20px;
     font-size: 22px;
     border: none;
-    box-shadow: 0 5px 16px 0 #f9db6d;
 }
 
 input::placeholder {
@@ -143,9 +143,9 @@ input::placeholder {
 
 
 .btn-end {
-    font-size: 1rem;
-    padding: 2rem;
-    width: 15rem;
+    font-size: 40px;
+    padding: 40px;
+    width: 500px;
     text-align: center;
     margin: 25px;
     text-decoration: none;
@@ -164,4 +164,20 @@ input::placeholder {
 .fa-laptop-house {
     margin-left: 20px;
     color: #247ba0;
+}
+
+@media screen and (max-width:660px){
+    .btn-end {
+        font-size: 25px;
+        padding: 30px;
+        width: 300px;
+        text-align: center;
+        margin: 25px;
+        text-decoration: none;
+        color: #f9db6d;
+        background-color: #234328;
+        border-radius: 15px;
+
+    }
+    
 }
