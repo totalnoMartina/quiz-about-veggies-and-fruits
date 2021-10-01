@@ -5,13 +5,11 @@
 */
 
 body {
-    margin: 150px 0 0 250px;
     color: #f9db6d;
 }
 
 #highScoreList {
     list-style: none;
-    margin-bottom: 50px;
 }
 
 .highscores {
