@@ -15,11 +15,10 @@ body {
     margin: 15px auto;
     align-items: center;
     justify-content: center;
-    max-width: 600px;
+    width: 600px;
     border-radius: 4px;
     background: #234328;
     font-size: 40px;
-    min-width: 400px;
 }
 
 .choice-display:hover {
@@ -81,8 +80,14 @@ body {
     width: 0%;
 }
 
+@media screen and (max-width: 600px) {
+    .choice-display {
+        width: 75%;
+    }
+}
+
 @media screen and (max-width: 800px) {
     .choice-display {
-        min-width: 640px;
+        width: 70%;
     }
 }

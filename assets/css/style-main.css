@@ -166,7 +166,7 @@ input::placeholder {
     color: #247ba0;
 }
 
-@media screen and (max-width:660px){
+@media screen and (max-width: 660px){
     .btn-end {
         font-size: 25px;
         padding: 30px;
