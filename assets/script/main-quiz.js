@@ -79,7 +79,7 @@ let questions = [{
 const SCORE_POINTS = 100;
 const MAX_QUESTIONS = 8;
 
-function startGame() {
+function startQuiz() {
     questionCounter = 0;
     score = 0;
     availableQuestions = [...questions];
@@ -138,7 +138,7 @@ choices.forEach(choice => {
             correctAnswer.parentElement.classList.remove('correct')};
             getNewQuestion();
 
-        }, 2000);
+        }, 1700);
     })
 })
 
@@ -147,4 +147,4 @@ addTheScore = num => {
     scoreText.innerText = score;
 }
 
-startGame()
+startQuiz()

@@ -8,27 +8,29 @@
     <meta name="description" content="Test knowledge in this quiz about vegetables and fruits">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- Links page to stylesheets -->
     <link rel="stylesheet" href="assets/css/style-main.css">
     <link rel="stylesheet" href="assets/css/style-quiz.css">
-    <link rel="stylesheet" href="assets/css/style-highscores.css">
 
     <title>Quiz Page</title>
 </head>
 
 <body>
-    <div id="quiz-area">
-        <div id="quiz" class="justify-center flex-column">
+    <!-- Main quiz area - wrapper -->
+    <section id="quiz-area">
+        <section id="quiz" class="justify-center flex-column">
+            <!-- Main Quiz with questions and progress and scores shown -->
             <div id="display-quiz">
-                <div class="display-item">
+                <section class="display-item">
                     <p id="progress-text" class="display-prefix">Question</p>
-                    <div id="progress-bar">
+                    <div id="progress">
                         <div id="progress-bar-full"></div>
                     </div>
-                </div>
-                <div class="display-item">
+                </section>
+                <article class="display-item">
                     <p class="display-prefix">Score <i class="fas fa-star-half-alt"></i></p>
                     <h1 class="display-main-text" id="score">0</h1>
-                </div>
+                </article>
             </div>
             <h1 id="question">Question</h1>
             <div class="choice-display">
@@ -47,8 +49,8 @@
                 <p class="choice-prefix">D</p>
                 <p class="choice-text" data-number="4">answer</p>
             </div>
-        </div>
-    </div>
+        </section>
+    </section>
     <script src="assets/script/main-quiz.js"></script>
 </body>
 
