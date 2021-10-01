@@ -1,0 +1,20 @@
+/* color palette:   #5d4648 for a rose ebony background
+                    #234328 for green quiz area background
+                    #f9db6d for text and some shades
+                    #fae1df for text and shades
+*/
+
+body {
+    margin: 150px 0 0 250px;
+    color: #f9db6d;
+}
+
+#highscore-list {
+    list-style: none;
+    margin-bottom: 50px;
+}
+
+.highscores {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
