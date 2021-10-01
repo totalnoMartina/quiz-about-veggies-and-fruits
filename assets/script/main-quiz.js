@@ -124,7 +124,7 @@ choices.forEach(choice => {
         let correctAnswer = "";
 
         if (classToApply === 'correct') {
-            incrementScore(SCORE_POINTS);
+            addTheScore(SCORE_POINTS);
         } else {
             correctAnswer = document.querySelector(`.choice-text[data-number="${currentQuestion.answer}"]`);
             correctAnswer.parentElement.classList.add('correct');
@@ -138,11 +138,11 @@ choices.forEach(choice => {
             correctAnswer.parentElement.classList.remove('correct')};
             getNewQuestion();
 
-        }, 3000);
+        }, 2000);
     })
 })
 
-incrementScore = num => {
+addTheScore = num => {
     score += num;
     scoreText.innerText = score;
 }
