@@ -41,11 +41,13 @@ body {
 .correct {
     background-color: #fae1df;
     color: black;
+    box-shadow: 0 8px 16px #f9db6d;
 }
 
 .incorrect {
     background-color: #920b16da;
     color: #f9db6d;
+    box-shadow: 0 8px 16px #f9db6d;
 }
 
 .display-quiz {
