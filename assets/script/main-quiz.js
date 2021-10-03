@@ -1,15 +1,23 @@
-const question = document.querySelector('#question');
-const choices = Array.from(document.querySelectorAll('.choice-text'));
-const progressText = document.querySelector('#progress-text');
-const scoreText = document.querySelector('#score');
-const progressBarFull = document.querySelector('#progress-bar-full');
+// global variables -- rename them !!
 
+const question = document.querySelector('#question'); // a variable that stores a question found based on id
+const choices = Array.from(document.querySelectorAll('.choice-text')); // creating array using class name and storing it in a variable choices found by class name
+const progressText = document.querySelector('#progress-text'); // variable that shows progress 
+const scoreText = document.querySelector('#score'); // variable that shows users score 
+const progressBarFull = document.querySelector('#progress-bar-full'); // variable that shows when quiz is on last question the progress bar is full
+
+// creating an empty array for questions
 let currentQuestion = {};
+// declaring a global variable that stores answers accepted
 let acceptingAnswers = true;
+// a global variable that stores a starting value of a score
 let score = 0;
-let questionCounter = 0;
+// a global variable that stores looping through questions
+let questionCount = 0;
+// an empty array that stores values of leftover questions within a function getNewQuestion()
 let availableQuestions = [];
 
+// array of questions and correct answers
 let questions = [{
         question: 'Which one of these is in fact a berry?',
         choice1: 'Cherry',
@@ -76,18 +84,21 @@ let questions = [{
     },
 ]
 
+// a global unchanging variables to store points and maximum number of questions
 const SCORE_POINTS = 100;
 const MAX_QUESTIONS = 8;
 
+// a function that starts the quiz
 function startQuiz() {
-    questionCounter = 0;
+    // set the counter and score to start with 0
+    questionCount = 0;
     score = 0;
     availableQuestions = [...questions];
     getNewQuestion();
 };
 
 function getNewQuestion() {
-    if (availableQuestions.length == 0 || questionCounter > MAX_QUESTIONS) {
+    if (availableQuestions.length == 0 || questionCount > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
 
         return window.location.assign('/save-score.html');
@@ -134,8 +145,9 @@ choices.forEach(choice => {
 
         setTimeout(() => {
             selectedChoice.parentElement.classList.remove(classToApply);
-            if(classToApply == 'incorrect') {
-            correctAnswer.parentElement.classList.remove('correct')};
+            if (classToApply == 'incorrect') {
+                correctAnswer.parentElement.classList.remove('correct')
+            };
             getNewQuestion();
 
         }, 1700);
