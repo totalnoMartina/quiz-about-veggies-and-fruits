@@ -82,11 +82,19 @@ let questions = [{
         choice4: 'Apricot',
         answer: 1,
     },
+    {
+        question: 'Which one of these herbs boosts memory, heals cancer, relieve pain and protect immune system',
+        choice1: 'Mint',
+        choice2: 'Rosemary',
+        choice3: 'Thyme',
+        choice4: 'Basil',
+        answer: 2,
+    }
 ]
 
 // a global unchanging variables to store points and maximum number of questions
 const SCORE_POINTS = 100;
-const MAX_QUESTIONS = 8;
+const MAX_QUESTIONS = 9;
 
 // a function that starts the quiz
 function startQuiz() {
@@ -104,9 +112,9 @@ function getNewQuestion() {
         return window.location.assign('/save-score.html');
     }
 
-    questionCounter++;
-    progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
-    progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`;
+    questionCount++;
+    progressText.innerText = `Question ${questionCount} of ${MAX_QUESTIONS}`
+    progressBarFull.style.width = `${(questionCount/MAX_QUESTIONS) * 100}%`;
 
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionsIndex];
