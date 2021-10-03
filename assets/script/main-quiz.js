@@ -90,7 +90,7 @@ function getNewQuestion() {
     if (availableQuestions.length == 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
 
-        return window.location.href('/save-score.html');
+        return window.location.assign('/save-score.html');
     }
 
     questionCounter++;

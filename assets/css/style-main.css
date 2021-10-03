@@ -120,9 +120,13 @@ h2 {
     width: 600px;
 }
 
+#save-score-text {
+    font-size: 35px;
+}
+
 input {
     margin-bottom: 20px;
-    width: 200px;
+    width: 250px;
     padding: 20px;
     font-size: 22px;
     border: none;
