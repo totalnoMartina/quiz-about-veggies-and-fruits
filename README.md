@@ -30,6 +30,10 @@ Possibly a timer, just to make it interesting?
 - The link for some of the questions can be found [here](https://laidbackgardener.blog/2017/03/23/10-strange-facts-about-vegetables/)
 - The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
 - Some questions and answers are inspired by this [page](https://www.eatfirst.com/en-au/c/blog/fun-facts-about-food)
-- Google Fonts***Add more 
+
+- Some facts about rosemary I found [here](http://justfunfacts.com/interesting-facts-about-rosemary/)
+- I added font style form [Google Fonts](https://fonts.google.com/) 
+
+***Add more 
 ### Media
 
