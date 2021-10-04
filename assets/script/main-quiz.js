@@ -124,20 +124,25 @@ function getNewQuestion() {
     // Style of progress bar to show how close to finishing the quiz 
     progressBarFull.style.width = `${(questionCount/MAX_QUESTIONS) * 100}%`;
 
-    // Using random method from Math module to multiply with 
+    // Using random method from Math module to get random number of index of the question
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length);
+    // Setting current question to an index of the available question
     currentQuestion = availableQuestions[questionsIndex];
+    // Display the text of the string in the question variable
     question.innerText = currentQuestion.question;
 
+    // Looping through choices based on value data of number next to it
     choices.forEach(choice => {
+        // Set number variable to dataset value of choice variable based on choice-number
         const number = choice.dataset['number'];
+        // Set text of choice to value of current question based on a choice-number
         choice.innerText = currentQuestion['choice' + number];
-    })
-
+    });
+    // A new array of questions that are left to be asked is created
     availableQuestions.splice(questionsIndex, 1);
-
+    // 
     acceptingAnswers = true;
-}
+};
 
 choices.forEach(choice => {
     choice.addEventListener('click', e => {
