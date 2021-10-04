@@ -21,6 +21,7 @@ body {
 }
 
 .quiz-name {
+    text-align: center;
     font-size: 60px;
     margin: 25px;
 }
@@ -37,7 +38,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 70%;
+    max-width: 75%;
     margin: 0;
     padding: 20px 0 0 250px;
 }
@@ -182,16 +183,21 @@ input::placeholder {
 
 /* Style for responsive page on screen sizes maximum 660px */
 @media screen and (max-width: 660px){
-    .btn-end {
-        font-size: 25px;
-        padding: 30px;
-        width: 300px;
-        text-align: center;
-        margin: 25px;
-        text-decoration: none;
-        color: #f9db6d;
-        background-color: #234328;
-        border-radius: 15px;
-    }
     
+    .quiz-name,
+    #final-score {
+        font-size: 35px;
+    }
+
+    p,
+    li {
+        font-size: 22px;
+    }
+
+    .btn,
+    .btn-save-score {
+        font-size: 20px;
+        padding: 20px;
+        max-width: 300px;
+    }
 }
