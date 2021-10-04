@@ -87,7 +87,7 @@ h2 {
     transform: none;
 }
 
-/* font awesome icons style for front page and highscores button */
+/* font awesome icons style for front page and highscores buttons */
 
 .fa-chess-queen,
 .fa-chess,
@@ -172,6 +172,7 @@ input::placeholder {
     transform: scale(1.03);
 }
 
+/* Font awesome icons buttons style on save score page */
 .fa-laptop-house,
 .fa-save,
 .fa-redo {
@@ -179,6 +180,7 @@ input::placeholder {
     color: #247ba0;
 }
 
+/* Style for responsive page on screen sizes maximum 660px */
 @media screen and (max-width: 660px){
     .btn-end {
         font-size: 25px;
@@ -190,7 +192,6 @@ input::placeholder {
         color: #f9db6d;
         background-color: #234328;
         border-radius: 15px;
-
     }
     
 }
