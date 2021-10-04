@@ -96,26 +96,35 @@ let questions = [{
 const SCORE_POINTS = 100;
 const MAX_QUESTIONS = 9;
 
-// a function that starts the quiz
+//  Function that starts the quiz and adds next remaining questions
 function startQuiz() {
-    // set the counter and score to start with 0
+    // Set the counter and score to start with 0
     questionCount = 0;
     score = 0;
+    // Using spread method to pick up each item and create an array  
     availableQuestions = [...questions];
+    // Calling function to get next question
     getNewQuestion();
 };
 
+// Getting new questions through function
 function getNewQuestion() {
+    // If there is no more questions or the counter is bigger than maximum of questions - which is impossible
     if (availableQuestions.length == 0 || questionCount > MAX_QUESTIONS) {
+        // A new variable stores score added through questions loop
         localStorage.setItem('mostRecentScore', score);
-
+        // The final score stored is saved in the save-score.html window storage
         return window.location.assign('/save-score.html');
     }
 
+    // Adding next question 
     questionCount++;
-    progressText.innerText = `Question ${questionCount} of ${MAX_QUESTIONS}`
+    // The display of Question number of total number of questions
+    progressText.innerText = `Question ${questionCount} of ${MAX_QUESTIONS}`;
+    // Style of progress bar to show how close to finishing the quiz 
     progressBarFull.style.width = `${(questionCount/MAX_QUESTIONS) * 100}%`;
 
+    // Using random method from Math module to multiply with 
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionsIndex];
     question.innerText = currentQuestion.question;
@@ -167,4 +176,4 @@ addTheScore = num => {
     scoreText.innerText = score;
 }
 
-startQuiz()
+startQuiz();
