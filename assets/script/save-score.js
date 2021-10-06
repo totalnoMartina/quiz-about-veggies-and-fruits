@@ -1,23 +1,25 @@
-const username = document.querySelector('#username');
-const saveScoreBtn = document.querySelector('#save-score-btn');
-const finalScore = document.querySelector('#final-score');
+// Global constant unchanging variables targeted by query
+
+const nickname = document.querySelector('#nickname');
+const storeScoreBtn = document.querySelector('#store-score-btn');
+const finalStore = document.querySelector('#final-store');
 const mostRecentScore = localStorage.getItem('mostRecentScore');
 
 const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
 
 const MAX_HIGHSCORES = 8;
 
-finalScore.innerText = mostRecentScore;
+finalStore.innerText = mostRecentScore;
 
-username.addEventListener('keyup', () => {
-    saveScoreBtn.disabled = !username.value;
+nickname.addEventListener('keyup', () => {
+    storeScoreBtn.disabled = !nickname.value;
 });
 saveHighScore = e => {
     e.preventDefault();
 
     const score = {
         score: mostRecentScore,
-        name: username.value
+        name: nickname.value
     }
 
     highScores.push(score);

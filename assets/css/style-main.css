@@ -20,6 +20,8 @@ body {
     color: #f9db6d;
 }
 
+/* Home page heading and Quiz name */
+
 .quiz-name {
     text-align: center;
     font-size: 60px;
@@ -31,7 +33,7 @@ h2 {
     margin-bottom: 60px;
 }
 
-/* Main Quiz wrap styles*/
+/* Main Quiz wrap styles */
 
 .quiz-area {
     width: 80%;
@@ -61,7 +63,7 @@ h2 {
     text-align: center;
 }
 
-/* Navigation buttons style */
+/* Home page and highscores navigation buttons */
 
 .btn {
     font-size: 50px;
@@ -88,7 +90,7 @@ h2 {
     transform: none;
 }
 
-/* font awesome icons style for front page and highscores buttons */
+/* font awesome icons for front page and highscores buttons */
 
 .fa-chess-queen,
 .fa-chess,
@@ -111,7 +113,7 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* Save Score page style */
+/* Save Score page */
 
 .save-score-form {
     display: flex;

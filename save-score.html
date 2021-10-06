@@ -20,13 +20,13 @@
     <section class="quiz-area">
         <section class="flex-center flex-column">
             <!-- Score that will be used in script to increase and add up -->
-            <h1 id="final-score">0</h1>
+            <h1 id="final-store">0</h1>
             <!-- Form to save your score with name and navigating buttons -->
             <form class="save-score-form">
                 <h2 id="save-score-text">Well done! Save your Score</h2>
                 <!-- ...add function for if you dont want to write the name it saves some default guest1 name -->
-                <input type="text" name="name" id="username" placeholder="Name / Nickname">
-                <button class="btn-save-score" id="save-score-btn" type="submit" onclick="saveHighScore(event)"
+                <input type="text" name="name" id="nickname" placeholder="Name / Nickname">
+                <button class="btn-save-score" id="store-score-btn" type="submit" onclick="saveHighScore(event)"
                     disabled>Save<i class="fas fa-save"></i></button>
                     <!-- ...maybe put navigation here in code -->
                 <a href="main-quiz.html" class="btn-save-score">Replay<i class="fas fa-redo"></i></a>
