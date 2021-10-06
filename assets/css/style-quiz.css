@@ -1,7 +1,9 @@
-/* color palette:   #5d4648 for a rose ebony background
+/* Global color palette:   
+                    #5d4648 for a rose ebony background shade
                     #234328 for green quiz area background
-                    #f9db6d for text and some shades
-                    #fae1df for text and shades
+                    #f9db6d for peach/ orange text and some shades
+                    #fae1df for background color of correct answer 
+                    #920b16da for background of incorrect answer
 */
 
 body {
@@ -68,15 +70,15 @@ body {
 #progress {
     width: 360px;
     height: 50px;
-    border: 3px solid #7ac2e1;
+    border: 3px solid #5aaf79;
     margin: 10px;
-    border-radius: 50px;
+    border-radius: 60px;
     overflow: hidden;
 }
 
 #progress-bar-full {
     height: 80%;
-    background: #7ac2e1;
+    background: #5aaf79;
     width: 0%;
 }
 

@@ -6,18 +6,18 @@ const progressText = document.querySelector('#progress-text'); // variable that 
 const scoreText = document.querySelector('#score'); // variable that shows users score 
 const progressBarFull = document.querySelector('#progress-bar-full'); // variable that shows when quiz is on last question the progress bar is full
 
-// creating an empty array for questions
+// creating an empty dictionary for question and answers connected to the question
 let currentQuestion = {};
-// declaring a global variable that stores answers accepted
+// declaring a constant variable that stores the true value of answers being accepted
 let acceptingAnswers = true;
 // a global variable that stores a starting value of a score
 let score = 0;
 // a global variable that stores looping through questions
 let questionCount = 0;
-// an empty array that stores values of leftover questions within a function getNewQuestion()
+// an empty array that stores values of leftover questions through a function getNewQuestion()
 let availableQuestions = [];
 
-// array of questions and correct answers
+// array of questions and a dictionary of question, choices and correct answers
 let questions = [{
         question: 'Which one of these is in fact a berry?',
         choice1: 'Cherry',
@@ -101,15 +101,15 @@ function startQuiz() {
     // Set the counter and score to start with 0
     questionCount = 0;
     score = 0;
-    // Using spread method to pick up each item and create an array  
+    // Use of spread method to pick up each remaining item and create an array  
     availableQuestions = [...questions];
     // Calling function to get next question
     getNewQuestion();
 };
 
-// Getting new questions through function
+// Get new questions through function
 function getNewQuestion() {
-    // If there is no more questions or the counter is bigger than maximum of questions - which is impossible
+    // If there is no more questions or the counter is bigger than maximum of questions
     if (availableQuestions.length == 0 || questionCount > MAX_QUESTIONS) {
         // A new variable stores score added through questions loop
         localStorage.setItem('mostRecentScore', score);
@@ -117,18 +117,18 @@ function getNewQuestion() {
         return window.location.assign('/save-score.html');
     }
 
-    // Adding next question 
+    // Adding next question using shorthand expression
     questionCount++;
-    // The display of Question number of total number of questions
+    // The display of current question number of total number of questions
     progressText.innerText = `Question ${questionCount} of ${MAX_QUESTIONS}`;
-    // Style of progress bar to show how close to finishing the quiz 
+    // Dynamically styling progress bar to show how close to finishing the quiz, fiiling up with color more with each new question 
     progressBarFull.style.width = `${(questionCount/MAX_QUESTIONS) * 100}%`;
 
-    // Using random method from Math module to get random number of index of the question
+    // Using random method from Math module to get random number of index of the question, for questions to be scattered and harder to remember
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length);
     // Setting current question to an index of the available question
     currentQuestion = availableQuestions[questionsIndex];
-    // Display the text of the string in the question variable
+    // Display the text of the string in the question variable !! Inspect says that question is not a function - true
     question.innerText = currentQuestion.question;
 
     // Looping through choices based on value data of number next to it
@@ -138,12 +138,13 @@ function getNewQuestion() {
         // Set text of choice to value of current question based on a choice-number
         choice.innerText = currentQuestion['choice' + number];
     });
-    // A new array of questions that are left to be asked is created
+    // A new array of questions that are left to be answered is created and first indexed question is used
     availableQuestions.splice(questionsIndex, 1);
-    // 
+    // as long as there is another question to ask, keep showing choices
     acceptingAnswers = true;
 };
 
+// Looping through choices and for each choice clicked the function is checking if there are more answers to click to
 choices.forEach(choice => {
     choice.addEventListener('click', e => {
         if (!acceptingAnswers) return;
