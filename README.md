@@ -1,17 +1,19 @@
 ## Quiz - Veggies and Fruits
 
-Description - 
-
+An interactive website - a quiz about vegetables, fruit and herbs to possibly entertain and inform user about some interesting facts that might spark more interest in veggies, fruits or herbs. 
 
 ## Features
 
-Navigation - do I need top nav bar like in previous webpages seen?
+- Home page offers two buttons - to start the quiz or check all Highscores
+- There is clear visibility of correct and incorrect answers when user clicks
+- There is an option to save your score or simply start again
 
 ### Features left to implement 
 
 Add more questions
 Add more style 
-Possibly a timer, just to make it interesting?
+Possibly a sliding questions function
+
 
 # Testing 
 
