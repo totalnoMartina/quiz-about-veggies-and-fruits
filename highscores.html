@@ -19,10 +19,15 @@
 <body>
     <!-- Class for decorating and control of main quiz area - wrapper -->
     <section class="quiz-area">
-        <!-- Navigation buttons and list of high scores -->
+        <!-- Navigation buttons, class to target style and list of high 
+            scores to be dynamically created by highscores-page.js -->
         <nav id="high-scores" class="flex-center flex-column">
+            <!-- High scores list name -->
             <h1 id="final-score">High Scores</h1>
+            <!-- An empty list with an id which will help Javascript to get
+                to this list and add elements <li> in it with appropriate name and score that user achieved -->
             <ul id="high-scores-list"></ul>
+            <!-- Home Page navigation button -->
             <a href="index.html" class="btn">Go Home<i class="fas fa-laptop-house"></i></a>
         </nav>
     </section>
