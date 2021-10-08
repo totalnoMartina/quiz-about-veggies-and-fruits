@@ -128,7 +128,7 @@ function getNewQuestion() {
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length);
     // Setting current question to an index of the available question
     currentQuestion = availableQuestions[questionsIndex];
-    // Display the text of the string in the question variable !! Inspect says that question is not a function - true
+    // Display the text of the string in the question variable !! Ask Tim ***** Inspect says that question is not a function - true
     question.innerText = currentQuestion.question;
 
     // Looping through options based on value data of number next to it
@@ -138,7 +138,8 @@ function getNewQuestion() {
         // Set text of option to the value of current number of the question
         option.innerText = currentQuestion['option' + number];
     });
-    // A new array of questions that are left to be answered is created and first indexed question is used
+    /* A new array of questions that are left to be answered is created and first 
+    indexed question is used */
     availableQuestions.splice(questionsIndex, 1);
     // as long as there is another question to ask, keep 
     acceptingAnswers = true;
@@ -148,41 +149,56 @@ function getNewQuestion() {
 function is checking if there are more answers to click to */
 options.forEach(option => {
     option.addEventListener('click', e => {
-        /* If there is no more answers then function is finished with return */
+        // If there is no more answers then function is finished with return 
         if (!acceptingAnswers) return;
-        /* Declare variable to false since there is no more questions left to loop through */
+        // Declare variable to false since there is no more questions left to loop through 
         acceptingAnswers = false;
-        /* Declare targeted event as selected option */
+        // Declare targeted event as selected option 
         const selectedOption = e.target;
+        /* Declare chosen answer according to property of dataset targeting the number of the 
+        option selected */
         const selectedAnswer = selectedOption.dataset['number'];
-
+        /* Declare variable specific to this block scope that takes the class value 
+         of an answer and in ternary expression a condition of correct or incorrect is calling
+        the class name */
         let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
-
+        /* Declare a variable specific to this block scope that we will use in the future and 
+        initially it is a string type of variable */
         let correctAnswer = "";
-
+        /* Conditional expression to check if class applied chosen by the answer is strictly
+        equal to correct and if so - call the function that adds the score */
         if (classToApply === 'correct') {
             addTheScore(SCORE_POINTS);
+            /* Otherwise correctAnswer variable is targeted by a class of answered question and 
+            its index value of an answer in currentQuestion dictionary */
         } else {
             correctAnswer = document.querySelector(`.option-text[data-number="${currentQuestion.answer}"]`);
+            /* correctAnswer is a child element of a list so we are calling the parent class to 
+            add all correct answers */
             correctAnswer.parentElement.classList.add('correct');
         }
-
+        // selectedOption is calling a class to be applied and added to a list after event clicked 
         selectedOption.parentElement.classList.add(classToApply);
-
+        // Creating an arrow function to set how long will it take until the questions switch to next one
         setTimeout(() => {
+            // Removing the options after selected one is clicked
             selectedOption.parentElement.classList.remove(classToApply);
+            // Conditional to value of class name of incorrect
             if (classToApply == 'incorrect') {
+                // Code that belongs to this part of a list class is removed
                 correctAnswer.parentElement.classList.remove('correct')
             };
+            // A function to call next Question is called
             getNewQuestion();
-
-        }, 1700);
+            // Duration of the wait to next question
+        }, 1500);
     })
 })
-
+/* Using arrow function to assign a num variable to be incremented by next score and write 
+it into HTML */
 addTheScore = num => {
     score += num;
     scoreText.innerText = score;
 }
-
+// Call a function to start the Quiz
 startQuiz();
