@@ -1,7 +1,7 @@
 // global variables -- rename them !!
 
 const question = document.querySelector('#question'); // a variable that stores a question found based on id
-const choices = Array.from(document.querySelectorAll('.choice-text')); // creating array using class name and storing it in a variable choices found by class name
+const options = Array.from(document.querySelectorAll('.option-text')); // creating array using class name and storing it in a variable choices found by class name
 const progressText = document.querySelector('#progress-text'); // variable that shows progress 
 const scoreText = document.querySelector('#score'); // variable that shows users score 
 const progressBarFull = document.querySelector('#progress-bar-full'); // variable that shows when quiz is on last question the progress bar is full
@@ -20,74 +20,74 @@ let availableQuestions = [];
 // array of questions and a dictionary of question, choices and correct answers
 let questions = [{
         question: 'Which one of these is in fact a berry?',
-        choice1: 'Cherry',
-        choice2: 'Strawberry',
-        choice3: 'Cantaloupe',
-        choice4: 'Raspberry',
+        option1: 'Cherry',
+        option2: 'Strawberry',
+        option3: 'Cantaloupe',
+        option4: 'Raspberry',
         answer: 3,
     },
     {
         question: 'Which vegetable contains more protein per calorie than animal based protein?',
-        choice1: 'Carrot',
-        choice2: 'Broccolli',
-        choice3: 'Leek',
-        choice4: 'Spinach',
+        option1: 'Carrot',
+        option2: 'Broccolli',
+        option3: 'Leek',
+        option4: 'Spinach',
         answer: 2,
     },
     {
         question: 'Which one of these is in fact a fruit?',
-        choice1: 'Pecan Nut',
-        choice2: 'Pistachio',
-        choice3: 'Walnut',
-        choice4: 'Almond',
+        option1: 'Pecan Nut',
+        option2: 'Pistachio',
+        option3: 'Walnut',
+        option4: 'Almond',
         answer: 2,
     },
     {
         question: 'Which fruit has better effect on your energy level than coffee?',
-        choice1: 'Apple',
-        choice2: 'Orange',
-        choice3: 'Grapes',
-        choice4: 'Nectarine',
+        option1: 'Apple',
+        option2: 'Orange',
+        option3: 'Grapes',
+        option4: 'Nectarine',
         answer: 1,
     },
     {
         question: 'Which nut butter helps in type 2 diabetes prevention, aids weigh-loss and glows in dark after exposed to intense light?',
-        choice1: 'Almond Butter',
-        choice2: 'Cashew Butter',
-        choice3: 'Hazelnut Butter',
-        choice4: 'Peanut Butter',
+        option1: 'Almond Butter',
+        option2: 'Cashew Butter',
+        option3: 'Hazelnut Butter',
+        option4: 'Peanut Butter',
         answer: 4,
     },
     {
         question: 'Which one of these berries lowers blood pressure and also can improve your mood?',
-        choice1: 'Gooseberry',
-        choice2: 'Kiwi',
-        choice3: 'Banana',
-        choice4: 'Watermelon',
+        option1: 'Gooseberry',
+        option2: 'Kiwi',
+        option3: 'Banana',
+        option4: 'Watermelon',
         answer: 3,
     },
     {
         question: 'Which vegetable is declared the "most hated vegetable" according to many studies?',
-        choice1: 'Brussel Sprouts',
-        choice2: 'Beetroot',
-        choice3: 'Cabbage',
-        choice4: 'Kale',
+        option1: 'Brussel Sprouts',
+        option2: 'Beetroot',
+        option3: 'Cabbage',
+        option4: 'Kale',
         answer: 1,
     },
     {
         question: 'Which one of these is considered "nutraceutical", meaning it can prevent and treat disease?',
-        choice1: 'Grapefruit',
-        choice2: 'Pear',
-        choice3: 'Mandarin',
-        choice4: 'Apricot',
+        option1: 'Grapefruit',
+        option2: 'Pear',
+        option3: 'Mandarin',
+        option4: 'Apricot',
         answer: 1,
     },
     {
         question: 'Which one of these herbs boosts memory, heals cancer, relieve pain and protect immune system',
-        choice1: 'Mint',
-        choice2: 'Rosemary',
-        choice3: 'Thyme',
-        choice4: 'Basil',
+        option1: 'Mint',
+        option2: 'Rosemary',
+        option3: 'Thyme',
+        option4: 'Basil',
         answer: 2,
     }
 ]
@@ -131,27 +131,30 @@ function getNewQuestion() {
     // Display the text of the string in the question variable !! Inspect says that question is not a function - true
     question.innerText = currentQuestion.question;
 
-    // Looping through choices based on value data of number next to it
-    choices.forEach(choice => {
-        // Set number variable to dataset value of choice variable based on choice-number
-        const number = choice.dataset['number'];
-        // Set text of choice to value of current question based on a choice-number
-        choice.innerText = currentQuestion['choice' + number];
+    // Looping through options based on value data of number next to it
+    options.forEach(option => {
+        // Set number variable to dataset value of option variable based on option-number
+        const number = option.dataset['number'];
+        // Set text of option to the value of current number of the question
+        option.innerText = currentQuestion['option' + number];
     });
     // A new array of questions that are left to be answered is created and first indexed question is used
     availableQuestions.splice(questionsIndex, 1);
-    // as long as there is another question to ask, keep showing choices
+    // as long as there is another question to ask, keep 
     acceptingAnswers = true;
 };
 
-// Looping through choices and for each choice clicked the function is checking if there are more answers to click to
-choices.forEach(choice => {
-    choice.addEventListener('click', e => {
+/* Looping through options using arrow function and for each option clicked and listened to, 
+function is checking if there are more answers to click to */
+options.forEach(option => {
+    option.addEventListener('click', e => {
+        /* If there is no more answers then function is finished with return */
         if (!acceptingAnswers) return;
-
+        /* Declare variable to false since there is no more questions left to loop through */
         acceptingAnswers = false;
-        const selectedChoice = e.target;
-        const selectedAnswer = selectedChoice.dataset['number'];
+        /* Declare targeted event as selected option */
+        const selectedOption = e.target;
+        const selectedAnswer = selectedOption.dataset['number'];
 
         let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
 
@@ -160,14 +163,14 @@ choices.forEach(choice => {
         if (classToApply === 'correct') {
             addTheScore(SCORE_POINTS);
         } else {
-            correctAnswer = document.querySelector(`.choice-text[data-number="${currentQuestion.answer}"]`);
+            correctAnswer = document.querySelector(`.option-text[data-number="${currentQuestion.answer}"]`);
             correctAnswer.parentElement.classList.add('correct');
         }
 
-        selectedChoice.parentElement.classList.add(classToApply);
+        selectedOption.parentElement.classList.add(classToApply);
 
         setTimeout(() => {
-            selectedChoice.parentElement.classList.remove(classToApply);
+            selectedOption.parentElement.classList.remove(classToApply);
             if (classToApply == 'incorrect') {
                 correctAnswer.parentElement.classList.remove('correct')
             };

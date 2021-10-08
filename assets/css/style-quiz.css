@@ -34,7 +34,7 @@ body {
     padding: 40px 40px;
 }
 
-.choice-text {
+.option-text {
     padding: 20px;
     width: 90%;
 }
@@ -83,13 +83,13 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-    .choice-display {
+    .option-display {
         width: 75%;
     }
 }
 
 @media screen and (max-width: 800px) {
-    .choice-display {
+    .option-display {
         width: 70%;
     }
 }
