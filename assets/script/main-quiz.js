@@ -96,7 +96,7 @@ let questions = [{
 const SCORE_POINTS = 100;
 const MAX_QUESTIONS = 9;
 
-//  Function that starts the quiz and adds next remaining questions
+//** Function that starts the quiz and adds next remaining questions */ 
 function startQuiz() {
     // Set the counter and score to start with 0
     questionCount = 0;
@@ -107,7 +107,7 @@ function startQuiz() {
     getNewQuestion();
 };
 
-// Get new questions through function
+//** Creating a function that takes available question as next question */
 function getNewQuestion() {
     // If there is no more questions or the counter is bigger than maximum of questions
     if (availableQuestions.length == 0 || questionCount > MAX_QUESTIONS) {
@@ -149,7 +149,7 @@ function getNewQuestion() {
 function is checking if there are more answers to click to */
 options.forEach(option => {
     option.addEventListener('click', e => {
-        // If there is no more answers then function is finished with return 
+        // If there is no more answers then function is stopped with nothing else to return
         if (!acceptingAnswers) return;
         // Declare variable to false since there is no more questions left to loop through 
         acceptingAnswers = false;

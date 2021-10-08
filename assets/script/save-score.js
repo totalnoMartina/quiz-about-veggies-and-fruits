@@ -1,4 +1,4 @@
-// Global constant unchanging variables targeted by query selector 
+// Global unchanging variables targeted by query selector 
 
 const nickname = document.querySelector('#nickname');
 const storeScoreBtn = document.querySelector('#store-score-btn');
