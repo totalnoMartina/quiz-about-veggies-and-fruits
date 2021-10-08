@@ -4,9 +4,9 @@ An interactive website - a quiz about vegetables, fruit and herbs to possibly en
 
 ## Features
 
-- Home page offers two buttons - to start the quiz or check all Highscores
-- There is clear visibility of correct and incorrect answers when user clicks
-- There is an option to save your score or simply start again
+- Home page offers two buttons - to start the quiz and check all Highscores
+- There is clear visibility of correct and incorrect answers when user clicks while answering
+- There is an option to save your score or simply start the quiz again
 
 ### Features left to implement 
 

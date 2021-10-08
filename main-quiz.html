@@ -23,32 +23,37 @@
             <div id="display-quiz">
                 <article class="display-item">
                     <!-- An id to target dynamically progress of the questions answered
-                    and fill out a certain percentage with background color chosen by css -->
-                    <p id="progress-text" class="display-prefix">Question</p>
+                    and fill out a certain percentage with background color targeted by css -->
+                    <p id="progress-text" class="display-score">Question</p>
                     <div id="progress">
+                        <!-- An empty div element to be targeted by id using JavaScript and dynamically
+                        filled up by css's background color until it reaches the last question -->
                         <div id="progress-bar-full"></div>
                     </div>
                 </article>
+                <!-- A class to style display of current score -->
                 <article class="display-item">
-                    <p class="display-prefix">Score <i class="fas fa-star-half-alt"></i></p>
+                    <p class="display-score">Score <i class="fas fa-star-half-alt"></i></p>
+                    <!-- A class to target style for the text and an id for score to be targeted by
+                    Javascript and summed up as they loop through questions -->
                     <h1 class="display-main-text" id="score">0</h1>
                 </article>
             </div>
             <h1 id="question">Question</h1>
-            <div class="choice-display">
-                <p class="choice-prefix">A</p>
+            <div class="option-display">
+                <p class="option-prefix">A</p>
                 <p class="choice-text" data-number="1">answer</p>
             </div>
-            <div class="choice-display">
-                <p class="choice-prefix">B</p>
+            <div class="option-display">
+                <p class="option-prefix">B</p>
                 <p class="choice-text" data-number="2">answer</p>
             </div>
-            <div class="choice-display">
-                <p class="choice-prefix">C</p>
+            <div class="option-display">
+                <p class="option-prefix">C</p>
                 <p class="choice-text" data-number="3">answer</p>
             </div>
-            <div class="choice-display">
-                <p class="choice-prefix">D</p>
+            <div class="option-display">
+                <p class="option-prefix">D</p>
                 <p class="choice-text" data-number="4">answer</p>
             </div>
         </section>

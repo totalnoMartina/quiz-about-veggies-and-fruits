@@ -11,7 +11,7 @@ body {
     color: #f9db6d;
 }
 
-.choice-display {
+.option-display {
     display: flex;
     height: 55px;
     margin: 15px auto;
@@ -23,14 +23,14 @@ body {
     font-size: 40px;
 }
 
-.choice-display:hover {
+.option-display:hover {
     cursor: pointer;
     box-shadow: 0 8px 16px #f9db6d;
     transform: scale(1.02);
     transform: transform 100ms;
 }
 
-.choice-prefix {
+.option {
     padding: 40px 40px;
 }
 
@@ -56,7 +56,7 @@ body {
     justify-content: space-between;
 }
 
-.display-prefix {
+.display-score {
     padding-top: 30px;
     text-align: center;
     font-size: 30px;
