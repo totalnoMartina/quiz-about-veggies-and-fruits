@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Test knowledge in this quiz about vegetables and fruits">
+    <meta name="description" content="Test knowledge in a quiz about vegetables and fruits">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <!-- Link to stylesheets -->
@@ -24,11 +24,12 @@
             <!-- Form to save your score with name and navigating buttons -->
             <form class="save-score-form">
                 <h2 id="save-score-text">Well done! Save your Score</h2>
-                <!-- ...add function for if you dont want to write the name it saves some default guest1 name -->
+                <!-- Input element for the user to write a name or nickname -->
                 <input type="text" name="name" id="nickname" placeholder="Name / Nickname">
+                <!-- Button to be targeted with JavaScript according to listened clicked event and save the score -->
                 <button class="btn-save-score" id="store-score-btn" type="submit" onclick="saveHighScore(event)"
                     disabled>Save<i class="fas fa-save"></i></button>
-                    <!-- ...maybe put navigation here in code -->
+                    <!-- Buttons to either go back home or save score -->
                 <a href="main-quiz.html" class="btn-save-score">Replay<i class="fas fa-redo"></i></a>
                 <a href="index.html" class="btn-save-score">Back Home<i class="fas fa-laptop-house"></i></a>
             </form>
