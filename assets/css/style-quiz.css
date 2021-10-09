@@ -76,7 +76,7 @@ body {
     overflow: hidden;
 }
 
-#progress-bar-full {
+#progress-full {
     height: 80%;
     background: #5aaf79;
     width: 0%;
