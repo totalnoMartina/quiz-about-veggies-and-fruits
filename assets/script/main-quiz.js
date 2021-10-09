@@ -112,7 +112,7 @@ function getNewQuestion() {
     // If there is no more questions or the counter is bigger than maximum of questions
     if (availableQuestions.length == 0 || questionCount > MAX_QUESTIONS) {
         // A new variable stores score added through questions loop
-        localStorage.setItem('mostRecentScore', score);
+        localStorage.setItem('lastScore', score);
         // The final score stored is saved in the save-score.html window storage
         return window.location.assign('/save-score.html');
     }
@@ -144,9 +144,9 @@ function getNewQuestion() {
     // as long as there is another question to ask, keep 
     acceptingAnswers = true;
 };
-
-/* Looping through options using arrow function and for each option clicked and listened to, 
-function is checking if there are more answers to click to */
+/**Looping through options using arrow function and for each option clicked and 
+ * listened to, function is checking if there are more answers to click to
+ */
 options.forEach(option => {
     option.addEventListener('click', e => {
         // If there is no more answers then function is stopped with nothing else to return
@@ -179,7 +179,10 @@ options.forEach(option => {
         }
         // selectedOption is calling a class to be applied and added to a list after event clicked 
         selectedOption.parentElement.classList.add(classToApply);
-        // Creating an arrow function to set how long will it take until the questions switch to next one
+        /**
+         * Creating an arrow function to set how long will it take until the questions switch 
+         * to next one
+         */
         setTimeout(() => {
             // Removing the options after selected one is clicked
             selectedOption.parentElement.classList.remove(classToApply);
