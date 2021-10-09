@@ -74,7 +74,7 @@ h2 {
     margin: 25px;
     text-decoration: none;
     color: #f9db6d;
-    background-color: #254d32;
+    background: linear-gradient(135deg, #234328 10%,#307a43 60%,#04ac20 90%);
     border-radius: 15px;
 }
 
@@ -102,7 +102,7 @@ h2 {
 }
 
 #highscores-btn {
-    background: #d33f04d3;
+    background: linear-gradient(135deg, #d33f04d3 10%, #d42008d3 40%, #af3404d3 95%);
 }
 
 #high-scores {
