@@ -4,7 +4,7 @@ const question = document.querySelector('#question'); // a variable that stores 
 const options = Array.from(document.querySelectorAll('.option-text')); // creating array using class name and storing it in a variable choices found by class name
 const progressText = document.querySelector('#progress-text'); // variable that shows progress 
 const scoreText = document.querySelector('#score'); // variable that shows users score 
-const progressBarFull = document.querySelector('#progress-bar-full'); // variable that shows when quiz is on last question the progress bar is full
+const progressBarFull = document.querySelector('#progress-full'); // variable that shows when quiz is on last question the progress bar is full
 
 // creating an empty dictionary for question and answers connected to the question
 let currentQuestion = {};
@@ -135,7 +135,7 @@ function getNewQuestion() {
     options.forEach(option => {
         // Set number variable to dataset value of option variable based on option-number
         const number = option.dataset['number'];
-        // Set text of option to the value of current number of the question
+        // Set text of the option to the value of current number of the question
         option.innerText = currentQuestion['option' + number];
     });
     /* A new array of questions that are left to be answered is created and first 
@@ -189,14 +189,14 @@ options.forEach(option => {
             // Conditional to value of class name of incorrect
             if (classToApply == 'incorrect') {
                 // Code that belongs to this part of a list class is removed
-                correctAnswer.parentElement.classList.remove('correct')
+                correctAnswer.parentElement.classList.remove('correct');
             };
             // A function to call next Question is called
             getNewQuestion();
             // Duration of the wait to next question
         }, 1500);
-    })
-})
+    });
+});
 /* Using arrow function to assign a num variable to be incremented by next score and write 
 it into HTML */
 addTheScore = num => {

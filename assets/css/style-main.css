@@ -13,10 +13,14 @@
     padding: 0;
     font-size: 30px;
     font-family: 'Play', sans-serif;
+    overflow-y: hidden;
+}
+
+html {
+    background: linear-gradient(85deg, #5d4648 1%,#921099 48%,#7e4ae8 100%);
 }
 
 body {
-    background: linear-gradient(135deg, #5d4648 1%,#921099 48%,#7e4ae8 100%);
     color: #f9db6d;
 }
 
@@ -25,24 +29,21 @@ body {
 .quiz-name {
     text-align: center;
     font-size: 60px;
-    margin: 25px;
+    padding: 25px;
 }
 
 h2 {
     font-size: 50px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 /* Main Quiz wrap styles */
 
 .quiz-area {
-    width: 85%;
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 100%;
-    margin: 0;
-    padding: 20px 0 0 250px;
+    margin-left: 80px;
 }
 
 .flex-column {
@@ -70,16 +71,16 @@ h2 {
     padding: 40px;
     width: 500px;
     text-align: center;
-    margin: 25px;
+    margin: 30px;
     text-decoration: none;
     color: #f9db6d;
-    background: linear-gradient(135deg, #234328 10%,#19642c 60%,#04ac20 90%);
+    background: linear-gradient(45deg, #234328 10%,#19642c 60%,#04ac20 90%);
     border-radius: 15px;
 }
 
-.btn:hover {
+.btn:hover, #highscores-btn:hover {
     cursor: pointer;
-    box-shadow: 0 15px 25px #fae1df;
+    box-shadow: 0 10px 20px #fae1df;
     transition: transform 150ms;
     transform: scale(1.03);
 }
@@ -101,7 +102,7 @@ h2 {
 }
 
 #highscores-btn {
-    background: linear-gradient(135deg, #f58d64d3 10%, #d42008d3 40%, #af3404d3 95%);
+    background: linear-gradient(45deg, #f58d64d3 10%, #d42008d3 40%, #af3404d3 95%);
 }
 
 #high-scores {
@@ -128,10 +129,12 @@ h2 {
 
 input {
     margin-bottom: 20px;
-    width: 250px;
+    width: 300px;
     padding: 20px;
     font-size: 22px;
     border: none;
+    border-radius: 20px;
+    outline: none;
 }
 
 input::placeholder {
@@ -144,12 +147,6 @@ input::placeholder {
     outline: none;
 }
 
-#end-text {
-    font-size: 35px;
-    color: #f9db6d;
-    text-align: center;
-}
-
 #save-score-btn {
     border: none;
 }
@@ -157,19 +154,19 @@ input::placeholder {
 
 .btn-save-score {
     font-size: 40px;
-    padding: 40px;
-    width: 500px;
+    width: 400px;
     text-align: center;
     margin: 25px;
     text-decoration: none;
     color: #f9db6d;
-    background: linear-gradient(135deg, #234328 10%,#1b5c2b 60%,#04ac20 90%);
+    background: linear-gradient(45deg, #234328 10%,#1b5c2b 60%,#04ac20 90%);
     border-radius: 15px;
+    padding: 20px;
 }
 
 .btn-save-score:hover {
     cursor: pointer;
-    box-shadow: 0 1rem 1.5rem #f9db6d;
+    box-shadow: 0 10px 20px #f9db6d;
     transition: transform 150ms;
     transform: scale(1.03);
 }
