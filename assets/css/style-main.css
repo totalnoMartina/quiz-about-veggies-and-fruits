@@ -16,7 +16,7 @@
 }
 
 body {
-    background-color: #5d4648;
+    background: linear-gradient(135deg, #5d4648 0%,#921099 48%,#7e4ae8 100%););
     color: #f9db6d;
 }
 
