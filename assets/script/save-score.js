@@ -3,13 +3,13 @@
 const nickname = document.querySelector('#nickname');
 const storeScoreBtn = document.querySelector('#store-score-btn');
 const finalStore = document.querySelector('#final-store');
-const mostRecentScore = localStorage.getItem('mostRecentScore');
+const lastScore = localStorage.getItem('lastScore');
 
 const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
 
 const MAX_HIGHSCORES = 8;
 
-finalStore.innerText = mostRecentScore;
+finalStore.innerText = lastScore;
 
 nickname.addEventListener('keyup', () => {
     storeScoreBtn.disabled = !nickname.value;
@@ -18,7 +18,7 @@ saveHighScore = e => {
     e.preventDefault();
 
     const score = {
-        score: mostRecentScore,
+        score: lastScore,
         name: nickname.value
     }
 
