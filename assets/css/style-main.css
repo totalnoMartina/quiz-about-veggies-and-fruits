@@ -23,6 +23,7 @@ body {
 /* Home page heading and Quiz name */
 
 .quiz-name {
+    max-width: 420px;
     text-align: center;
     font-size: 60px;
     margin: 25px;
@@ -189,6 +190,7 @@ input::placeholder {
     .quiz-name,
     #final-score {
         font-size: 35px;
+        max-width: 250px;
     }
 
     p,
