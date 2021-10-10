@@ -14,7 +14,7 @@ const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
 // Declare a variable to hold summed up highscores
 const HIGHSCORES = 8;
 // Store last stored score in a variable that displays it using a method
-finalStore.innerText = lastScore;
+finalStore.innerText = 'lastScore';
 
 /** Listening for a nickname value, and if nothing is entered, user is 
  * unable to store the score
