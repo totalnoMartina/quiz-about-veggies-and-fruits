@@ -30,7 +30,7 @@ saveHighScore = e => {
     e.preventDefault();
     // Declare a variable to store a dictionary of the last score summed up and nickname entered
     const score = {
-        score: 'lastScore',
+        score: lastScore,
         name: nickname.value
     }
     // Add last score to highscores list
@@ -43,5 +43,5 @@ saveHighScore = e => {
         highScores.splice(8);
 
     localStorage.setItem('highScores', JSON.stringify(highScores));
-    window.location.assign('/');
+    window.location.assign('https://totalnomartina.github.io/quiz-about-veggies-and-fruits/');
 }
