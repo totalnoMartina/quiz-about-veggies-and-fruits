@@ -102,7 +102,7 @@ let questions = [{
 
 // a global unchanging variables to store points and maximum number of questions
 const SCORE_POINTS = 100;
-const MAX_QUESTIONS = 10;
+const TOP_QUESTIONS = 10;
 
 //** Function that starts the quiz and adds next remaining questions */ 
 function startQuiz() {
@@ -118,19 +118,19 @@ function startQuiz() {
 //** Creating a function that takes available question as next question */
 function getNewQuestion() {
     // If there is no more questions or the counter is bigger than maximum of questions
-    if (availableQuestions.length == 0 || questionCount > MAX_QUESTIONS) {
+    if (availableQuestions.length == 0 || questionCount > TOP_QUESTIONS) {
         // A new variable stores score added through questions loop
         localStorage.setItem('lastScore', score);
         // The final score stored is saved in the save-score.html window storage
-        return window.location.assign('https://totalnomartina.github.io/quiz-about-veggies-and-fruits/');
+        return window.location.assign('https://totalnomartina.github.io/quiz-about-veggies-and-fruits/save-score.html');
     }
 
     // Adding next question using shorthand expression
     questionCount++;
     // The display of current question number of total number of questions
-    progressText.innerText = `Question ${questionCount} of ${MAX_QUESTIONS}`;
+    progressText.innerText = `Question ${questionCount} of ${TOP_QUESTIONS}`;
     // Dynamically styling progress bar to show how close to finishing the quiz, fiiling up with color more with each new question 
-    progressBarFull.style.width = `${(questionCount/MAX_QUESTIONS) * 100}%`;
+    progressBarFull.style.width = `${(questionCount/TOP_QUESTIONS) * 100}%`;
 
     // Using random method from Math module to get random number of index of the question, for questions to be scattered and harder to remember
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length);

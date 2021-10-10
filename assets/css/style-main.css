@@ -29,12 +29,12 @@ body {
 .quiz-name {
     text-align: center;
     font-size: 60px;
-    padding: 25px;
+    padding: 20px;
 }
 
 h2 {
     font-size: 50px;
-    margin-bottom: 30px;
+    margin: 10px 0 30px 0;
 }
 
 /* Main Quiz wrap styles */
@@ -98,7 +98,8 @@ h2 {
 .fa-chess-queen,
 .fa-chess,
 .fa-carrot,
-.fa-lemon .fa-seedling {
+.fa-lemon,
+.fa-seedling {
     margin: 0 20px 0 20px;
     color: #fae1df;
 }
@@ -113,7 +114,6 @@ h2 {
 
 #final-score {
     font-size: 60px;
-    margin-bottom: 20px;
 }
 
 /* Save Score page */

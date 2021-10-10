@@ -12,7 +12,7 @@ const lastScore = localStorage.getItem('lastScore');
 // Using JSON method to add a string which was gotten form to stored highscores and if there was none start an array 
 const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
 // Declare a variable to hold summed up highscores
-const HIGHSCORES = 8;
+const TOP_HIGHSCORES = 8;
 // Store last stored score in a variable that displays it using a method
 finalStore.innerText = lastScore;
 
@@ -45,5 +45,5 @@ saveHighScore = e => {
     // Calling strings of highscores to be stored in an array in local storage
     localStorage.setItem('highScores', JSON.stringify(highScores));
     // Use a location.assign() method and placing an url to be storing the highscores
-    window.location.assign('https://totalnomartina.github.io/quiz-about-veggies-and-fruits/highscores.html');
+    window.location.assign('https://totalnomartina.github.io/quiz-about-veggies-and-fruits/highscores-page.html');
 }
