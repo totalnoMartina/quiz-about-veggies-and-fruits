@@ -43,5 +43,5 @@ saveHighScore = e => {
         highScores.splice(8);
     
     localStorage.setItem('highScores', JSON.stringify(highScores));
-    window.location.assign('https://totalnomartina.github.io/quiz-about-veggies-and-fruits/save-score.html');
+    window.location.assign("https://totalnomartina.github.io/quiz-about-veggies-and-fruits/save-score.html");
 }
