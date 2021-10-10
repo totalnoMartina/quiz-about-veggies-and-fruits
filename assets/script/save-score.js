@@ -24,7 +24,8 @@ nickname.addEventListener('keyup', () => {
 });
 
 /**
- * Prevent the browser from executing the default action of the event in saving highscore
+ * Prevent the browser from executing the default action of the event in 
+ * saving highscore function
  */
 saveHighScore = e => {
     e.preventDefault();
@@ -41,7 +42,8 @@ saveHighScore = e => {
         }),
         // Spliting the highscores list into 8 pieces to remember
         highScores.splice(8);
-
+    // Calling strings of highscores to be stored in an array in local storage
     localStorage.setItem('highScores', JSON.stringify(highScores));
-    window.location.assign('https://totalnomartina.github.io/quiz-about-veggies-and-fruits/');
+    // Use a location.assign() method and placing an url to be storing the highscores
+    window.location.assign('https://totalnomartina.github.io/quiz-about-veggies-and-fruits/highscores.html');
 }

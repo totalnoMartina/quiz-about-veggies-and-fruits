@@ -43,7 +43,7 @@ let questions = [{
         answer: 2,
     },
     {
-        question: 'Which fruit has better effect on your energy level than coffee?',
+        question: 'Which fruit is of Rose family and has better effect on your energy level than coffee?',
         option1: 'Apple',
         option2: 'Orange',
         option3: 'Grapes',
