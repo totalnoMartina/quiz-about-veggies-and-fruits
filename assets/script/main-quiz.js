@@ -19,10 +19,10 @@ let availableQuestions = [];
 
 // array of questions and a dictionary of question, choices and correct answers
 let questions = [{
-        question: 'Which one of these is in fact a berry?',
+        question: 'Which one of these is weigh-loss-friendly, helps boost immune system and is in fact a berry?',
         option1: 'Cherry',
         option2: 'Strawberry',
-        option3: 'Cantaloupe',
+        option3: 'Pumpkin',
         option4: 'Raspberry',
         answer: 3,
     },
@@ -33,6 +33,14 @@ let questions = [{
         option3: 'Leek',
         option4: 'Spinach',
         answer: 2,
+    },
+    {
+        question: 'Which one of these oils, when added to your diet helps boost heart health, reduces inflammation and has antibacterial properties inside our gut?',
+        option1: 'Sesame oil',
+        option2: 'Vegetable oil',
+        option3: 'Olive oil',
+        option4: 'Sunflower oil',
+        answer: 3,
     },
     {
         question: 'Which one of these is in fact a fruit?',
@@ -79,11 +87,11 @@ let questions = [{
         option1: 'Grapefruit',
         option2: 'Pear',
         option3: 'Mandarin',
-        option4: 'Apricot',
+        option4: 'Lemon',
         answer: 1,
     },
     {
-        question: 'Which one of these herbs boosts memory, heals cancer, relieve pain and protect immune system',
+        question: 'Which one of these herbs boosts memory, heals cancer, relieves pain and protects immune system',
         option1: 'Mint',
         option2: 'Rosemary',
         option3: 'Thyme',
@@ -94,7 +102,7 @@ let questions = [{
 
 // a global unchanging variables to store points and maximum number of questions
 const SCORE_POINTS = 100;
-const MAX_QUESTIONS = 9;
+const MAX_QUESTIONS = 10;
 
 //** Function that starts the quiz and adds next remaining questions */ 
 function startQuiz() {
@@ -114,7 +122,7 @@ function getNewQuestion() {
         // A new variable stores score added through questions loop
         localStorage.setItem('lastScore', score);
         // The final score stored is saved in the save-score.html window storage
-        return window.location.assign('https://totalnomartina.github.io/quiz-about-veggies-and-fruits/save-score.html');
+        return window.location.assign('https://totalnomartina.github.io/quiz-about-veggies-and-fruits/');
     }
 
     // Adding next question using shorthand expression
