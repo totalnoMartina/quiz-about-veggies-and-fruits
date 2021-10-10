@@ -1,4 +1,3 @@
-
 //Declare a variable that targets id of high-scores-list
 const highScoresList = document.querySelector('#high-scores-list');
 /*Declaring a variable of getting the items that were dynamically created 

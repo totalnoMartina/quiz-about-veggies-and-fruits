@@ -17,7 +17,7 @@
 }
 
 html {
-    background: linear-gradient(85deg, #5d4648 1%,#921099 48%,#7e4ae8 100%);
+    background: linear-gradient(85deg, #5d4648 1%, #921099 48%, #7e4ae8 100%);
 }
 
 body {
@@ -75,11 +75,12 @@ h2 {
     margin: 30px;
     text-decoration: none;
     color: #f9db6d;
-    background: linear-gradient(45deg, #234328 10%,#19642c 60%,#04ac20 90%);
+    background: linear-gradient(45deg, #234328 10%, #19642c 60%, #04ac20 90%);
     border-radius: 15px;
 }
 
-.btn:hover, #highscores-btn:hover {
+.btn:hover,
+#highscores-btn:hover {
     cursor: pointer;
     box-shadow: 0 10px 20px #fae1df;
     transition: transform 150ms;
@@ -97,7 +98,7 @@ h2 {
 .fa-chess-queen,
 .fa-chess,
 .fa-carrot,
-.fa-lemon {
+.fa-lemon .fa-seedling {
     margin: 0 20px 0 20px;
     color: #fae1df;
 }
@@ -160,7 +161,7 @@ input::placeholder {
     margin: 25px;
     text-decoration: none;
     color: #f9db6d;
-    background: linear-gradient(45deg, #234328 10%,#1b5c2b 60%,#04ac20 90%);
+    background: linear-gradient(45deg, #234328 10%, #1b5c2b 60%, #04ac20 90%);
     border-radius: 15px;
     padding: 20px;
 }
@@ -181,8 +182,8 @@ input::placeholder {
 }
 
 /* Style for responsive page on screen sizes maximum 660px */
-@media screen and (max-width: 660px){
-    
+@media screen and (max-width: 660px) {
+
     .quiz-name,
     #final-score {
         font-size: 35px;
