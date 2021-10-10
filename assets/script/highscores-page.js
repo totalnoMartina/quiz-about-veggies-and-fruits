@@ -10,5 +10,5 @@ element with relevant class which targets connecting name of the user played and
 and ultimately using a method to join together the two variables and display it through html */
 highScoresList.innerHTML =
     highScores.map(score => {
-        return `<li class="highscore">${score.name} - ${score.score}</li>`
+        return `<li class="highscores">${score.name} - ${score.score}</li>`
     }).join('')
