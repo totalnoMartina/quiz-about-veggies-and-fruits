@@ -42,6 +42,6 @@ saveHighScore = e => {
         // Spliting the highscores list into 8 pieces to remember
         highScores.splice(8);
 
-    const highScores = localStorage.setItem('highScores', JSON.stringify(highScores));
+    let highScores = localStorage.setItem('highScores', JSON.stringify(highScores));
     window.location.assign('/');
 }
