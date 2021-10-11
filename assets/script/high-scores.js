@@ -1,5 +1,5 @@
 //Declare a variable that targets id of high-scores-list
-const highScoresList = document.querySelector('#high-scores-list');
+let highScoresList = document.querySelector('#high-scores-list');
 /*Declaring a variable of getting the items that were dynamically created 
 and using JSON function we add every new score into an array, or we create a new one to do same */
 const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
