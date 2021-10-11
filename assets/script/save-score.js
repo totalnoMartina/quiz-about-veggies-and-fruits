@@ -48,10 +48,3 @@ saveHighScore = e => {
     window.location.assign('https://totalnomartina.github.io/quiz-about-veggies-and-fruits/index.html');
 }
 
-// const resetScore = document.querySelector('#reset');
-
-// function reset(score) {
-//     highScoresList.reload(score);
-// }
-
-// resetScore.addEventListener('click', reset);

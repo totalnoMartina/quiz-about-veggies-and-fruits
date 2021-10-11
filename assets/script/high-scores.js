@@ -11,3 +11,11 @@ highScoresList.innerHTML =
     highScores.map(score => {
         return `<li class="highscore">${score.name} - ${score.score}</li>`
     }).join('')
+
+const resetScore = document.querySelector('#reset');
+
+function reset(score) {
+    highScoresList.reload(score);
+}
+
+resetScore.addEventListener('click', reset);
