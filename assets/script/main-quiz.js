@@ -3,11 +3,11 @@
 const question = document.querySelector('#question'); // a variable that stores a question found based on id
 const options = Array.from(document.querySelectorAll('.option-text')); // creating array using class name and storing it in a variable choices found by class name
 const progressInfo = document.querySelector('#progress-info'); // variable that shows progress 
-const scoreText = document.querySelector('#score'); // variable that shows users score 
+const scoreInfo = document.querySelector('#score'); // variable that shows users score 
 const progressFull = document.querySelector('#progress-full'); // variable that shows when quiz is on last question the progress bar is full
 
 // creating an empty dictionary for question and answers connected to the question
-let currentQuestion = {};
+let chooseQuestion = {};
 // declaring a constant variable that stores the true value of answers being accepted
 let acceptingAnswers = true;
 // a global variable that stores a starting value of a score
@@ -143,16 +143,16 @@ function getNewQuestion() {
     // Using random method from Math module to get random number of index of the question, for questions to be scattered and harder to remember
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length);
     // Setting current question to an index of the available question
-    currentQuestion = availableQuestions[questionsIndex];
+    chooseQuestion = availableQuestions[questionsIndex];
     // Display the text of the string in the question variable !! Ask Tim ***** Inspect says that question is not a function - true
-    question.innerText = currentQuestion.question;
+    question.innerText = chooseQuestion.question;
 
     // Looping through options based on value data of number next to it
     options.forEach(option => {
         // Set number variable to dataset value of option variable based on option-number
         const number = option.dataset['number'];
         // Set text of the option to the value of current number of the question
-        option.innerText = currentQuestion['option' + number];
+        option.innerText = chooseQuestion['option' + number];
     });
     /* A new array of questions that are left to be answered is created and first 
     indexed question is used */
@@ -177,7 +177,7 @@ options.forEach(option => {
         /* Declare variable specific to this block scope that takes the class value 
          of an answer and in ternary expression a condition of correct or incorrect is calling
         the class name */
-        let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
+        let classToApply = selectedAnswer == chooseQuestion.answer ? 'correct' : 'incorrect';
         /* Declare a variable specific to this block scope that we will use in the future and 
         initially it is a string type of variable */
         let correctAnswer = "";
@@ -188,7 +188,7 @@ options.forEach(option => {
             /* Otherwise correctAnswer variable is targeted by a class of answered question and 
             its index value of an answer in currentQuestion dictionary */
         } else {
-            correctAnswer = document.querySelector(`.option-text[data-number="${currentQuestion.answer}"]`);
+            correctAnswer = document.querySelector(`.option-text[data-number="${chooseQuestion[answer]}"]`);
             /* correctAnswer is a child element of a list so we are calling the parent class to 
             add all correct answers */
             correctAnswer.parentElement.classList.add('correct');
