@@ -29,10 +29,10 @@ let questions = [{
     {
         question: 'Which vegetable contains more protein per calorie than animal based protein?',
         option1: 'Carrot',
-        option2: 'Broccolli',
+        option2: 'Spinach',
         option3: 'Leek',
-        option4: 'Spinach',
-        answer: 2,
+        option4: 'Broccolli',
+        answer: 4,
     },
     {
         question: 'Which one of these oils, when added to your diet helps boost heart health, reduces inflammation and has antibacterial properties inside our gut?',
@@ -91,18 +91,26 @@ let questions = [{
         answer: 1,
     },
     {
-        question: 'Which one of these herbs boosts memory, heals cancer, relieves pain and protects immune system',
+        question: 'Which one of these herbs boosts memory, heals cancer, relieves pain and protects immune system?',
         option1: 'Mint',
         option2: 'Rosemary',
         option3: 'Thyme',
         option4: 'Basil',
         answer: 2,
+    },
+    {
+        question: 'Which one of these is a flower turned inside-out, and has more fiber than prunes and more potassium than bananas?',
+        option1: 'Grape',
+        option2: 'Apricot',
+        option3: 'Date',
+        option4: 'Fig',
+        answer: 4,
     }
 ]
 
 // a global unchanging variables to store points and maximum number of questions
 const SCORE_POINTS = 100;
-const TOP_QUESTIONS = 10;
+const TOP_QUESTIONS = 11;
 
 //** Function that starts the quiz and adds next remaining questions */ 
 function startQuiz() {
