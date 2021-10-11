@@ -47,3 +47,11 @@ saveHighScore = e => {
     // Use a location.assign() method and placing an url to be storing the highscores
     window.location.assign('https://totalnomartina.github.io/quiz-about-veggies-and-fruits/index.html');
 }
+
+const resetScore = document.querySelector('#reset');
+
+function reset() {
+    highScoresList.reload();
+}
+
+resetScore.addEventListener('click', reset);
