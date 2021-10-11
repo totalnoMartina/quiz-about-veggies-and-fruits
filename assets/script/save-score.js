@@ -50,8 +50,8 @@ saveHighScore = e => {
 
 const resetScore = document.querySelector('#reset');
 
-function reset() {
-    highScoresList.reload();
+function reset(score) {
+    highScoresList.reload(score);
 }
 
 resetScore.addEventListener('click', reset);
