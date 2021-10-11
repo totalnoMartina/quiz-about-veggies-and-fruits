@@ -217,7 +217,7 @@ options.forEach(option => {
 it into HTML */
 addTheScore = num => {
     score += num;
-    scoreText.innerText = score;
+    scoreInfo.innerText = score;
 }
 // Call a function to start the Quiz
 startQuiz();
