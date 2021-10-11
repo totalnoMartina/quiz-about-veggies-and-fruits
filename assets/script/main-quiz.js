@@ -177,7 +177,7 @@ options.forEach(option => {
         /* Declare variable specific to this block scope that takes the class value 
          of an answer and in ternary expression a condition of correct or incorrect is calling
         the class name */
-        let classToApply = selectedAnswer == chooseQuestion[answer] ? 'correct' : 'incorrect';
+        let classToApply = selectedAnswer == chooseQuestion.answer ? 'correct' : 'incorrect';
         /* Declare a variable specific to this block scope that we will use in the future and 
         initially it is a string type of variable */
         let correctAnswer = "";
@@ -188,7 +188,7 @@ options.forEach(option => {
             /* Otherwise correctAnswer variable is targeted by a class of answered question and 
             its index value of an answer in currentQuestion dictionary */
         } else {
-            correctAnswer = document.querySelector(`.option-text[data-number="${chooseQuestion[answer]}"]`);
+            correctAnswer = document.querySelector(`.option-text[data-number="${chooseQuestion.answer}"]`);
             /* correctAnswer is a child element of a list so we are calling the parent class to 
             add all correct answers */
             correctAnswer.parentElement.classList.add('correct');
