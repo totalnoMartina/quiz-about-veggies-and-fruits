@@ -10,4 +10,11 @@ and ultimately using a method to join together the two variables and display it 
 highScoresList.innerHTML =
     highScores.map(score => {
         return `<li class="highscore">${score.name} - ${score.score}</li>`
-    }).join('')
+    }).join('');
+
+
+var scoreReset = document.querySelector('#reset');
+
+scoreReset.addEventListener('click', function(e) {
+    location.reload();
+}, false);

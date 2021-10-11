@@ -11,7 +11,7 @@ An interactive website - a quiz about vegetables, fruit and herbs to possibly en
 ### Features left to implement 
 
 Add more questions 
-Possibly a function that can clear the highscores list for user
+A function that can clear the highscores list for user called reset score
 
 
 # Testing
@@ -19,6 +19,8 @@ Possibly a function that can clear the highscores list for user
 - During creating this quiz the location.assign() function was originally used for creating an elements of <li> and storing to url of '/', ask Tim what does this mean? 
 
 ## Validators Testing
+
+
 
 ## Bugs / Issues
 
@@ -41,6 +43,8 @@ Possibly a function that can clear the highscores list for user
 - Some questions and answers are inspired by this [page](https://www.eatfirst.com/en-au/c/blog/fun-facts-about-food)
 
 - Some facts about rosemary I found [here](http://justfunfacts.com/interesting-facts-about-rosemary/)
+
+- Interesting facts about figs are found [here](https://valleyfig.com/our-story/fig-facts/)
 - I added font style form [Google Fonts](https://fonts.google.com/) 
 
 ***Add more 
