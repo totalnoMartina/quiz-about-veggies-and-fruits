@@ -2,9 +2,9 @@
 
 const question = document.querySelector('#question'); // a variable that stores a question found based on id
 const options = Array.from(document.querySelectorAll('.option-text')); // creating array using class name and storing it in a variable choices found by class name
-const progressText = document.querySelector('#progress-text'); // variable that shows progress 
+const progressInfo = document.querySelector('#progress-info'); // variable that shows progress 
 const scoreText = document.querySelector('#score'); // variable that shows users score 
-const progressBarFull = document.querySelector('#progress-full'); // variable that shows when quiz is on last question the progress bar is full
+const progressFull = document.querySelector('#progress-full'); // variable that shows when quiz is on last question the progress bar is full
 
 // creating an empty dictionary for question and answers connected to the question
 let currentQuestion = {};
@@ -136,16 +136,16 @@ function getNewQuestion() {
     // Adding next question using shorthand expression
     questionCount++;
     // The display of current question number of total number of questions
-    progressText.innerText = `Question ${questionCount} of ${TOP_QUESTIONS}`;
+    progressInfo.innerText = `Question ${questionCount} of ${TOP_QUESTIONS}`;
     // Dynamically styling progress bar to show how close to finishing the quiz, fiiling up with color more with each new question 
-    progressBarFull.style.width = `${(questionCount/TOP_QUESTIONS) * 100}%`;
+    progressFull.style.width = `${(questionCount/TOP_QUESTIONS) * 100}%`;
 
     // Using random method from Math module to get random number of index of the question, for questions to be scattered and harder to remember
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length);
     // Setting current question to an index of the available question
     currentQuestion = availableQuestions[questionsIndex];
     // Display the text of the string in the question variable !! Ask Tim ***** Inspect says that question is not a function - true
-    question.innerText = currentQuestion.question;
+    question.innerText = currentQuestion[question];
 
     // Looping through options based on value data of number next to it
     options.forEach(option => {
@@ -177,7 +177,7 @@ options.forEach(option => {
         /* Declare variable specific to this block scope that takes the class value 
          of an answer and in ternary expression a condition of correct or incorrect is calling
         the class name */
-        let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
+        let classToApply = selectedAnswer == currentQuestion[answer] ? 'correct' : 'incorrect';
         /* Declare a variable specific to this block scope that we will use in the future and 
         initially it is a string type of variable */
         let correctAnswer = "";
@@ -188,7 +188,7 @@ options.forEach(option => {
             /* Otherwise correctAnswer variable is targeted by a class of answered question and 
             its index value of an answer in currentQuestion dictionary */
         } else {
-            correctAnswer = document.querySelector(`.option-text[data-number="${currentQuestion.answer}"]`);
+            correctAnswer = document.querySelector(`.option-text[data-number="${currentQuestion[answer]}"]`);
             /* correctAnswer is a child element of a list so we are calling the parent class to 
             add all correct answers */
             correctAnswer.parentElement.classList.add('correct');
