@@ -31,7 +31,7 @@ body {
 }
 
 .option {
-    padding: 40px 40px;
+    padding: 30px 30px;
 }
 
 .option-text {
@@ -96,6 +96,10 @@ body {
         overflow: hidden;
     }
 
+    .option-text {
+        padding: 10px;
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 800px) {
