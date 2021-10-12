@@ -1,10 +1,18 @@
 //Declare a variable that targets id of high-scores-list
 let highScoresList = document.getElementById('high-scores-list');
+const buttonScoresDisplay = document.getElementsByTagName('a');
 
 /*Declare a variable of getting the items that were dynamically created 
 and using JSON function we add every new score into an array, or we create a new one to do same */
 const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
-
+function buttonHide() {
+    console.log('hiding')
+    if(highScores == []) {
+        buttonScoresDisplay.value.hidden = true; 
+    } else {
+        buttonScoresDisplay.value.hidden = false;
+    }
+}
 /* Reach out to inner text of the HTML and add a dictionary that was put inside a list 
 element with relevant class which targets connecting name of the user played and score achieved,
 and ultimately using a method to join together the two variables and display it through html */
@@ -23,6 +31,6 @@ function reset() {
     localStorage.clear();
     window.location.href = 'index.html';
 }
-
+buttonHide();
 // Adding a function to be called to reset the hghscores after clicked
 resetScore.addEventListener('click', reset);

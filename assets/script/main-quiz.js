@@ -219,5 +219,7 @@ addTheScore = num => {
     score += num;
     scoreInfo.innerText = score;
 }
+buttonHide();
+
 // Call a function to start the Quiz
 startQuiz();
