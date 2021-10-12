@@ -24,8 +24,8 @@ nickname.addEventListener('keyup', () => {
 });
 
 /**
- * Prevent the browser from executing the default action of the event in 
- * saving highscore function
+ * Prevent the browser from executing the default action of the event - onclick declared in html
+ *  in saving highscore function
  */
 saveHighScore = e => {
     e.preventDefault();
