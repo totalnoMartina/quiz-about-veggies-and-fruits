@@ -35,7 +35,7 @@ let questions = [{
         answer: 4,
     },
     {
-        question: 'Which one of these oils, when added to your diet helps boost heart health, reduces inflammation and has antibacterial properties inside our gut?',
+        question: 'When added to your diet, it helps boost heart health, reduces inflammation and has antibacterial properties in our gut?',
         option1: 'Sesame oil',
         option2: 'Vegetable oil',
         option3: 'Olive oil',

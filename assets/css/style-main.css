@@ -194,6 +194,7 @@ input::placeholder {
     p,
     li {
         font-size: 22px;
+        text-align: center;
     }
 
     .btn,
