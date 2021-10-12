@@ -15,7 +15,7 @@ highScoresList.innerHTML =
 const resetScore = document.querySelector('#reset');
 
 function reset() {
-    highScoresList = [];
+    highScoresList.innerHTML = [];
 }
 
 resetScore.addEventListener('click', reset);
