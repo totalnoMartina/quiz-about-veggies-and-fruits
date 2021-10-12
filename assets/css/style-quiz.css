@@ -70,6 +70,7 @@ body {
 #progress {
     width: 360px;
     height: 50px;
+    background-color: #234328;
     border: 3px solid #5aaf79;
     margin: 10px;
     border-radius: 60px;
@@ -77,9 +78,10 @@ body {
 }
 
 #progress-full {
-    height: 80%;
+    height: 100%;
     background: #5aaf79;
     width: 0%;
+    border-bottom: 5px solid rgba(255, 255, 255, 0.5);
 }
 
 @media screen and (max-width: 600px) {

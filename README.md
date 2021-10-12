@@ -16,15 +16,21 @@ A function that can clear the highscores list for user called reset score
 
 # Testing
 
-- During creating this quiz the location.assign() function was originally used for creating an elements of <li> and storing to url of '/', ask Tim what does this mean? 
+- 
 
 ## Validators Testing
+ html, css
 
+## Browser Compatibility
+ mozilla, safari, firefox
 
+## Responsiveness 
+
+mobile, tablet, desktop
 
 ## Bugs / Issues
 
-
+- here difficulties highscore
 
 ## Credits
 

@@ -1,7 +1,7 @@
 //Declare a variable that targets id of high-scores-list
 let highScoresList = document.getElementById('high-scores-list');
 
-/*Declaring a variable of getting the items that were dynamically created 
+/*Declare a variable of getting the items that were dynamically created 
 and using JSON function we add every new score into an array, or we create a new one to do same */
 const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
 
@@ -20,7 +20,8 @@ const resetScore = document.querySelector('#reset');
  * A function to clear all the highscores in the highscores list
  */
 function reset() {
-    highScoresList.innerHTML = [];
+    localStorage.clear();
+    window.location.href = 'index.html';
 }
 
 // Adding a function to be called to reset the hghscores after clicked
