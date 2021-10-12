@@ -1,4 +1,4 @@
-// global variables -- rename them !!
+// Global variables 
 
 const question = document.querySelector('#question'); // A variable that stores a question targeted based on id
 const options = Array.from(document.querySelectorAll('.option-text')); // Creating an array using class name and storing it in a variable choices found by class name
@@ -8,16 +8,16 @@ const progressFull = document.querySelector('#progress-full'); // A variable tha
 
 // An empty dictionary for questions and answers connected to the question
 let chooseQuestion = {};
-// declaring a constant variable that stores the true value of answers being accepted
+// Declaring a constant variable that stores the true value of answers being accepted
 let asking = true;
-// a global variable that stores a starting value of a score
+// A global variable that stores a starting value of a score
 let score = 0;
-// a global variable that stores looping through questions
+// A global variable that stores looping through questions
 let anotherQuestion = 0;
-// an empty array that stores values of leftover questions through a function getNewQuestion()
+// An empty array that stores values of leftover questions through a function getNewQuestion()
 let remainingQs = [];
 
-// array of questions and a dictionary of question, choices and correct answers
+// An array of questions and a dictionary of question, choices and correct answers
 let questions = [{
         question: 'Which one of these is weigh-loss-friendly, helps boost immune system and is in fact a berry?',
         option1: 'Cherry',
@@ -108,7 +108,7 @@ let questions = [{
     }
 ]
 
-// a global unchanging variables to store points and maximum number of questions
+// Unchanging variables to store points and maximum number of questions
 const SCORE_POINTS = 100;
 const TOP_QUESTIONS = 11;
 
@@ -119,13 +119,13 @@ function startQuiz() {
     score = 0;
     // Use of spread method to pick up each remaining item and create an array  
     remainingQs = [...questions];
-    // Calling function to get next question
+    // Calling a function to get the next question
     getNewQuestion();
 };
 
 //** Creating a function that takes available question as next question */
 function getNewQuestion() {
-    // If there is no more questions or the counter is bigger than maximum of questions
+    // If there is no more questions left or the counter is bigger than maximum of questions
     if (remainingQs.length == 0 || anotherQuestion > TOP_QUESTIONS) {
         // A new variable stores score added through questions loop
         localStorage.setItem('lastScore', score);
@@ -135,14 +135,14 @@ function getNewQuestion() {
 
     // Adding next question using shorthand expression
     anotherQuestion++;
-    // The display of current question number of total number of questions
+    // The display of next question number of total number of questions
     progressInfo.innerText = `Question ${anotherQuestion} of ${TOP_QUESTIONS}`;
     // Dynamically styling progress bar to show how close to finishing the quiz, fiiling up with color more with each new question 
     progressFull.style.width = `${(anotherQuestion/TOP_QUESTIONS) * 100}%`;
 
     // Using random method from Math module to get random number of index of the question, for questions to be scattered and harder to remember
     const questionsIndex = Math.floor(Math.random() * remainingQs.length);
-    // Setting current question to an index of the available question
+    // Setting remaining question to an index of the available question
     chooseQuestion = remainingQs[questionsIndex];
     // Display the text of the string in the question variable !! Ask Tim ***** Inspect says that question is not a function - true
     question.innerText = chooseQuestion.question;

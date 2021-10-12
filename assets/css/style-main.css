@@ -94,7 +94,7 @@ h2 {
     transform: none;
 }
 
-/* font awesome icons for front page and highscores buttons */
+/* Font awesome icons for front page and highscores buttons */
 
 .fa-chess-queen,
 .fa-chess,
@@ -127,7 +127,7 @@ h2 {
 }
 
 #save-score-text {
-    font-size: 35px;
+    font-size: 30px;
 }
 
 input {
@@ -157,7 +157,7 @@ input::placeholder {
 
 .btn-save-score {
     font-size: 40px;
-    width: 400px;
+    width: 300px;
     text-align: center;
     margin: 25px;
     text-decoration: none;

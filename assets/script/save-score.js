@@ -40,7 +40,7 @@ saveHighScore = e => {
     highScores.sort((a, b) => {
             return b.score - a.score;
         }),
-        // Spliting the highscores list into 8 pieces to remember
+        // Spliting the highscores list into 7 pieces to store 
         highScores.splice(7);
     // Calling strings of highscores to be stored in an array in local storage
     localStorage.setItem('highScores', JSON.stringify(highScores));
