@@ -202,4 +202,9 @@ input::placeholder {
         padding: 20px;
         max-width: 200px;
     }
+
+    #question {
+        font-size: 23px;
+        margin: 0 10px 0 10px;
+    }
 }
