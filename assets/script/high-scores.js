@@ -12,10 +12,15 @@ highScoresList.innerHTML =
         return `<li class="highscore">${score.name} - ${score.score}</li>`
     }).join('')
 
+// Declare a variable that targets the reset button id
 const resetScore = document.querySelector('#reset');
 
+/**
+ * A function to clear all the highscores in the highscores list
+ */
 function reset() {
     highScoresList.innerHTML = [];
 }
 
+// Adding a function to be called to reset the hghscores after clicked
 resetScore.addEventListener('click', reset);
