@@ -199,7 +199,6 @@ input::placeholder {
     .quiz-name,
     #final-score {
         font-size: 35px;
-        max-width: 250px;
         margin: 5px;
     }
 
@@ -219,5 +218,9 @@ input::placeholder {
     #question {
         font-size: 23px;
         margin: 0 10px 0 10px;
+    }
+
+    .fas {
+        font-size: 18px;
     }
 }
