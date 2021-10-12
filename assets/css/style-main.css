@@ -157,7 +157,8 @@ input::placeholder {
 
 .btn-save-score {
     font-size: 40px;
-    width: 300px;
+    width: 400px;
+    height: 22px;
     text-align: center;
     margin: 25px;
     text-decoration: none;
