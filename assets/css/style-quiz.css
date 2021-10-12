@@ -68,7 +68,7 @@ body {
 }
 
 #progress {
-    width: 360px;
+    max-width: 360px;
     height: 50px;
     background-color: #a4e6ae;
     border: 3px solid #3ebd6c;
@@ -89,9 +89,13 @@ body {
         width: 75%;
     }
 
+    #progress-info {
+        font-size: 18px;
+    }
+
     #progress {
-        width: 210px;
-        height: 35px;
+        max-width: 220px;
+        height: 20px;
         border: 2px solid #5aaf79;
         margin: 10px;
         border-radius: 50px;
@@ -101,6 +105,14 @@ body {
     .option-text {
         padding: 10px;
         width: 80%;
+    }
+
+    #display-quiz {
+        font-size: 20px;
+    }
+
+    #quiz {
+        font-size: 18px;
     }
 }
 
