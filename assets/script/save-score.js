@@ -5,7 +5,7 @@ const nickname = document.querySelector('#nickname');
 // A variable to store a button that stores the score
 const storeScoreBtn = document.querySelector('#store-score-btn');
 // A variable to store final score stored 
-const finalStore = document.querySelector('#final-store');
+const finalStore = document.getElementById('final-store');
 // Declare a variable of last score and getting it from local storage
 const lastScore = localStorage.getItem('lastScore');
 

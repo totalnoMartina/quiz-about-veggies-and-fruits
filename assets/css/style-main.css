@@ -198,8 +198,8 @@ input::placeholder {
 
     .quiz-name,
     #final-score {
-        font-size: 35px;
-        margin: 5px;
+        font-size: 30px;
+        margin: 10px;
     }
 
     p,
