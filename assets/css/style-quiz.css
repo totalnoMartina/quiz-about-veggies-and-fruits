@@ -12,13 +12,13 @@ body {
 }
 
 #question {
-    font-size: 23px;
+    font-size: 30px;
 }
 
 .option-display {
     display: flex;
     height: 55px;
-    margin: 15px auto;
+    margin: 10px auto;
     align-items: center;
     justify-content: center;
     width: 600px;
