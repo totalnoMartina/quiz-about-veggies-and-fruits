@@ -45,6 +45,10 @@ saveHighScore = e => {
     // Setting strings of highscores to be stored in an array in local storage
     localStorage.setItem('highScores', JSON.stringify(highScores));
     // Use a location.assign() method and placing an url to be storing the highscores
-    window.location.assign('highscores-page.html');
+    storeToHighCores();
+
+    function storeToHighCores() {
+        window.location.href = 'highscores-page.html';
+    }
 }
 
