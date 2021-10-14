@@ -122,6 +122,11 @@ const TOP_QUESTIONS = 12;
 
 //** Function that starts the quiz and adds next remaining questions */ 
 function startQuiz() {
+    if (highScores === []) {
+        highScores.remove;
+    } else {
+        startQuiz();
+    }
     // Set the counter and score to start with 0
     anotherQuestion = 0;
     score = 0;
@@ -227,5 +232,7 @@ addTheScore = num => {
     score += num;
     scoreInfo.innerText = score;
 }
+
+
 // Call a function to start the Quiz
 startQuiz();
