@@ -57,6 +57,7 @@ Original idea for the interactive webpage involved a tarot-kind of entertainment
 
 
 - The link for some of the questions can be found [here](https://laidbackgardener.blog/2017/03/23/10-strange-facts-about-vegetables/)
+- The hemp seed facts [link](https://www.healthline.com/nutrition/6-health-benefits-of-hemp-seeds#TOC_TITLE_HDR_5) 
 - The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
 - Some questions and answers are inspired by this [page](https://www.eatfirst.com/en-au/c/blog/fun-facts-about-food)
 
@@ -67,8 +68,6 @@ Original idea for the interactive webpage involved a tarot-kind of entertainment
 
 ***Add more 
 ### Media
-
-The background image was found on [this site](https://www.youworkforthem.com/photo/118813/variety-of-vegetables-fruit-seeds-cereals-beans-spices-superfoods-herbs)
 
 The responsive image that contains all three screen sizes is made using [Canva](https://www.canva.com/)
 

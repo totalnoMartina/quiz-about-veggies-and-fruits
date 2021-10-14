@@ -27,6 +27,14 @@ let questions = [{
         answer: 3,
     },
     {
+        question: 'Which one of these is a complete protein source - meaning it contains all the essential amino acids that your body can\'t make and is in fact a nut?',
+        option1: 'Hemp seed',
+        option2: 'Pumpkin seed',
+        option3: 'Chia seed',
+        option4: 'Butternutsquash seed',
+        answer: 1,
+    },
+    {
         question: 'Which vegetable contains more protein per calorie than animal based protein?',
         option1: 'Carrot',
         option2: 'Spinach',
@@ -110,7 +118,7 @@ let questions = [{
 
 // Unchanging variables to store points and maximum number of questions
 const SCORE_POINTS = 100;
-const TOP_QUESTIONS = 11;
+const TOP_QUESTIONS = 12;
 
 //** Function that starts the quiz and adds next remaining questions */ 
 function startQuiz() {
