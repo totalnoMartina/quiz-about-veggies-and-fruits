@@ -1,6 +1,9 @@
 ## Quiz - Veggies and Fruits
 
 An interactive website - a quiz about vegetables, fruit and herbs to possibly entertain and inform user about some interesting facts that might spark more interest in veggies, fruits and herbs. 
+![Responsive Images](assets/readme-images/responsive-images-1.png?raw=true)
+
+
 
 ## Features
 
@@ -11,12 +14,16 @@ An interactive website - a quiz about vegetables, fruit and herbs to possibly en
 ### Features left to implement 
 
 Add more questions 
-A function that can clear the highscores list for user called reset score
+A function that can hide hifghscores if there is none
+a function that restarts the game in the main quiz area right off of questions
 
 
 # Testing
 
-- 
+![Home Page Lighthouse Test](assets/readme-images/home-page-lighthouse.png?raw=true)
+![Main Quiz Lighthouse Test](assets/readme-images/main-quiz-lighthouse.png?raw=true)
+![Save Score Lighthouse Test](assets/readme-images/save-score-lighthouse.png?raw=true)
+
 
 ## Validators Testing
  html, css
@@ -26,7 +33,7 @@ A function that can clear the highscores list for user called reset score
 
 ## Responsiveness 
 
-mobile, tablet, desktop
+mobile, tablet, desktop image here also
 
 ## Bugs / Issues
 
