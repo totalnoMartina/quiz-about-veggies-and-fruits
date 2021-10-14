@@ -172,7 +172,8 @@ input::placeholder {
 }
 
 
-.btn-save-score {
+.btn-save-score,
+.btn-replay {
     font-size: 30px;
     width: 400px;
     text-align: center;
@@ -184,11 +185,16 @@ input::placeholder {
     padding: 20px;
 }
 
-.btn-save-score:hover {
+.btn-save-score:hover,
+.btn-replay:hover {
     cursor: pointer;
     box-shadow: 0 10px 20px #f9db6d;
     transition: transform 150ms;
     transform: scale(1.03);
+}
+
+.btn-replay {
+    float: right;
 }
 
 /* Font awesome icons buttons style on save score page */
@@ -215,10 +221,11 @@ input::placeholder {
     }
 
     .btn,
-    .btn-save-score {
+    .btn-save-score,
+    .btn-replay {
         font-size: 20px;
         padding: 20px;
-        max-width: 200px;
+        max-width: 190px;
     }
 
     #question {
