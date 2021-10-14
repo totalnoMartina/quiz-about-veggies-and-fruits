@@ -172,11 +172,20 @@ input::placeholder {
 }
 
 
-.btn-save-score,
-.btn-replay {
+.btn-save-score {
     font-size: 30px;
     width: 400px;
     text-align: center;
+    margin: 25px;
+    text-decoration: none;
+    color: #f9db6d;
+    background: linear-gradient(45deg, #234328 10%, #1b5c2b 60%, #04ac20 90%);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.btn-replay {
+    width: 80px;
     margin: 25px;
     text-decoration: none;
     color: #f9db6d;

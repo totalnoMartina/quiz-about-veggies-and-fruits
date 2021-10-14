@@ -123,7 +123,7 @@ const TOP_QUESTIONS = 12;
 //** Function that starts the quiz and adds next remaining questions */ 
 function startQuiz() {
     /**
-     * if (highScores === []) {
+     * if (highScores. === []) {
         highScores.remove;
     } else {
         startQuiz();
