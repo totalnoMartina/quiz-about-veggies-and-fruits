@@ -21,7 +21,7 @@ const resetScore = document.querySelector('#reset');
  */
 function reset() {
     localStorage.clear();
-    window.location.href = 'index.html';
+    window.location.assign('index.html');
 }
 
 // Adding a function to be called to reset the hghscores after clicked
