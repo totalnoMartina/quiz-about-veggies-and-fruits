@@ -11,6 +11,10 @@ body {
     color: #f9db6d;
 }
 
+#question {
+    font-size: 23px;
+}
+
 .option-display {
     display: flex;
     height: 55px;
@@ -20,7 +24,6 @@ body {
     width: 600px;
     border-radius: 40px;
     background: #234328;
-    font-size: 40px;
 }
 
 .option-display:hover {
@@ -35,7 +38,6 @@ body {
 }
 
 .option-text {
-    font-size: 20px;
     padding: 20px;
     width: 90%;
 }
@@ -87,7 +89,8 @@ body {
 
 @media screen and (max-width: 600px) {
     .option-display {
-        width: 75%;
+        width: 70%;
+        height: 38px;
     }
 
     #progress-info {
@@ -95,8 +98,8 @@ body {
     }
 
     #progress {
-        max-width: 220px;
-        height: 30px;
+        max-width: 200px;
+        height: 35px;
         border: 2px solid #5aaf79;
         margin: 10px;
         border-radius: 50px;
@@ -104,7 +107,7 @@ body {
     }
 
     #question {
-        font-size: 19px;
+        font-size: 21px;
         margin: 0 10px 0 10px;
     }
 
@@ -123,17 +126,22 @@ body {
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
     .option-display {
-        width: 67%;
+        width: 60%;
+        height: 44px;
+    }
+
+    .option-text {
+        font-size: 20px;
     }
 
     #question {
-        font-size: 20px;
-        margin: 0 15px 0 15px;
+        font-size: 22px;
+        padding: 0 15px 0 15px;
     }
     #progress {
-        max-width: 320px;
+        max-width: 330px;
         height: 20px;
         border: 2px solid #5aaf79;
         margin: 10px;

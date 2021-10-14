@@ -145,7 +145,7 @@ function getNewQuestion() {
         // A new variable stores score added through questions loop
         localStorage.setItem('lastScore', score);
         // The final score stored is saved in the save-score.html window storage
-        return window.location.assign('https://totalnomartina.github.io/quiz-about-veggies-and-fruits/save-score.html');
+        return window.location.href = 'https://totalnomartina.github.io/quiz-about-veggies-and-fruits/save-score.html';
     }
 
     // Adding next question using shorthand expression
