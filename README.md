@@ -14,6 +14,7 @@ An interactive website - a quiz about vegetables, fruit and herbs to possibly en
 ### Features left to implement 
 
 Add more questions 
+A function that if user does not want to store name - random vegetable name comes up 
 A function that can hide hifghscores if there is none
 a function that restarts the game in the main quiz area right off of questions
 
@@ -38,6 +39,10 @@ mobile, tablet, desktop image here also
 ## Bugs / Issues
 
 - here difficulties highscore
+
+## Wireframes
+
+Original idea for the interactive webpage involved a tarot-kind of entertainment, 'The Voice of Your Soul' was the name, and it was supposed to be giving user cards of inspiration, support, love and kindness, as a spiritual person ans a vegan, I thought vegetables would be more appropriate. However, there is an image of the previous idea ![Wireframe](assets/readme-images/wireframe-the-voice-of-your-soul.png?raw=true)
 
 ## Credits
 
@@ -64,4 +69,8 @@ mobile, tablet, desktop image here also
 ### Media
 
 The background image was found on [this site](https://www.youworkforthem.com/photo/118813/variety-of-vegetables-fruit-seeds-cereals-beans-spices-superfoods-herbs)
+
+The responsive image that contains all three screen sizes is made using [Canva](https://www.canva.com/)
+
+
 
