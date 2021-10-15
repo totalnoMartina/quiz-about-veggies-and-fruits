@@ -218,7 +218,7 @@ input::placeholder {
     color: #f9db6d;
     background: linear-gradient(45deg, #234328 10%, #1b5c2b 60%, #04ac20 90%);
     border-radius: 15px;
-    padding: 5px;
+    padding: 10px;
 }
 
 .btn-save-score:hover,
@@ -293,8 +293,8 @@ footer {
     .btn-save-score,
     .btn-replay {
         font-size: 20px;
-        padding: 18px;
-        max-width: 280px;
+        padding: 10px;
+        max-width: 290px;
     }
     
     .btn:hover,
