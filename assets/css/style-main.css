@@ -201,7 +201,7 @@ input::placeholder {
     font-size: 30px;
     width: 400px;
     text-align: center;
-    margin: 25px;
+    margin: 18px;
     text-decoration: none;
     color: #f9db6d;
     background: linear-gradient(45deg, #234328 10%, #1b5c2b 60%, #04ac20 90%);
@@ -286,7 +286,7 @@ footer {
     .btn-save-score,
     .btn-replay {
         font-size: 20px;
-        padding: 20px;
+        padding: 18px;
         max-width: 280px;
     }
     
