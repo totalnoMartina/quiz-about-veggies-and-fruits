@@ -46,18 +46,18 @@ p {
 
 .fa-github {
     text-align: center;
-    width: 100px;
+    width: 50px;
     margin: 10px;
-    padding: 5px;
+    padding: 10px;
     text-decoration: none;
     color: #f9db6d;
     background: linear-gradient(45deg, #234328 10%, #19642c 60%, #04ac20 90%);
-    border-radius: 30px;
+    border-radius: 15px;
 }
 
 .fa-github:hover {
     cursor: pointer;
-    box-shadow: 0 10px 20px #fae1df;
+    box-shadow: 0 10px 20px #f9db6d;
     transition: transform 150ms;
     transform: scale(1.03);
 }
@@ -106,7 +106,7 @@ p {
 .btn:hover,
 #highscores-btn:hover {
     cursor: pointer;
-    box-shadow: 0 10px 20px #fae1df;
+    box-shadow: 0 10px 20px #f9db6d;
     transition: transform 150ms;
     transform: scale(1.03);
 }
