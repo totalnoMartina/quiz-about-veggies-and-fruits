@@ -233,8 +233,9 @@ input::placeholder {
 
 footer {
     position: fixed;
+    justify-content: space-between;
     bottom: 0;
-    left: 0;
+    right: 0;
 }
 /* Font awesome icons buttons style on save score page */
 .fa-laptop-house,
@@ -262,9 +263,11 @@ footer {
 
     .btn,
     .btn-save-score,
-    .btn-replay {
-        font-size: 20px;
-        padding: 15px;
+    .btn-replay,
+    .fa-laptop-house,
+    .fa-github {
+        font-size: 16px;
+        padding: 10px;
         max-width: 190px;
     }
     .btn:hover,

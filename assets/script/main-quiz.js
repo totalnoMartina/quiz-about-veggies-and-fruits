@@ -236,6 +236,5 @@ addTheScore = num => {
     scoreInfo.innerText = score;
 }
 
-
 // Call a function to start the Quiz
 startQuiz();
