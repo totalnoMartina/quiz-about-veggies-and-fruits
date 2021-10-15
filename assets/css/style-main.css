@@ -53,6 +53,7 @@ p {
     color: #f9db6d;
     background: linear-gradient(45deg, #234328 10%, #19642c 60%, #04ac20 90%);
     border-radius: 15px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 .fa-github:hover {
@@ -120,7 +121,8 @@ p {
 
 /* Font awesome icons for front page and highscores buttons */
 .fas {
-    font-size: 30px;
+    font-size: 22px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 } 
 
 .fa-carrot {
@@ -210,13 +212,13 @@ input::placeholder {
 }
 
 .btn-replay {
-    width: 80px;
-    margin: 20px;
+    width: 60px;
+    margin: 10px;
     text-decoration: none;
     color: #f9db6d;
     background: linear-gradient(45deg, #234328 10%, #1b5c2b 60%, #04ac20 90%);
     border-radius: 15px;
-    padding: 10px;
+    padding: 5px;
 }
 
 .btn-save-score:hover,
