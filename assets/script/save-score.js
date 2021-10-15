@@ -51,4 +51,13 @@ saveHighScore = e => {
         window.location.href = 'highscores-page.html';
     }
 }
+nickname.addEventListener("change", stateHandle);
+
+function stateHandle() {
+    if (nickname.value === "") {
+        highscoresButton.disabled = true; //button remains disabled
+    } else {
+        highscoresButton.disabled = false; //button is enabled
+    }
+}
 

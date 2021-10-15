@@ -267,11 +267,13 @@ footer {
         padding: 15px;
         max-width: 190px;
     }
-
-    .fas {
-        font-size: 18px;
+    .btn:hover,
+    .btn-save-score:hover {
+        cursor: pointer;
+        box-shadow: 0 10px 20px #f9db6d;
+        transition: transform 150ms;
+        transform: scale(1.03);
     }
-}
 
 @media screen and (max-width: 850px) {
     .quiz-name {
@@ -290,4 +292,11 @@ footer {
         max-width: 280px;
     }
     
+    .btn:hover,
+    .btn-save-score:hover {
+        cursor: pointer;
+        box-shadow: 0 10px 20px #f9db6d;
+        transition: transform 150ms;
+        transform: scale(1.03);
 }
+}}

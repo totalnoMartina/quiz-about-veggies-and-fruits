@@ -26,3 +26,14 @@ function reset() {
 
 // Adding a function to be called to reset the hghscores after clicked
 resetScore.addEventListener('click', reset);
+
+nickname.addEventListener("change", stateHandle);
+
+function stateHandle() {
+    if (nickname.value === "") {
+        highscoresButton.disabled = true; //button remains disabled
+    } else {
+        highscoresButton.disabled = false; //button is enabled
+    }
+}
+

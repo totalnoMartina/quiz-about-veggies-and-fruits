@@ -5,6 +5,7 @@ const options = Array.from(document.querySelectorAll('.option-text')); // Creati
 const progressInfo = document.querySelector('#progress-info'); // A variable that targets progress area
 const scoreInfo = document.querySelector('#score'); // A variable that targets score based on id 
 const progressFull = document.querySelector('#progress-full'); // A variable that shows when quiz is on last question the progress bar is full
+const highscoresButton = document.querySelector('#highscore-btn'); // A variable that keeps value of a button that leads to highscores-page.html
 
 // An empty dictionary for questions and answers connected to the question
 let chooseQuestion = {};
@@ -19,7 +20,7 @@ let remainingQs = [];
 
 // An array of questions and a dictionary of question, choices and correct answers
 let questions = [{
-        question: 'Which one of these is weigh-loss-friendly, helps boost immune system and is in fact a berry?',
+        question: 'Which one of these is weight-loss-friendly, helps boost immune system and is in fact a berry?',
         option1: 'Cherry',
         option2: 'Strawberry',
         option3: 'Pumpkin',
@@ -43,7 +44,7 @@ let questions = [{
         answer: 4,
     },
     {
-        question: 'When added to your diet, it helps boost heart health, reduces inflammation and has antibacterial properties in our gut?',
+        question: 'Which one of these when added to your diet, helps boost heart health, reduces inflammation and has antibacterial properties in our gut?',
         option1: 'Sesame oil',
         option2: 'Vegetable oil',
         option3: 'Olive oil',
@@ -67,7 +68,7 @@ let questions = [{
         answer: 1,
     },
     {
-        question: 'Which nut butter helps in type 2 diabetes prevention, aids weigh-loss and glows in dark after exposed to intense light?',
+        question: 'Which nut butter helps in type 2 diabetes prevention, aids weight-loss and glows in dark after exposed to intense light?',
         option1: 'Almond Butter',
         option2: 'Cashew Butter',
         option3: 'Hazelnut Butter',
