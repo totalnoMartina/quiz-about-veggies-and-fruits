@@ -118,10 +118,7 @@ p {
     transform: none;
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
-}
+
 /* Font awesome icons for front page and highscores buttons */
 .fas {
     font-size: 30px;
@@ -234,6 +231,11 @@ input::placeholder {
     float: right;
 }
 
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
 /* Font awesome icons buttons style on save score page */
 .fa-laptop-house,
 .fa-save,
