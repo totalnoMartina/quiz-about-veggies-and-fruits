@@ -201,22 +201,22 @@ input::placeholder {
     font-size: 30px;
     width: 400px;
     text-align: center;
-    margin: 25px;
+    margin: 20px;
     text-decoration: none;
     color: #f9db6d;
     background: linear-gradient(45deg, #234328 10%, #1b5c2b 60%, #04ac20 90%);
     border-radius: 15px;
-    padding: 20px;
+    padding: 10px;
 }
 
 .btn-replay {
     width: 80px;
-    margin: 25px;
+    margin: 20px;
     text-decoration: none;
     color: #f9db6d;
     background: linear-gradient(45deg, #234328 10%, #1b5c2b 60%, #04ac20 90%);
     border-radius: 15px;
-    padding: 20px;
+    padding: 10px;
 }
 
 .btn-save-score:hover,
@@ -240,7 +240,7 @@ footer {
 .fa-laptop-house,
 .fa-save,
 .fa-redo {
-    margin-left: 20px;
+    margin-left: 15px;
     color: #f9db6d;
 }
 
@@ -263,7 +263,7 @@ footer {
     .btn-save-score,
     .btn-replay {
         font-size: 20px;
-        padding: 20px;
+        padding: 15px;
         max-width: 190px;
     }
 
