@@ -68,6 +68,8 @@ Original idea for the interactive webpage involved a tarot-kind of entertainment
 - Turmeric facts can be found [here](http://www.drsanderschiropractic.com/blog/16406-five-surprising-facts-about-turmeric)
 - Mushroom facts can be found [here](https://www.goodhousekeeping.com/health/diet-nutrition/a27633487/mushroom-health-benefits/)
 
+- Some facts about broab beans - fava beans can be found [here](https://www.healthbenefitstimes.com/broad-beans/)
+
 ***Add more 
 ### Media
 

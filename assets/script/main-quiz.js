@@ -5,7 +5,6 @@ const options = Array.from(document.querySelectorAll('.option-text')); // Creati
 const progressInfo = document.querySelector('#progress-info'); // A variable that targets progress area
 const scoreInfo = document.querySelector('#score'); // A variable that targets score based on id 
 const progressFull = document.querySelector('#progress-full'); // A variable that shows when quiz is on last question the progress bar is full
-const highscoresButton = document.querySelector('#highscore-btn'); // A variable that keeps value of a button that leads to highscores-page.html
 
 // An empty dictionary for questions and answers connected to the question
 let chooseQuestion = {};
@@ -130,6 +129,14 @@ let questions = [{
         option3: 'Rice',
         option4: 'Almond',
         answer: 1,
+    },
+    {
+        question: 'Coming from a \'pea family\', this vegetable helps boost immune system, prevents anemia and improves sleep, which is it?',
+        option1: 'Chickpea',
+        option2: 'Black Bean',
+        option3: 'Fava Bean',
+        option4: 'Lentil',
+        answer: 3,
     }
 ]
 
