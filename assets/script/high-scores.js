@@ -28,14 +28,15 @@ function reset() {
 resetScore.addEventListener('click', reset);
 
 nickname.addEventListener("change", stateHandle);
-
+/*
 function buttonChange() {
     if (nickname.value === "") {
         highscoresButton.disabled = true; //button disabled if no user storing name 
     } else {
         highscoresButton.disabled = false; //button is enabled
     }
-}
+}*/
+
 // Call a buttonChange for the highscores button to show or not
-buttonChange();
+// buttonChange();
 

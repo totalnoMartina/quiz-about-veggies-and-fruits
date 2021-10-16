@@ -8,6 +8,10 @@ body {
     color: #f9db6d;
 }
 
+#final-score {
+    padding-top: 20px;
+}
+
 #high-scores-list {
     list-style: none;
 }
@@ -15,4 +19,23 @@ body {
 .highscores {
     font-size: 20px;
     margin: 10px;
+}
+
+.btn-reset {
+    font-size: 20px;
+    padding: 15px;
+    width: 300px;
+    text-align: center;
+    margin: 20px;
+    text-decoration: none;
+    color: #f9db6d;
+    background: linear-gradient(45deg, #234328 10%, #19642c 60%, #04ac20 90%);
+    border-radius: 15px;
+}
+
+.btn-reset:hover {
+    cursor: pointer;
+    box-shadow: 0 5px 20px #f9db6d;
+    transition: transform 150ms;
+    transform: scale(1.03);
 }

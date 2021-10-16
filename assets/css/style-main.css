@@ -153,9 +153,6 @@ p {
     background: linear-gradient(45deg, #f58d64d3 10%, #d42008d3 40%, #af3404d3 95%);
 }
 
-#high-scores {
-    margin: 15px 0 20px 0;
-}
 
 #final-score {
     font-size: 45px;
