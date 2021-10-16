@@ -75,8 +75,8 @@ body {
 #progress {
     max-width: 360px;
     height: 50px;
-    background-color: #a4e6ae;
-    border: 3px solid #3ebd6c;
+    background: #a1f1bf;
+    border: 2px solid #3ebd6c;
     margin: 10px;
     border-radius: 60px;
     overflow: hidden;
@@ -84,9 +84,8 @@ body {
 
 #progress-full {
     height: 100%;
-    background: #3ebd6c;
+    background: linear-gradient(45deg, #5dee73 10%, #a4e6ae 60%, #04ac20 90%);
     width: 0%;
-    border-bottom: 5px solid rgba(255, 255, 255, 0.5);
 }
 
 @media screen and (max-width: 600px) {
