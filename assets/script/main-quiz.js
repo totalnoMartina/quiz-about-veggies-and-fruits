@@ -114,12 +114,20 @@ let questions = [{
         option3: 'Date',
         option4: 'Fig',
         answer: 4,
+    },
+    {
+        question: 'Which one of these spices supports liver detoxification, is proven to reduce depression symptoms and even help reverse diabetes?',
+        option1: 'Cardamom',
+        option2: 'Turmeric',
+        option3: 'Ginger',
+        option4: 'Cinnamon',
+        answer: 2,
     }
 ]
 
 // Unchanging variables to store points and maximum number of questions
 const SCORE_POINTS = 100;
-const TOP_QUESTIONS = 12;
+const TOP_QUESTIONS = 13;
 
 //** Function that starts the quiz and adds next remaining questions */ 
 function startQuiz() {
