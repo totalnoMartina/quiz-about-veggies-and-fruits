@@ -31,7 +31,7 @@ body {
     cursor: pointer;
     box-shadow: 0 8px 16px #f9db6d;
     transform: scale(1.02);
-    transform: transform 100ms;
+    transition-duration: 100ms;
 }
 
 .option {
@@ -128,10 +128,8 @@ body {
 }
 
 @media screen and (max-width: 850px) {
-    .quiz-are {
-        max-width: 850px;
-    }
-    
+
+
     #quiz {
         max-width: 850px;
     }
@@ -145,6 +143,7 @@ body {
         font-size: 22px;
         padding: 0 15px 0 15px;
     }
+
     #progress {
         max-width: 330px;
         height: 20px;

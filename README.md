@@ -7,17 +7,16 @@ An interactive website - a quiz about vegetables, fruit and herbs to possibly en
 
 ## Features
 
-- Home page offers two buttons - Start the quiz and check all Highscores
+- Home page offers three buttons - Start the quiz, check all Highscores, students/coders Github link in the right corner
+- There is a button to restart the game while in the quiz questions area, or ho to home page and maybe do something else
 - There is clear visibility of correct and incorrect answers when user clicks while answering
-- There is an option to save your score, start the quiz again or go to Home page
+- There is an option to save your score, start the quiz again, go to Home page, or check Github repository of the student/coder
 
 ### Features left to implement 
 
 Add more questions 
 A function that if user does not want to store name - random vegetable name comes up 
-A function that can hide hifghscores if there is none
-a function that restarts the game in the main quiz area right off of questions
-
+A function that can hide highscores if there is none stored
 
 # Testing
 
@@ -27,7 +26,13 @@ a function that restarts the game in the main quiz area right off of questions
 
 
 ## Validators Testing
- html, css
+ html, 
+ ## Main Page CSS Validator
+ ![Main Page CSS Validator](assets/readme-images/main-page-validator-css.png?raw=true)
+ ## Main Quiz Page CSS Validator
+ ![Main Quiz CSS Validator](assets/readme-images/main-quiz-validator-css.png?raw=true)
+ ## Highscores Page CSS Validator
+ ![Main Quiz CSS Validator](assets/readme-images/highscores-validator-css.png?raw=true)
 
 ## Browser Compatibility
  mozilla, safari, firefox
