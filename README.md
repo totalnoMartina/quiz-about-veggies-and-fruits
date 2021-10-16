@@ -1,7 +1,7 @@
-## Quiz - Veggies and Fruits
+## Quiz - Berry Herbal Quiz 
 
-An interactive website - a quiz about vegetables, fruit and herbs to possibly entertain and inform user about some interesting facts that might spark more interest in veggies, fruits and herbs. 
-![Responsive Images](assets/readme-images/responsive-images-1.png?raw=true)
+An interactive webpage - a quiz about vegetables, fruit and herbs to possibly entertain and inform user about some interesting facts that might spark more interest in veggies, fruits and herbs. 
+![Main Image](assets/readme-images/main-image.png?raw=true)
 
 
 
@@ -26,7 +26,7 @@ A function that can hide highscores if there is none stored
 
 
 ## Validators Testing
- html,
+
  ## Main Page HTML Validator 
  ![](assets/readme-images/index-html-validator.png?raw=true)
 
