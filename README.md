@@ -66,6 +66,7 @@ Original idea for the interactive webpage involved a tarot-kind of entertainment
 - Interesting facts about figs are found [here](https://valleyfig.com/our-story/fig-facts/)
 - I added font style form [Google Fonts](https://fonts.google.com/) 
 - Turmeric facts can be found [here](http://www.drsanderschiropractic.com/blog/16406-five-surprising-facts-about-turmeric)
+- Mushroom facts can be found [here](https://www.goodhousekeeping.com/health/diet-nutrition/a27633487/mushroom-health-benefits/)
 
 ***Add more 
 ### Media

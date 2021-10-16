@@ -122,12 +122,20 @@ let questions = [{
         option3: 'Ginger',
         option4: 'Cinnamon',
         answer: 2,
+    },
+    {
+        question: 'This one is a rare source of vitamin D, packed with minerals like selenium, potassium, copper, iron and phosphorus, and also helps stop your skin and brain from aging, which is it?',
+        option1: 'Mushroom',
+        option2: 'Soy Bean',
+        option3: 'Rice',
+        option4: 'Almond',
+        answer: 1,
     }
 ]
 
 // Unchanging variables to store points and maximum number of questions
 const SCORE_POINTS = 100;
-const TOP_QUESTIONS = 13;
+const TOP_QUESTIONS = 14;
 
 //** Function that starts the quiz and adds next remaining questions */ 
 function startQuiz() {
