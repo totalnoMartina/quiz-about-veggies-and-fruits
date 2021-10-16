@@ -142,7 +142,7 @@ let questions = [{
 
 // Unchanging variables to store points and maximum number of questions
 const SCORE_POINTS = 100;
-const TOP_QUESTIONS = 14;
+const TOP_QUESTIONS = 15;
 
 //** Function that starts the quiz and adds next remaining questions */ 
 function startQuiz() {
