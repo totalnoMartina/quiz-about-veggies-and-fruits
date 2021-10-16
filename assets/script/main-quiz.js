@@ -225,10 +225,10 @@ options.forEach(option => {
             add all correct answers */
             correctAnswer.parentElement.classList.add('correct');
         }
-        // selectedOption is calling a class to be applied and added to a list after event clicked 
+        // selectedOption calls a class to be applied as argument and then is added to a list after a question(parent element) is answered(child element)
         selectedOption.parentElement.classList.add(classToApply);
         /**
-         * Creating an arrow function to set how long will it take until the questions switch 
+         * Creating an arrow function to set how long will it take until the questions switches 
          * to next one
          */
         setTimeout(() => {
@@ -241,7 +241,7 @@ options.forEach(option => {
             };
             // A function to call next Question is called
             getNewQuestion();
-            // Duration of the wait to next question
+            // Duration of the wait to next question after one is answered
         }, 1500);
     });
 });

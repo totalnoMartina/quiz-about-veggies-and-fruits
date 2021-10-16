@@ -38,42 +38,36 @@
                     <p class="display-score">Score <i class="fas fa-star-half-alt"></i></p>
                     <!-- A class to target style for the text and an id for score to be targeted by
                     Javascript and summed up as they loop through questions -->
-                    <h1 class="display-main-text" id="score">0</h1>
+                    <h2 class="display-main-text" id="score">0</h2>
                 </article>
             </section>
             <!-- Id targeted by JavaScript to pick up qustions out of question variable in main-quiz.js file -->
-            <h1 id="question">Question</h1>
+            <h2 id="question">Question</h2>
             <!-- Class to target the display of the answer option -->
             <article class="option-display">
-                <!-- Class to target the 'A' key of the currentQuestion dictionary -->
+                <!-- Class to target the 'A'/'B'/'C'/'D' key of the currentQuestion dictionary -->
                 <p class="option-prefix">A</p>
-                <!-- Class to target all answer values by data number 1 in currentQuestion dictionary -->
+                <!-- Class to target all answer values by data number 1/2/3/4 in currentQuestion dictionary -->
                 <p class="option-text" data-number="1">answer</p>
             </article>
-            <!-- Class to target the display of the answer option -->
             <article class="option-display">
-                <!-- Class to target the 'B' key of the currentQuestion dictionary -->
                 <p class="option-prefix">B</p>
-                <!-- Class to target all answer values by data number 2 in currentQuestion dictionary -->
                 <p class="option-text" data-number="2">answer</p>
             </article>
             <article class="option-display">
-                <!-- Class to target the 'C' key of the currentQuestion dictionary -->
                 <p class="option-prefix">C</p>
-                <!-- Class to target all answer values by data number 3 in currentQuestion dictionary -->
                 <p class="option-text" data-number="3">answer</p>
             </article>
             <article class="option-display">
-                <!-- Class to target the 'D' key of the currentQuestion dictionary -->
                 <p class="option-prefix">D</p>
-                <!-- Class to target all answer values by data number 4 in currentQuestion dictionary -->
                 <p class="option-text" data-number="4">answer</p>
             </article>
         </section>
     </section>
     <!-- Footer containing link to Github -->
-    <footer><a href="https://github.com/totalnoMartina" target="_blank" name="link-to-github"><i class="fab fa-github"></i></a>
-    <a href="index.html"><i class="fas fa-laptop-house fab fa-github"></i></a></footer>
+    <footer><a href="https://github.com/totalnoMartina" target="_blank"><i
+                class="fab fa-github"></i></a>
+        <a href="index.html"><i class="fas fa-laptop-house fab fa-github"></i></a></footer>
     <!-- Link to script -->
     <script src="assets/script/main-quiz.js"></script>
 </body>
