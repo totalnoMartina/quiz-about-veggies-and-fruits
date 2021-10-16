@@ -19,10 +19,10 @@
 <body>
     <!-- Main quiz area - style wrap -->
     <section id="quiz-area">
-        <section id="quiz" class="justify-center flex-column">
+        <fieldset id="quiz" class="justify-center flex-column">
             <!-- Main Quiz with questions, progress bar and score dynamically shown -->
-            <section id="display-quiz">
-                <article class="display-item">
+            <fieldset id="display-quiz">
+                <textarea class="display-item">
                     <!-- An id to target dynamically progress of the questions answered
                     and fill out a certain percentage with background color targeted by css -->
                     <p id="progress-info" class="display-score">Question</p>
@@ -32,41 +32,40 @@
                         <div id="progress-full"></div>
                     </div>
                     <a href="main-quiz.html" class="btn-replay"><i class="fas fa-redo"></i></a>
-                </article>
+                </textarea>
                 <!-- A class to style display of current score -->
-                <article class="display-item">
+                <textarea class="display-item">
                     <p class="display-score">Score <i class="fas fa-star-half-alt"></i></p>
                     <!-- A class to target style for the text and an id for score to be targeted by
                     Javascript and summed up as they loop through questions -->
                     <h2 class="display-main-text" id="score">0</h2>
-                </article>
-            </section>
+                </textarea>
+            </fieldset>
             <!-- Id targeted by JavaScript to pick up qustions out of question variable in main-quiz.js file -->
             <h2 id="question">Question</h2>
             <!-- Class to target the display of the answer option -->
-            <article class="option-display">
+            <select class="option-display">
                 <!-- Class to target the 'A'/'B'/'C'/'D' key of the currentQuestion dictionary -->
-                <p class="option-prefix">A</p>
+                <option class="option-prefix">A</option>
                 <!-- Class to target all answer values by data number 1/2/3/4 in currentQuestion dictionary -->
-                <p class="option-text" data-number="1">answer</p>
-            </article>
-            <article class="option-display">
-                <p class="option-prefix">B</p>
-                <p class="option-text" data-number="2">answer</p>
-            </article>
-            <article class="option-display">
-                <p class="option-prefix">C</p>
-                <p class="option-text" data-number="3">answer</p>
-            </article>
-            <article class="option-display">
-                <p class="option-prefix">D</p>
-                <p class="option-text" data-number="4">answer</p>
-            </article>
-        </section>
+                <option class="option-text" data-number="1">answer</option>
+            </select>
+            <select class="option-display">
+                <option class="option-prefix">B</option>
+                <option class="option-text" data-number="2">answer</option>
+            </select>
+            <select class="option-display">
+                <option class="option-prefix">C</option>
+                <option class="option-text" data-number="3">answer</option>
+            </select>
+            <select class="option-display">
+                <option class="option-prefix">D</option>
+                <option class="option-text" data-number="4">answer</option>
+            </select>
+        </fieldset>
     </section>
     <!-- Footer containing link to Github -->
-    <footer><a href="https://github.com/totalnoMartina" target="_blank"><i
-                class="fab fa-github"></i></a>
+    <footer><a href="https://github.com/totalnoMartina" target="_blank"><i class="fab fa-github"></i></a>
         <a href="index.html"><i class="fas fa-laptop-house fab fa-github"></i></a></footer>
     <!-- Link to script -->
     <script src="assets/script/main-quiz.js"></script>

@@ -26,9 +26,21 @@ A function that can hide highscores if there is none stored
 
 
 ## Validators Testing
- html, 
+ html,
+ ## Main Page HTML Validator 
+ ![](assets/readme-images/index-html-validator.png?raw=true)
+
+ ## Main Quiz Page HTML Validator
+ ![](assets/readme-images/main-quiz-html-validator.png?raw=true)
+
+ ## Save Score HTML Validator
+ ![](assets/readme-images/save-score-html-validator.png?raw=true)
+
+ ## Highscores Page HTML Validator 
+ ![](assets/readme-images/highscores-html-validator.png?raw=true)
+
  ## Main Page CSS Validator
- ![Main Page CSS Validator](assets/readme-images/main-page-validator-css.png?raw=true)
+ ![](assets/readme-images/main-page-validator-css.png?raw=true)
  ## Main Quiz Page CSS Validator
  ![Main Quiz CSS Validator](assets/readme-images/main-quiz-validator-css.png?raw=true)
  ## Highscores Page CSS Validator
