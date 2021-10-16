@@ -27,7 +27,7 @@ function reset() {
 // Adding a function to be called to reset the hghscores after clicked
 resetScore.addEventListener('click', reset);
 
-nickname.addEventListener("change", stateHandle);
+//nickname.addEventListener("change", stateHandle);
 /*
 function buttonChange() {
     if (nickname.value === "") {

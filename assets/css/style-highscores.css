@@ -27,6 +27,7 @@ body {
     width: 300px;
     text-align: center;
     margin: 20px;
+    border: none;
     text-decoration: none;
     color: #f9db6d;
     background: linear-gradient(45deg, #234328 10%, #19642c 60%, #04ac20 90%);
