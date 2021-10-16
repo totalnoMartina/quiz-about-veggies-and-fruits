@@ -47,11 +47,12 @@ A function that can hide highscores if there is none stored
  ![Main Quiz CSS Validator](assets/readme-images/highscores-validator-css.png?raw=true)
 
 ## Browser Compatibility
+
  mozilla, safari, firefox
 
 ## Responsiveness 
 
-mobile, tablet, desktop image here also
+![Responsive Images](assets/readme-images/responsive-images-1.png?raw=true)
 
 ## Bugs / Issues
 

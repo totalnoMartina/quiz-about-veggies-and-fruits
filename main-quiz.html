@@ -19,10 +19,10 @@
 <body>
     <!-- Main quiz area - style wrap -->
     <section id="quiz-area">
-        <fieldset id="quiz" class="justify-center flex-column">
+        <nav id="quiz" class="justify-center flex-column">
             <!-- Main Quiz with questions, progress bar and score dynamically shown -->
-            <fieldset id="display-quiz">
-                <textarea class="display-item">
+            <section id="display-quiz">
+                <div class="display-item">
                     <!-- An id to target dynamically progress of the questions answered
                     and fill out a certain percentage with background color targeted by css -->
                     <p id="progress-info" class="display-score">Question</p>
@@ -32,41 +32,48 @@
                         <div id="progress-full"></div>
                     </div>
                     <a href="main-quiz.html" class="btn-replay"><i class="fas fa-redo"></i></a>
-                </textarea>
+                </div>
                 <!-- A class to style display of current score -->
-                <textarea class="display-item">
+                <div class="display-item">
                     <p class="display-score">Score <i class="fas fa-star-half-alt"></i></p>
                     <!-- A class to target style for the text and an id for score to be targeted by
                     Javascript and summed up as they loop through questions -->
                     <h2 class="display-main-text" id="score">0</h2>
-                </textarea>
-            </fieldset>
+                </div>
+            </section>
             <!-- Id targeted by JavaScript to pick up qustions out of question variable in main-quiz.js file -->
             <h2 id="question">Question</h2>
             <!-- Class to target the display of the answer option -->
-            <select class="option-display">
-                <!-- Class to target the 'A'/'B'/'C'/'D' key of the currentQuestion dictionary -->
-                <option class="option-prefix">A</option>
-                <!-- Class to target all answer values by data number 1/2/3/4 in currentQuestion dictionary -->
-                <option class="option-text" data-number="1">answer</option>
-            </select>
-            <select class="option-display">
-                <option class="option-prefix">B</option>
-                <option class="option-text" data-number="2">answer</option>
-            </select>
-            <select class="option-display">
-                <option class="option-prefix">C</option>
-                <option class="option-text" data-number="3">answer</option>
-            </select>
-            <select class="option-display">
-                <option class="option-prefix">D</option>
-                <option class="option-text" data-number="4">answer</option>
-            </select>
-        </fieldset>
+            <div class="option-display">
+                <!-- Class to target the 'A' key of the currentQuestion dictionary -->
+                <p class="option-prefix">A</p>
+                <!-- Class to target all answer values by data number 1 in currentQuestion dictionary -->
+                <p class="option-text" data-number="1">answer</p>
+            </div>
+            <!-- Class to target the display of the answer option -->
+            <div class="option-display">
+                <!-- Class to target the 'B' key of the currentQuestion dictionary -->
+                <p class="option-prefix">B</p>
+                <!-- Class to target all answer values by data number 2 in currentQuestion dictionary -->
+                <p class="option-text" data-number="2">answer</p>
+            </div>
+            <div class="option-display">
+                <!-- Class to target the 'C' key of the currentQuestion dictionary -->
+                <p class="option-prefix">C</p>
+                <!-- Class to target all answer values by data number 3 in currentQuestion dictionary -->
+                <p class="option-text" data-number="3">answer</p>
+            </div>
+            <div class="option-display">
+                <!-- Class to target the 'D' key of the currentQuestion dictionary -->
+                <p class="option-prefix">D</p>
+                <!-- Class to target all answer values by data number 4 in currentQuestion dictionary -->
+                <p class="option-text" data-number="4">answer</p>
+            </div>
+        </nav>
     </section>
     <!-- Footer containing link to Github -->
     <footer><a href="https://github.com/totalnoMartina" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="index.html"><i class="fas fa-laptop-house fab fa-github"></i></a></footer>
+    <a href="index.html"><i class="fas fa-laptop-house fab fa-github"></i></a></footer>
     <!-- Link to script -->
     <script src="assets/script/main-quiz.js"></script>
 </body>

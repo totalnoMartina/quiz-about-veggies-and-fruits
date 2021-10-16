@@ -13,7 +13,7 @@ let asking = true;
 // A global variable that stores a starting value of a score
 let score = 0;
 // A global variable that stores looping through questions
-let anotherQuestion = 0;
+let anotherQuestion = '';
 // An empty array that stores values of leftover questions through a function getNewQuestion()
 let remainingQs = [];
 
