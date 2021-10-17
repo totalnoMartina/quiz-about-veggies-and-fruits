@@ -27,6 +27,22 @@ let questions = [{
         answer: 3,
     },
     {
+        question: 'This vegetable is of a Sunflower family and number one in antioxidants amongst all vegetables, there is also a Food and Wine festival in California dedicated bringing together lovers of this specific vegetable, which one is it?',
+        option1: 'Salsify',
+        option2: 'Endive',
+        option3: 'Artichoke',
+        option4: 'Lettuce',
+        answer: 3,
+    },
+    {
+        question: 'This fruit is discovered in 500 BC and from Aztecs native language Nahuatl translated as \'testicles\', it is abundant in nutrients and a low-carb food counting only 160 calories per 100 grams serving. Which is it?',
+        option1: 'Nectarine',
+        option2: 'Avocado',
+        option3: 'Aubergine',
+        option4: 'Grape',
+        answer: 2,
+    },
+    {
         question: 'Which one of these is a complete protein source - meaning it contains all the essential amino acids that your body can\'t make and is in fact a nut?',
         option1: 'Hemp seed',
         option2: 'Pumpkin seed',
@@ -91,9 +107,17 @@ let questions = [{
         answer: 1,
     },
     {
+        question: 'This berry, native to North America, is ranked number one antioxidants amongst 40 varieties of fruit and is known to mankind over 13 000 years. Which is it?',
+        option1: 'Huckleberry',
+        option2: 'Blueberry',
+        option3: 'Farkleberry',
+        option4: 'Cranberry',
+        answer: 2,
+    },
+    {
         question: 'Which one of these is considered "nutraceutical", meaning it can prevent and treat disease?',
         option1: 'Grapefruit',
-        option2: 'Pear',
+        option2: 'Bergamot',
         option3: 'Mandarin',
         option4: 'Lemon',
         answer: 1,
@@ -123,12 +147,20 @@ let questions = [{
         answer: 2,
     },
     {
-        question: 'This one is a rare source of vitamin D, packed with minerals like selenium, potassium, copper, iron and phosphorus, and also helps stop your skin and brain from aging, which is it?',
+        question: 'This one is a rare natural source of vitamin D, packed with minerals like selenium, potassium, copper, iron and phosphorus, even helps stop your skin and brain from aging, which is it?',
         option1: 'Mushroom',
         option2: 'Soy Bean',
         option3: 'Rice',
         option4: 'Almond',
         answer: 1,
+    },
+    {
+        question: 'Worshipped by ancient Egyptians, this vegetable was used for paying rent, and for its anti-bacterial properties - it was also used for treating wounds, which one is it?',
+        option1: 'Pepper',
+        option2: 'Tomato',
+        option3: 'Courgette',
+        option4: 'Onion',
+        answer: 4,
     },
     {
         question: 'Coming from a \'pea family\', this vegetable helps boost immune system, prevents anemia and improves sleep, which is it?',
@@ -142,7 +174,7 @@ let questions = [{
 
 // Unchanging variables to store points and maximum number of questions
 const SCORE_POINTS = 100;
-const TOP_QUESTIONS = 15;
+const TOP_QUESTIONS = 19;
 
 //** Function that starts the quiz and adds next remaining questions */ 
 function startQuiz() {

@@ -15,14 +15,19 @@ An interactive webpage - a quiz about vegetables, fruit and herbs to possibly en
 ### Features left to implement 
 
 Add more questions 
-A function that if user does not want to store name - random vegetable name comes up 
+A function that gives option to user to choose playing half of quiz
 A function that can hide highscores if there is none stored
 
 # Testing
 
-![Home Page Lighthouse Test](assets/readme-images/home-page-lighthouse.png?raw=true)
-![Main Quiz Lighthouse Test](assets/readme-images/main-quiz-lighthouse.png?raw=true)
-![Save Score Lighthouse Test](assets/readme-images/save-score-lighthouse.png?raw=true)
+Home Page Lighthouse Test
+![](assets/readme-images/home-page-lighthouse.png?raw=true)
+
+Main Quiz Lighthouse Test
+![](assets/readme-images/main-quiz-lighthouse.png?raw=true)
+
+Save Score Lighthouse Test
+![](assets/readme-images/save-score-lighthouse.png?raw=true)
 
 
 ## Validators Testing
@@ -52,15 +57,17 @@ A function that can hide highscores if there is none stored
 
 ## Responsiveness 
 
-![Responsive Images](assets/readme-images/responsive-images-1.png?raw=true)
+Responsive Image - The webpage has been made taking into consideration three different sizes of the screen, max-width for mobile being 650px, max-width for tablet devices being 850px and laptop screen size max-width being 1024px
+
+![](assets/readme-images/responsive-images-1.png?raw=true)
 
 ## Bugs / Issues
 
-- here difficulties highscore
+- Some minor difficulties with implementing localStorage.getItem and kept losing a variable since last letter would be accidentally ommitted during code checking and re-arrangements, but with help of my mentor my letter was found
 
 ## Wireframes
 
-Original idea for the interactive webpage involved a tarot-kind of entertainment, 'The Voice of Your Soul' was the name, and it was supposed to be giving user cards of inspiration, support, love and kindness, as a spiritual person ans a vegan, I thought vegetables would be more appropriate. However, there is an image of the previous idea ![Wireframe](assets/readme-images/wireframe-the-voice-of-your-soul.png?raw=true)
+Original idea for the interactive webpage involved a tarot-kind of entertainment, 'The Voice of Your Soul' was the name, and it was supposed to be giving user cards of inspiration, support, love and kindness, as a spiritual person ans a vegan, I thought vegetables would be more appropriate. However, there is an image of the wireframe of my first idea ![](assets/readme-images/wireframe-the-voice-of-your-soul.png?raw=true)
 
 ## Credits
 
@@ -85,8 +92,11 @@ Original idea for the interactive webpage involved a tarot-kind of entertainment
 - I added font style form [Google Fonts](https://fonts.google.com/) 
 - Turmeric facts can be found [here](http://www.drsanderschiropractic.com/blog/16406-five-surprising-facts-about-turmeric)
 - Mushroom facts can be found [here](https://www.goodhousekeeping.com/health/diet-nutrition/a27633487/mushroom-health-benefits/)
-
+- Some facts about Avocado can be found on this [link](https://www.healthline.com/nutrition/12-proven-benefits-of-avocado#TOC_TITLE_HDR_2) and this [link](https://www.businessinsider.com/avocado-history-word-testicle-2018-6?r=US&IR=T)
 - Some facts about broab beans - fava beans can be found [here](https://www.healthbenefitstimes.com/broad-beans/)
+- Facts about Artichoke can be found on this [link](https://www.oceanmist.com/blog/8-little-known-facts-about-the-artichoke)
+- Facts about Blueberries can be found on this [link](https://www.wildflower.org/expert/show.php?id=5146&__cf_chl_managed_tk__=pmd_fUkpZwnFiuCVBuyNsZLnmKAiGfS3T4KJ04HYx1Yr5I8-1634429702-0-gqNtZGzNAvujcnBszROR) and also [here](https://www.bcblueberry.com/bc-blueberry-council/news/did-you-know-10-surprising-facts-about-blueberries)
+- Facts about onion can be found on this [link](https://factslegend.org/these-30-exciting-onion-facts-will-amaze-you/)
 
 ***Add more 
 ### Media
