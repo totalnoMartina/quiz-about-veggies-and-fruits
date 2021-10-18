@@ -5,7 +5,7 @@ const options = Array.from(document.querySelectorAll('.option-text')); // Creati
 const progressInfo = document.querySelector('#progress-info'); // A variable that targets progress area
 const scoreInfo = document.querySelector('#score'); // A variable that targets score based on id 
 const progressFull = document.querySelector('#progress-full'); // A variable that shows when quiz is on last question the progress bar is full
-const chooseNumberQuest = document.querySelector('#question-num')
+
 
 // An empty dictionary for questions and answers connected to the question
 let chooseQuestion = {};
