@@ -95,6 +95,10 @@ body {
         height: 38px;
     }
 
+    .display-main-text {
+        font-size: 30px;
+    }
+
     #progress-info {
         font-size: 18px;
     }
