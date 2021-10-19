@@ -2,18 +2,18 @@
 
 const question = document.querySelector('#question'); // A variable that stores a question targeted based on id
 const options = Array.from(document.querySelectorAll('.option-text')); // Creating an array using class name and storing it in a variable choices found by class name
-const progressInfo = document.querySelector('#progress-info'); // A variable that targets progress area
+const progressInfo = document.querySelector('#progress-info'); // A variable that targets progress text area
 const scoreInfo = document.querySelector('#score'); // A variable that targets score based on id 
-const progressFull = document.querySelector('#progress-full'); // A variable that shows when quiz is on last question the progress bar is full
-// const questNumberChoice = document.getElementsByTagName('[input=number');
+const progressFull = document.querySelector('#progress-full'); // A variable that shows progress bar is filling up by each question answered
+// const questNumberChoice = document.getElementsByTagName('[input=number'); -targeting input value to get choice of questions possibly
 
-// An empty dictionary for questions and answers connected to the question
+// An empty dictionary for storing questions and answers connected to the question
 let chooseQuestion = {};
-// Declaring a constant variable that stores the true value of answers being accepted
+// Declaring a variable that stores the true value of answers being accepted
 let asking = true;
 // A global variable that stores a starting value of a score
 let score = 0;
-// A global variable that stores looping through questions
+// An empty variable that is used for looping through questions
 let anotherQuestion = '';
 // An empty array that stores values of leftover questions through a function getNewQuestion()
 let remainingQs = [];
