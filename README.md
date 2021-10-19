@@ -49,6 +49,17 @@ Add more questions
 A function that gives option to user to choose playing half of quiz
 A function that can hide highscores if there is none stored
 
+## Deployment
+
+Github platform is used to deploy this project, in this way: 
+
+- The steps to deploy are as follows: 
+  - In the GitHub repository, navigate to the Settings tab 
+  - From the source section drop-down menu, select the Master Branch(or Main Branch for Linux)
+  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment
+
+The live link can be found here - https://totalnomartina.github.io/quiz-about-veggies-and-fruits/ 
+
 # Testing
 
 Home Page Lighthouse Test
