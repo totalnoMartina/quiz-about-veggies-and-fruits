@@ -3,7 +3,9 @@
 An interactive webpage - a quiz about vegetables, fruit and herbs to possibly entertain and inform user about some interesting facts that might spark more interest in veggies, fruits and herbs. 
 ![Main Image](assets/readme-images/main-image.png?raw=true)
 
+** colors, font features here in order
 
+## Technologies used - github, css,  hmtl, javascript
 
 ## Features
 
@@ -30,7 +32,7 @@ Save Score Lighthouse Test
 ![](assets/readme-images/save-score-lighthouse.png?raw=true)
 
 
-## Validators Testing
+## Validators Testing ** update
 
  ## Main Page HTML Validator 
  ![](assets/readme-images/index-html-validator.png?raw=true)
@@ -53,7 +55,7 @@ Save Score Lighthouse Test
 
 ## Browser Compatibility
 This webpage is made on Chromebook, Linux, Google Chrome OS, Version 94.0.4606.97 (Official Build) (64-bit), in a Chrome Browser and is fully compatible with it,
-*ask Tim do I need a screen shot also, or to put it as welcome image or both because now welcome image is cut a bit
+*ask Tim do I need a screen shot also, -- YES -- or to put it as welcome image or both because now welcome image is cut a bit 
  Next browser tested is Safari on Iphone 6S and is fully compatible, and here is a screenshot ![](assets/readme-images/iphone-6s-safari-ios.jpg?raw=true)
 
 There seems to be slower response in shadow appearance during playing on Mozilla Firefox and here is a screenshot of a home page ![](assets/readme-images/firefox-screen.png?raw=true)

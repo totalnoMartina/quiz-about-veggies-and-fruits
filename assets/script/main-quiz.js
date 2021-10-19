@@ -5,7 +5,6 @@ const options = Array.from(document.querySelectorAll('.option-text')); // Creati
 const progressInfo = document.querySelector('#progress-info'); // A variable that targets progress text area
 const scoreInfo = document.querySelector('#score'); // A variable that targets score based on id 
 const progressFull = document.querySelector('#progress-full'); // A variable that shows progress bar is filling up by each question answered
-// const questNumberChoice = document.getElementsByTagName('[input=number'); -targeting input value to get choice of questions possibly
 
 // An empty dictionary for storing questions and answers connected to the question
 let chooseQuestion = {};
@@ -13,7 +12,7 @@ let chooseQuestion = {};
 let asking = true;
 // A global variable that stores a starting value of a score
 let score = 0;
-// An empty variable that is used for looping through questions
+// An empty variable used for looping through questions
 let anotherQuestion = '';
 // An empty array that stores values of leftover questions through a function getNewQuestion()
 let remainingQs = [];
@@ -175,15 +174,14 @@ let questions = [{
 
 // Unchanging variables to store points and maximum number of questions
 const SCORE_POINTS = 100;
-let TOP_QUESTIONS = 19;
+let TOP_QUESTIONS = localStorage.getItem('questions-nums');
+
 
 //** Function that starts the quiz and adds next remaining questions */ 
 function startQuiz() {
     // Set the counter and score to start with 0
     anotherQuestion = 0;
     score = 0;
-
-
     // Use of spread method to pick up each remaining item and create an array 
     remainingQs = [...questions];
     // Calling a function to get the next question
@@ -193,11 +191,11 @@ function startQuiz() {
 //** Creating a function that takes available question as next question */
 function getNewQuestion() {
     // If there is no more questions left or the counter is bigger than maximum of questions
-    if (remainingQs.length == 0 || anotherQuestion > TOP_QUESTIONS) {
+    if (remainingQs.length === 0 || anotherQuestion === TOP_QUESTIONS) {
         // A new variable stores score added through questions loop
         localStorage.setItem('lastScore', score);
         // The final score stored is saved in the save-score.html window storage
-        return window.location.href = 'https://totalnomartina.github.io/quiz-about-veggies-and-fruits/save-score.html';
+       return window.location.href = 'save-score.html';
     }
 
     // Adding next question using shorthand expression

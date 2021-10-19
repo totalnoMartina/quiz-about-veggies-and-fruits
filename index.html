@@ -28,10 +28,12 @@
         <!-- Navigation links to start the quiz or view High Scores -->
         <nav id="home-page" class="flex-column flex-center">
             <div class="choose-number-quest">
-                <label for="questions-num">Number of questions</label>
-                <input name="questions-num" id="questions-num" type="number" pattern="[0-9]*" />
+                <label for="questions-num">Number of questions( choose 7 - 19)</label>
+                <input name="questions-num" id="questions-num" type="text" pattern="^[0-9]{1,2}$">
+                <br>
+                <span id="warning"></span> <!-- style this-->
             </div>
-            <a href="main-quiz.html" class="btn"><i class="fas fa-chess"></i>Start</a>
+            <a class="btn" id="start-btn"><i class="fas fa-chess"></i>Start</a>
             <a href="highscores-page.html" id="highscores-btn" class="btn"><i class="fas fa-chess-queen"></i>High
                 Scores</a>
         </nav>
@@ -40,6 +42,7 @@
     <footer><a href="https://github.com/totalnoMartina" target="_blank">Github<i class="fab fa-github"></i></a>
         <a href="https://www.linkedin.com/in/martina-grganic/" target="_blank">LinkedIn<i class="fab fa-linkedin"></i></a>
     </footer>
+    <script src="assets/script/index.js"></script>
 </body>
 
 </html>
