@@ -1,3 +1,6 @@
+/* jshint esversion: 8 */
+
+//localStorage.removeItem('questions-nums');
 const highScoreBtn = document.getElementById('highscores-btn');
 
         if(localStorage.getItem('highScores')) {
