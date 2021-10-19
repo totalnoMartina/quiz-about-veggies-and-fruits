@@ -1,3 +1,6 @@
+/* jshint esversion: 8 */
+
+
 // Global unchanging variables
 
 // A variable to store users nickname / name

@@ -1,3 +1,6 @@
+/* jshint esversion: 8 */
+
+
 //Declare a variable that targets id of high-scores-list
 let highScoresList = document.getElementById('high-scores-list');
 

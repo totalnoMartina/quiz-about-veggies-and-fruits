@@ -1,3 +1,6 @@
+/* jshint esversion: 8 */
+
+
 // Global variables 
 
 const question = document.querySelector('#question'); // A variable that stores a question targeted based on id
