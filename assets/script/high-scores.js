@@ -29,4 +29,3 @@ function reset() {
 
 // Adding a function to be called to reset the hghscores after clicked
 resetScore.addEventListener('click', reset);
-

@@ -1,11 +1,31 @@
 ## Quiz - A Berry Herbal Quiz 
 
 An interactive webpage - a quiz about vegetables, fruit and herbs to possibly entertain and inform user about some interesting facts that might spark more interest in veggies, fruits and herbs. 
-![Main Image](assets/readme-images/main-image.png?raw=true)
+![Main Image](assets/readme-images/chrome-screenshot-welcome.png?raw=true)
 
 ** colors, font features here in order
 
 ## Technologies used - github, css,  hmtl, javascript
+
+## Wireframes
+
+Original idea for the interactive webpage involved a tarot-kind of entertainment, 'The Voice of Your Soul' was the name, and it was supposed to be giving user cards of inspiration, support, love and kindness, as a spiritual person ans a vegan, I thought vegetables would be more appropriate. However, there is an image of the wireframe of my first idea ![](assets/readme-images/wireframe-the-voice-of-your-soul.png?raw=true)
+
+My first idea seemed too spiritual so I decided to go for the second best thing, plant-based resources and interesting facts we never knew about vegetables, fruit or herbs, the image of wireframe for this quiz started like this image below ![](assets/readme-images/wireframe-quiz.png?raw=true)
+
+## Browser Compatibility
+This webpage is made on Chromebook, Linux, Google Chrome OS, Version 94.0.4606.97 (Official Build) (64-bit), in a Chrome Browser and is fully compatible with it, Chrome screenshot is below ![](assets/readme-images/chrome-welcome-screen.png?raw=true)
+ 
+ Next browser tested is Safari on Iphone 6S and is fully compatible, and here is a screenshot ![](assets/readme-images/iphone-6s-safari-ios.jpg?raw=true)
+
+There seems to be slower response in shadow appearance during playing on Mozilla Firefox and here is a screenshot of a home page ![](assets/readme-images/firefox-screen.png?raw=true)
+
+## Responsiveness 
+
+Responsive Image - The webpage has been made taking into consideration three different sizes of the screen, max-width for mobile being 650px, max-width for tablet devices being 850px and laptop screen size max-width being 1024px
+
+![](assets/readme-images/responsive-images-1.png?raw=true)
+
 
 ## Features
 
@@ -53,28 +73,11 @@ Save Score Lighthouse Test
  ## Highscores Page CSS Validator
  ![Main Quiz CSS Validator](assets/readme-images/highscores-validator-css.png?raw=true)
 
-## Browser Compatibility
-This webpage is made on Chromebook, Linux, Google Chrome OS, Version 94.0.4606.97 (Official Build) (64-bit), in a Chrome Browser and is fully compatible with it,
-*ask Tim do I need a screen shot also, -- YES -- or to put it as welcome image or both because now welcome image is cut a bit 
- Next browser tested is Safari on Iphone 6S and is fully compatible, and here is a screenshot ![](assets/readme-images/iphone-6s-safari-ios.jpg?raw=true)
-
-There seems to be slower response in shadow appearance during playing on Mozilla Firefox and here is a screenshot of a home page ![](assets/readme-images/firefox-screen.png?raw=true)
-
-## Responsiveness 
-
-Responsive Image - The webpage has been made taking into consideration three different sizes of the screen, max-width for mobile being 650px, max-width for tablet devices being 850px and laptop screen size max-width being 1024px
-
-![](assets/readme-images/responsive-images-1.png?raw=true)
 
 ## Bugs / Issues
 
 - Some minor difficulties with implementing localStorage.getItem and kept losing a variable since last letter would be accidentally ommitted during code checking and re-arrangements, but with help of my mentor my letter was found
 
-## Wireframes
-
-Original idea for the interactive webpage involved a tarot-kind of entertainment, 'The Voice of Your Soul' was the name, and it was supposed to be giving user cards of inspiration, support, love and kindness, as a spiritual person ans a vegan, I thought vegetables would be more appropriate. However, there is an image of the wireframe of my first idea ![](assets/readme-images/wireframe-the-voice-of-your-soul.png?raw=true)
-
-My first idea seemed too spiritual so I decided to go for the second best thing, plant-based resources and interesting facts we never knew about vegetables, fruit or herbs, the image of wireframe for this quiz started like this image below ![](assets/readme-images/wireframe-quiz.png?raw=true)
 
 ## Credits
 

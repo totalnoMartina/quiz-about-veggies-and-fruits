@@ -1,6 +1,3 @@
-/* jshint esversion: 8 */
-
-localStorage.removeItem('questions-nums');
 const highScoreBtn = document.getElementById('highscores-btn');
 
         if(localStorage.getItem('highScores')) {
@@ -9,7 +6,6 @@ const highScoreBtn = document.getElementById('highscores-btn');
             highScoreBtn.style.display = 'none';
         }
 
-    
 const questNumberChoice = document.getElementById('questions-num'); // targeting input value to get choice of questions possibly
 const startBtn = document.getElementById('start-btn');
 
@@ -17,7 +13,6 @@ startBtn.addEventListener('click', checkNumQuestions);
 
 function checkNumQuestions() {
     if(parseInt(questNumberChoice.value) >= 7 && parseInt(questNumberChoice.value) <= 19) {
-        localStorage.setItem('questions-nums', parseInt(questNumberChoice.value));
         window.location.href = 'main-quiz.html';
     } else {
         document.getElementById('warning').innerText = 'You must choose between 7 - 19 questions';
