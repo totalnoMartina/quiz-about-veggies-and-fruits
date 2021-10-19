@@ -113,18 +113,17 @@ body {
     }
 
     #question {
-        font-size: 21px;
         margin: 0 10px 0 10px;
     }
 
     .option-text {
-        padding: 10px;
-        font-size: 18px;
+        padding: 8px;
+        font-size: 17px;
         width: 80%;
     }
 
     #display-quiz {
-        font-size: 20px;
+        font-size: 19px;
     }
 
     #quiz {

@@ -38,6 +38,10 @@ h2 {
     margin: 15px 0 20px 0;
 }
 
+#questions-num {
+    font-size: 35px
+}
+
 p {
     font-size: 25px;
     text-align: center;
@@ -260,6 +264,18 @@ footer {
     .quiz-name,
     #final-score {
         font-size: 30px;
+        margin: 10px;
+    }
+
+    .choose-number-quest {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    #questions-num {
+        max-width: 190px;
+        max-height: 20px;
+        font-size: 17px;
         margin: 10px;
     }
 
