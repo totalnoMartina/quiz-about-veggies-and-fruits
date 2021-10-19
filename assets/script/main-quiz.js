@@ -5,7 +5,7 @@ const options = Array.from(document.querySelectorAll('.option-text')); // Creati
 const progressInfo = document.querySelector('#progress-info'); // A variable that targets progress area
 const scoreInfo = document.querySelector('#score'); // A variable that targets score based on id 
 const progressFull = document.querySelector('#progress-full'); // A variable that shows when quiz is on last question the progress bar is full
-
+// const questNumberChoice = document.getElementsByTagName('[input=number');
 
 // An empty dictionary for questions and answers connected to the question
 let chooseQuestion = {};
@@ -182,6 +182,8 @@ function startQuiz() {
     // Set the counter and score to start with 0
     anotherQuestion = 0;
     score = 0;
+
+
     // Use of spread method to pick up each remaining item and create an array 
     remainingQs = [...questions];
     // Calling a function to get the next question

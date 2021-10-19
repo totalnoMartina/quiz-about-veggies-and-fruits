@@ -54,9 +54,9 @@ Save Score Lighthouse Test
 ## Browser Compatibility
 This webpage is made on Chromebook, Linux, Google Chrome OS, Version 94.0.4606.97 (Official Build) (64-bit), in a Chrome Browser and is fully compatible with it,
 *ask Tim do I need a screen shot also, or to put it as welcome image or both because now welcome image is cut a bit
- Next browser tested is Safari on Iphone 6S and there is a screenshot ![](assets/readme-images/iphone-6s-safari-ios.jpg?raw=true)
+ Next browser tested is Safari on Iphone 6S and is fully compatible, and here is a screenshot ![](assets/readme-images/iphone-6s-safari-ios.jpg?raw=true)
 
-There seems to be slower response during playing in shadow appearance on Mozilla Firefox and here is a screenshot of a home page ![](assets/readme-images/firefox-screen.png?raw=true)
+There seems to be slower response in shadow appearance during playing on Mozilla Firefox and here is a screenshot of a home page ![](assets/readme-images/firefox-screen.png?raw=true)
 
 ## Responsiveness 
 
@@ -72,6 +72,8 @@ Responsive Image - The webpage has been made taking into consideration three dif
 
 Original idea for the interactive webpage involved a tarot-kind of entertainment, 'The Voice of Your Soul' was the name, and it was supposed to be giving user cards of inspiration, support, love and kindness, as a spiritual person ans a vegan, I thought vegetables would be more appropriate. However, there is an image of the wireframe of my first idea ![](assets/readme-images/wireframe-the-voice-of-your-soul.png?raw=true)
 
+My first idea seemed too spiritual so I decided to go for the second best thing, plant-based resources and interesting facts we never knew about vegetables, fruit or herbs, the image of wireframe for this quiz started like this image below ![](assets/readme-images/wireframe-quiz.png?raw=true)
+
 ## Credits
 
 - At first I wanted to practice Javascript with coding a few quizzes as I belive repetition and practice is one of better ways to advance skills so I followed a coder provided in the link below and finally created this webpage, so here is a link to my [repository](https://github.com/totalnoMartina/vegan-quiz)
@@ -83,6 +85,7 @@ Original idea for the interactive webpage involved a tarot-kind of entertainment
 
 ### Content 
 
+- Color palette was chosen using [Coolors](https://coolors.co/) ** i will make a screenshot of the palette - is this right area for this? ask 
 
 - The link for some of the questions can be found [here](https://laidbackgardener.blog/2017/03/23/10-strange-facts-about-vegetables/)
 - The hemp seed facts [link](https://www.healthline.com/nutrition/6-health-benefits-of-hemp-seeds#TOC_TITLE_HDR_5) 
