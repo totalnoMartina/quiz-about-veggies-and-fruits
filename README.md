@@ -1,4 +1,4 @@
-## Quiz - Berry Herbal Quiz 
+## Quiz - A Berry Herbal Quiz 
 
 An interactive webpage - a quiz about vegetables, fruit and herbs to possibly entertain and inform user about some interesting facts that might spark more interest in veggies, fruits and herbs. 
 ![Main Image](assets/readme-images/main-image.png?raw=true)
@@ -7,7 +7,7 @@ An interactive webpage - a quiz about vegetables, fruit and herbs to possibly en
 
 ## Features
 
-- Home page offers three buttons - Start the quiz, check all Highscores, students/coders Github link in the right corner
+- Home page offers four buttons - Start the quiz, check all Highscores, students Github link in the right corner, and students link to LinkedIn
 - There is a button to restart the game while in the quiz questions area, or ho to home page and maybe do something else
 - There is clear visibility of correct and incorrect answers when user clicks while answering
 - There is an option to save your score, start the quiz again, go to Home page, or check Github repository of the student/coder
