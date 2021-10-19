@@ -52,8 +52,11 @@ Save Score Lighthouse Test
  ![Main Quiz CSS Validator](assets/readme-images/highscores-validator-css.png?raw=true)
 
 ## Browser Compatibility
+This webpage is made on Chromebook, Linux, Google Chrome OS, Version 94.0.4606.97 (Official Build) (64-bit), in a Chrome Browser and is fully compatible with it,
+*ask Tim do I need a screen shot also, or to put it as welcome image or both because now welcome image is cut a bit
+ Next browser tested is Safari on Iphone 6S and there is a screenshot ![](assets/readme-images/iphone-6s-safari-ios.jpg?raw=true)
 
- mozilla, safari, firefox
+There seems to be slower response during playing in shadow appearance on Mozilla Firefox and here is a screenshot of a home page ![](assets/readme-images/firefox-screen.png?raw=true)
 
 ## Responsiveness 
 
