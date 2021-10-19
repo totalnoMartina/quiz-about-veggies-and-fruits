@@ -1,17 +1,24 @@
 ## Quiz - A Berry Herbal Quiz 
 
-An interactive webpage - a quiz about vegetables, fruit and herbs to possibly entertain and inform user about some interesting facts that might spark more interest in veggies, fruits and herbs. 
+An interactive webpage - a quiz about vegetables, fruit and herbs to entertain and educate user about some interesting facts that might spark more interest in veggies, fruits and herbs.
 ![Main Image](assets/readme-images/chrome-screenshot-welcome.png?raw=true)
+
+- Color palette was chosen using [Coolors](https://coolors.co/) **  make a screenshot of the palette -  ask 
 
 ** colors, font features here in order
 
-## Technologies used - github, css,  hmtl, javascript
+## Technologies used 
+
+- HTML / CSS - for the styled skeleton of a webpage
+- JavaScript - for dynamic quiz functions cooperation
+- Github - for code control, record and publishing of webpage
+- Wireframe is made using [Lucidchart](https://www.lucidchart.com/pages/landing/wireframe-software?utm_source=google&utm_medium=cpc&utm_campaign=_chart_en_tier1_mixed_search_brand_bmm_&km_CPC_CampaignId=1490375424&km_CPC_AdGroupID=55688906577&km_CPC_Keyword=%2Blucid%20chart%20%2Bwireframe&km_CPC_MatchType=b&km_CPC_ExtensionID=&km_CPC_Network=g&km_CPC_AdPosition=&km_CPC_Creative=475760219039&km_CPC_TargetID=aud-812368091438:kwd-467383918265&km_CPC_Country=9040163&km_CPC_Device=c&km_CPC_placement=&km_CPC_target=&mkwid=sDmZV3BGx_pcrid_475760219039_pkw_%2Blucid%20chart%20%2Bwireframe_pmt_b_pdv_c_slid__pgrid_55688906577_ptaid_aud-812368091438:kwd-467383918265_&gclid=CjwKCAjw2bmLBhBREiwAZ6ugo5nVAcUCBN04fmpypbxf3fnQoPInv2hcowoTSoJcGXpYbT5lCBpiORoCDtIQAvD_BwE)
 
 ## Wireframes
 
 Original idea for the interactive webpage involved a tarot-kind of entertainment, 'The Voice of Your Soul' was the name, and it was supposed to be giving user cards of inspiration, support, love and kindness, as a spiritual person ans a vegan, I thought vegetables would be more appropriate. However, there is an image of the wireframe of my first idea ![](assets/readme-images/wireframe-the-voice-of-your-soul.png?raw=true)
 
-My first idea seemed too spiritual so I decided to go for the second best thing, plant-based resources and interesting facts we never knew about vegetables, fruit or herbs, the image of wireframe for this quiz started like this image below ![](assets/readme-images/wireframe-quiz.png?raw=true)
+My first idea seemed too spiritual so I decided to go for the second best thing, plant-based resources and interesting facts we never knew about vegetables, fruit or herbs, the image of wireframe for this quiz started like this ![](assets/readme-images/wireframe-quiz.png?raw=true)
 
 ## Browser Compatibility
 This webpage is made on Chromebook, Linux, Google Chrome OS, Version 94.0.4606.97 (Official Build) (64-bit), in a Chrome Browser and is fully compatible with it, Chrome screenshot is below ![](assets/readme-images/chrome-welcome-screen.png?raw=true)
@@ -29,10 +36,12 @@ Responsive Image - The webpage has been made taking into consideration three dif
 
 ## Features
 
-- Home page offers four buttons - Start the quiz, check all Highscores, students Github link in the right corner, and students link to LinkedIn
-- There is a button to restart the game while in the quiz questions area, or ho to home page and maybe do something else
+- Home page offers three buttons - and the fourth button of highscores appears if the quiz has been played before and there is a score in the record stored
+
+- There is a button to restart the game while in the quiz questions area, github icon for link to students repository and button for home page
 - There is clear visibility of correct and incorrect answers when user clicks while answering
 - There is an option to save your score, start the quiz again, go to Home page, or check Github repository of the student/coder
+
 
 ### Features left to implement 
 
@@ -89,8 +98,6 @@ Save Score Lighthouse Test
 
 
 ### Content 
-
-- Color palette was chosen using [Coolors](https://coolors.co/) ** i will make a screenshot of the palette - is this right area for this? ask 
 
 - The link for some of the questions can be found [here](https://laidbackgardener.blog/2017/03/23/10-strange-facts-about-vegetables/)
 - The hemp seed facts [link](https://www.healthline.com/nutrition/6-health-benefits-of-hemp-seeds#TOC_TITLE_HDR_5) 
