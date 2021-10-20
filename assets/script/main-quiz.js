@@ -177,7 +177,8 @@ let questions = [{
 
 // Unchanging variables to store points and maximum number of questions
 const SCORE_POINTS = 100;
-let TOP_QUESTIONS = localStorage.getItem('questions-nums');
+let TOP_QUESTIONS = sessionStorage.getItem('TOP_QUESTIONS');
+console.log(TOP_QUESTIONS);
 
 
 //** Function that starts the quiz and adds next remaining questions */ 

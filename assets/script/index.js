@@ -1,6 +1,6 @@
 /* jshint esversion: 8 */
 
-//  localStorage.removeItem('questions-nums');
+localStorage.removeItem('questions-nums');
 const highScoreBtn = document.getElementById('highscores-btn');
 
         if(localStorage.getItem('highScores')) {
@@ -12,11 +12,13 @@ const highScoreBtn = document.getElementById('highscores-btn');
 const questNumberChoice = document.getElementById('questions-num'); // targeting input value to get choice of questions possibly
 const startBtn = document.getElementById('start-btn');
 
+
 startBtn.addEventListener('click', checkNumQuestions);
+
 
 function checkNumQuestions() {
     if(parseInt(questNumberChoice.value) >= 7 && parseInt(questNumberChoice.value) <= 19) {
-        
+        sessionStorage.setItem("TOP_QUESTIONS", questNumberChoice.value);
         window.location.href = 'main-quiz.html';
         
     } else {
