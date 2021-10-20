@@ -28,7 +28,7 @@ body {
 .quiz-name {
     text-align: center;
     font-size: 60px;
-    padding: 18px;
+    padding: 10px;
 }
 
 
@@ -112,7 +112,7 @@ a {
 
 .btn {
     font-size: 50px;
-    padding: 32px;
+    padding: 28px;
     width: 500px;
     text-align: center;
     margin: 20px;

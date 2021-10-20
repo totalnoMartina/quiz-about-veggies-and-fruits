@@ -29,9 +29,9 @@ There seems to be slower response in shadow appearance during playing on Mozilla
 
 ## Responsiveness 
 
-Responsive Image - The webpage has been made taking into consideration three different sizes of the screen, max-width for mobile being 650px, max-width for tablet devices being 850px and laptop screen size max-width being 1024px
+Responsive Image - The webpage has been made taking into consideration three different sizes of the screen, max-width of 650px for mobile screen size, max-width being 850px for tablet devices and laptop screen size max-width being 1024px
 
-![](assets/readme-images/responsive-images-1.png?raw=true)
+![](assets/readme-images/responsiveness-image.png?raw=true)
 
 
 ## Features

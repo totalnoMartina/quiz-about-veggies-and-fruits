@@ -195,7 +195,7 @@ function startQuiz() {
 //** Creating a function that takes available question as next question */
 function getNewQuestion() {
     // If there is no more questions left or the counter is bigger than maximum of questions
-    if (remainingQs.length === 0 || anotherQuestion === TOP_QUESTIONS) {
+    if (remainingQs.length === 0 && anotherQuestion === TOP_QUESTIONS) {
         // A new variable stores score added through questions loop
         localStorage.setItem('lastScore', score);
         // The final score stored is saved in the save-score.html window storage
