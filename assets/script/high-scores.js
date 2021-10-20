@@ -13,8 +13,8 @@ element with relevant class which targets connecting name of the user played and
 and ultimately using a method to join together the two variables and display it through html */
 highScoresList.innerHTML =
     highScores.map(score => {
-        return `<li class="highscore">${score.name} - ${score.score}</li>`
-    }).join('')
+        return `<li class="highscore">${score.name} - ${score.score}</li>`;
+    }).join('');
 
 // Declare a variable that targets the reset button id
 const resetScore = document.querySelector('#reset');

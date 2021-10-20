@@ -173,7 +173,7 @@ let questions = [{
         option4: 'Lentil',
         answer: 3,
     }
-]
+];
 
 // Unchanging variables to store points and maximum number of questions
 const SCORE_POINTS = 100;
@@ -198,7 +198,7 @@ function getNewQuestion() {
         // A new variable stores score added through questions loop
         localStorage.setItem('lastScore', score);
         // The final score stored is saved in the save-score.html window storage
-       return window.location.href = 'save-score.html';
+        return (window.location.href = 'save-score.html');
     }
 
     // Adding next question using shorthand expression
@@ -210,14 +210,14 @@ function getNewQuestion() {
 
     // Using random method from Math module to get random number of index of the question, for questions to be scattered and harder to remember
     const questionsIndex = Math.floor(Math.random() * remainingQs.length);
-    // Setting remaining question to an index of the available question
+    // Set remaining question to an index of the available question to choose
     chooseQuestion = remainingQs[questionsIndex];
-    // Display the text of the string in the question variable !! Ask Tim ***** Inspect says that question is not a function - true
+    // Display the text of the string in the question variable 
     question.innerText = chooseQuestion.question;
 
     // Looping through options based on value data of number next to it
     options.forEach(option => {
-        // Set number variable to dataset value of option variable based on option-number
+        // Set number variable to dataset value of option variable based on option-a number
         const number = option.dataset['number'];
         // Set text of the option to the value of current number of the question
         option.innerText = chooseQuestion['option' + number];
@@ -225,15 +225,15 @@ function getNewQuestion() {
     /* A new array of questions that are left to be answered is created and first 
     indexed question is used */
     remainingQs.splice(questionsIndex, 1);
-    // as long as there is another question to ask, keep 
+    // as long as there is another question to ask, keep asking truthy
     asking = true;
-};
-/**Looping through options using arrow function and for each option clicked and 
- * listened to, function is checking if there are more answers to click to
+}
+/**Loop through options, use arrow function and for each option clicked and 
+ * listened to, function checks if there are more answers to click to
  */
 options.forEach(option => {
     option.addEventListener('click', e => {
-        // If there is no more answers then function is stopped with nothing else to return
+        // If there is no more answers then function is stopped with nothing to return
         if (!asking) return;
         // Declare variable to false since there is no more questions left to loop through 
         asking = false;
@@ -241,7 +241,7 @@ options.forEach(option => {
         const selectedOption = e.target;
         /* Declare chosen answer according to property of dataset targeting the number of the 
         option selected */
-        const selectedAnswer = selectedOption.dataset['number'];
+        const selectedAnswer = selectedOption.dataset.number;
         /* Declare variable specific to this block scope that takes the class value 
          of an answer and in ternary expression a condition of correct or incorrect is calling
         the class name */
@@ -274,16 +274,16 @@ options.forEach(option => {
             if (classToApply == 'incorrect') {
                 // Code that belongs to this part of a list class is removed
                 correctAnswer.parentElement.classList.remove('correct');
-            };
+            }
             // A function to call next Question is called
             getNewQuestion();
             // Duration of the wait to next question after one is answered
         }, 1500);
     });
 });
-/* Using arrow function to assign a num variable to be incremented by next score and write 
+/* Using a function to assign a num variable to be incremented by next score and write 
 it into HTML */
-addTheScore = num => {
+function addTheScore(num) {
     score += num;
     scoreInfo.innerText = score;
 }

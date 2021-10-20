@@ -16,8 +16,10 @@ startBtn.addEventListener('click', checkNumQuestions);
 
 function checkNumQuestions() {
     if(parseInt(questNumberChoice.value) >= 7 && parseInt(questNumberChoice.value) <= 19) {
+        
         window.location.href = 'main-quiz.html';
+        
     } else {
-        document.getElementById('warning').innerText = 'You must choose between 7 - 19 questions';
+        document.getElementById('warning').innerText = 'Please, choose between 7 - 19 questions';
     }
 }

@@ -30,19 +30,19 @@ nickname.addEventListener('keyup', () => {
  * Prevent the browser from executing the default action of the event - onclick declared in html
  *  in saving highscore function
  */
-saveHighScore = e => {
+function saveHighScore(e) {
     e.preventDefault();
     // Declare a variable to store a dictionary of the last score summed up and nickname entered
     const score = {
         score: lastScore,
         name: nickname.value
-    }
+    };
     // Add last score to highscores list
     highScores.push(score);
     // Sort highscores list +++++
     highScores.sort((a, b) => {
-            return b.score - a.score;
-        }),
+        return b.score - a.score;
+    }),
         // Spliting the highscores list into 7 pieces to store 
         highScores.splice(7);
     // Setting strings of highscores to be stored in an array in local storage
@@ -53,5 +53,5 @@ saveHighScore = e => {
     function storeToHighScores() {
         window.location.href = 'highscores-page.html';
     }
-}
+};
 
