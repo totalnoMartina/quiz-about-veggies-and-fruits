@@ -1,15 +1,19 @@
 /* jshint esversion: 8 */
 
+// Remove value for user to always have empty field
 localStorage.removeItem('questions-nums');
-const highScoreBtn = document.getElementById('highscores-btn');
+const highScoreBtn = document.getElementById('highscores-btn'); // A variable to hold a highscore button by id
 
+        // Condition is checked based on record of highScores in local storage
         if(localStorage.getItem('highScores')) {
+            // If found values, show button
             highScoreBtn.style.display = 'block';
         } else {
+            // Otherwise, do not show button
             highScoreBtn.style.display = 'none';
         }
 
-const questNumberChoice = document.getElementById('questions-num'); // targeting input value to get choice of questions possibly
+const questNumberChoice = document.getElementById('questions-num'); // Variable that holds input value that chooses questions
 const startBtn = document.getElementById('start-btn');
 
 
