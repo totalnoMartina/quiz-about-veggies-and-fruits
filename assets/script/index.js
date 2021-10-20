@@ -21,7 +21,7 @@ startBtn.addEventListener('click', checkNumQuestions);
 
 
 function checkNumQuestions() {
-    if(parseInt(questNumberChoice.value) >= 7 && parseInt(questNumberChoice.value) <= 19) {
+    if(parseInt(questNumberChoice.value) > 6 && parseInt(questNumberChoice.value) < 20) {
         sessionStorage.setItem("TOP_QUESTIONS", questNumberChoice.value);
         window.location.href = 'main-quiz.html';
         

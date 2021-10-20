@@ -195,15 +195,22 @@ function startQuiz() {
 //** Creating a function that takes available question as next question */
 function getNewQuestion() {
     // If there is no more questions left or the counter is bigger than maximum of questions
-    if (remainingQs.length === 0 && anotherQuestion === TOP_QUESTIONS) {
+    if (remainingQs.length === 0 || anotherQuestion === TOP_QUESTIONS) {
         // A new variable stores score added through questions loop
         localStorage.setItem('lastScore', score);
         // The final score stored is saved in the save-score.html window storage
         return (window.location.href = 'save-score.html');
     }
 
-    // Adding next question using shorthand expression
-    anotherQuestion++;
+
+    if(anotherQuestion < TOP_QUESTIONS) {
+        // Adding next question using shorthand expression
+        anotherQuestion++;
+    } else {
+        localStorage.setItem('lastScore', score);
+        return (window.location.href = 'save-score.html');
+    }
+    
     // The display of next question number of total number of questions
     progressInfo.innerText = `Question ${anotherQuestion} of ${TOP_QUESTIONS}`;
     // Dynamically styling progress bar to show how close to finishing the quiz, fiiling up with color more with each new question 
@@ -213,6 +220,7 @@ function getNewQuestion() {
     const questionsIndex = Math.floor(Math.random() * remainingQs.length);
     // Set remaining question to an index of the available question to choose
     chooseQuestion = remainingQs[questionsIndex];
+    console.log(chooseQuestion);
     // Display the text of the string in the question variable 
     question.innerText = chooseQuestion.question;
 
@@ -223,10 +231,10 @@ function getNewQuestion() {
         // Set text of the option to the value of current number of the question
         option.innerText = chooseQuestion['option' + number];
     });
-    /* A new array of questions that are left to be answered is created and first 
+    /* A new array of questions that are left to be answered is created and each 
     indexed question is used */
     remainingQs.splice(questionsIndex, 1);
-    // as long as there is another question to ask, keep asking truthy
+    // As long as there is another question to ask, keep asking truthy
     asking = true;
 }
 /**Loop through options, use arrow function and for each option clicked and 
