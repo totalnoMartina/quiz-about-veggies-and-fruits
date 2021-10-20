@@ -1,7 +1,7 @@
 /* jshint esversion: 8 */
 
 // Remove value for user to always have empty field
-localStorage.removeItem('questions-nums');
+sessionStorage.removeItem('questions-nums');
 const highScoreBtn = document.getElementById('highscores-btn'); // A variable to hold a highscore button by id
 
         // Condition is checked based on record of highScores in local storage

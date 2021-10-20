@@ -21,11 +21,17 @@ Original idea for the interactive webpage involved a tarot-kind of entertainment
 My first idea seemed too spiritual so I decided to go for the second best thing, plant-based resources and interesting facts we never knew about vegetables, fruit or herbs, the image of wireframe for this quiz started like this ![](assets/readme-images/wireframe-quiz.png?raw=true)
 
 ## Browser Compatibility
-This webpage is made on Chromebook, Linux, Google Chrome OS, Version 94.0.4606.97 (Official Build) (64-bit), in a Chrome Browser and is fully compatible with it, Chrome screenshot is below ![](assets/readme-images/chrome-welcome-screen.png?raw=true)
+This webpage is made on Chromebook, Linux, Google Chrome OS, Version 94.0.4606.97 (Official Build) (64-bit), in a Chrome Browser and is fully compatible with it, Chrome screenshot is below ![](assets/readme-images/chrome-screenshot-welcome.png?raw=true)
  
- Next browser tested is Safari on Iphone 6S and is fully compatible, and here is a screenshot ![](assets/readme-images/iphone-6s-safari-ios.jpg?raw=true)
+ Next browser tested is Safari on Iphone 6S and is fully compatible, and here is a screenshot ![](assets/readme-images/safari-mobile.jpg?raw=true)
 
-There seems to be slower response in shadow appearance during playing on Mozilla Firefox and here is a screenshot of a home page ![](assets/readme-images/firefox-screen.png?raw=true)
+The Ecosia Browser (plant tree for every search)was tried in mobile and desktop versions and both were working smoothly, images are below 
+- Mobile version
+
+![](assets/readme-images/ecosia-mobile.jpg?raw=true) 
+- Desktop version
+
+![](assets/readme-images/ecosia-browser.png?raw=true)
 
 ## Responsiveness 
 
@@ -45,9 +51,7 @@ Responsive Image - The webpage has been made taking into consideration three dif
 
 ### Features left to implement 
 
-Add more questions 
-A function that gives option to user to choose playing half of quiz
-A function that can hide highscores if there is none stored
+None, all features that were decided to be implemented were succsesfully applied in this quiz
 
 ## Deployment
 
@@ -63,13 +67,16 @@ The live link can be found here - https://totalnomartina.github.io/quiz-about-ve
 # Testing
 
 Home Page Lighthouse Test
-![](assets/readme-images/home-page-lighthouse.png?raw=true)
+![](assets/readme-images/homepage-lighthouse.png?raw=true)
 
 Main Quiz Lighthouse Test
-![](assets/readme-images/main-quiz-lighthouse.png?raw=true)
+![](assets/readme-images/quiz-lighthouse.png?raw=true)
 
 Save Score Lighthouse Test
 ![](assets/readme-images/save-score-lighthouse.png?raw=true)
+
+Highscores Lighthouse
+![](assets/readme-images/highscores-lighthouse.png?raw=true)
 
 
 ## Validators Testing ** update

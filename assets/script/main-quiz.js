@@ -178,7 +178,7 @@ let questions = [{
 // Unchanging variables to store points and maximum number of questions
 const SCORE_POINTS = 100;
 let TOP_QUESTIONS = sessionStorage.getItem('TOP_QUESTIONS');
-console.log(TOP_QUESTIONS);
+
 
 
 //** Function that starts the quiz and adds next remaining questions */ 
@@ -190,7 +190,7 @@ function startQuiz() {
     remainingQs = [...questions];
     // Calling a function to get the next question
     getNewQuestion();
-};
+}
 
 //** Creating a function that takes available question as next question */
 function getNewQuestion() {
@@ -201,19 +201,20 @@ function getNewQuestion() {
         // The final score stored is saved in the save-score.html window storage
         return (window.location.href = 'save-score.html');
     }
-
-
-    if(anotherQuestion < TOP_QUESTIONS) {
+    // Condition to the amount of questions if bigger than the counter
+    if (anotherQuestion < TOP_QUESTIONS) {
         // Adding next question using shorthand expression
         anotherQuestion++;
     } else {
+        // Set item in local storage to calculate score and display
         localStorage.setItem('lastScore', score);
+        // Reference to guide to the page to save the score
         return (window.location.href = 'save-score.html');
     }
-    
+
     // The display of next question number of total number of questions
     progressInfo.innerText = `Question ${anotherQuestion} of ${TOP_QUESTIONS}`;
-    // Dynamically styling progress bar to show how close to finishing the quiz, fiiling up with color more with each new question 
+    // Dynamically styling progress bar to show how close to finishing the quiz, fill up with color more with each new question 
     progressFull.style.width = `${(anotherQuestion/TOP_QUESTIONS) * 100}%`;
 
     // Using random method from Math module to get random number of index of the question, for questions to be scattered and harder to remember
