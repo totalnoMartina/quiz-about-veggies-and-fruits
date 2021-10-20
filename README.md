@@ -3,9 +3,9 @@
 An interactive webpage - a quiz about vegetables, fruit and herbs to entertain and educate user about some interesting facts that might spark more interest in veggies, fruits and herbs.
 ![Main Image](assets/readme-images/chrome-screenshot-welcome.png?raw=true)
 
-- Color palette was chosen using [Coolors](https://coolors.co/) **  make a screenshot of the palette -  ask 
+- Color palette was chosen using [Coolors](https://coolors.co/) 
 
-** colors, font features here in order
+![](assets/readme-images/pallette.png?raw=true)
 
 ## Technologies used 
 
@@ -42,11 +42,12 @@ Responsive Image - The webpage has been made taking into consideration three dif
 
 ## Features
 
-- Home page offers three buttons - and the fourth button of highscores appears if the quiz has been played before and there is a score in the record stored
+- Home page offers for user to input value of number of questions, a button to start the quiz, button to see highscores(if any in local storage)
 
 - There is a button to restart the game while in the quiz questions area, github icon for link to students repository and button for home page
 - There is clear visibility of correct and incorrect answers when user clicks while answering
 - There is an option to save your score, start the quiz again, go to Home page, or check Github repository of the student/coder
+- There is a footer that changes positions for better UX that has Github link that opens in new page and students Linked in while on home page, and home button with Github link while in main quiz area
 
 
 ### Features left to implement 
