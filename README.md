@@ -22,26 +22,6 @@ Original idea for the interactive webpage involved a tarot-kind of entertainment
 
 My first idea seemed too spiritual so I decided to go for the second best thing, plant-based resources and interesting facts we never knew about vegetables, fruit or herbs, the image of wireframe for this quiz started like this ![](assets/readme-images/wireframe-quiz.png?raw=true)
 
-## Browser Compatibility
-This webpage is made on Chromebook, Linux, Google Chrome OS, Version 94.0.4606.97 (Official Build) (64-bit), in a Chrome Browser and is fully compatible with it, Chrome screenshot is below ![](assets/readme-images/chrome-screenshot-welcome.png?raw=true)
- 
- Next browser tested is Safari on Iphone 6S and is fully compatible, and here is a screenshot ![](assets/readme-images/safari-mobile.jpg?raw=true)
-
-The Ecosia Browser (plant tree for every search)was tried in mobile and desktop versions and both were working smoothly, images are below 
-- Mobile version
-
-![](assets/readme-images/ecosia-mobile.jpg?raw=true) 
-- Desktop version
-
-![](assets/readme-images/ecosia-browser.png?raw=true)
-
-## Responsiveness 
-
-Responsive Image - The webpage has been made taking into consideration three different sizes of the screen, max-width of 650px for mobile screen size, max-width being 850px for tablet devices and laptop screen size max-width being 1024px
-
-![](assets/readme-images/responsiveness-image.png?raw=true)
-
-
 ## Features
 
 - Home page offers for user to input value of number of questions, a button to start the quiz, button to see highscores(if any in local storage) and no highscores button if no quiz has been previously played
@@ -69,18 +49,47 @@ None, all features that were decided to be implemented were succsesfully applied
 
 ## Deployment
 
-Github platform is used to deploy this project, in these steps: 
+GitHub platform is used to deploy this project, in these steps: 
 
 - The steps to deploy are as follows: 
-  - In the GitHub repository, navigate to the Settings tab 
-  - From the source section drop-down menu, select the Master Branch(or Main Branch for Linux)
-  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment
+  - In the [GitHub repository](https://github.com/totalnoMartina/quiz-about-veggies-and-fruits), navigate to the Settings tab.
+  - From the Source section drop-down menu, select the `Main` Branch (alt: `Master`).
+  - Once the `Main` branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
-The live link can be found here - https://totalnomartina.github.io/quiz-about-veggies-and-fruits/ 
+The live link can be found [here](https://totalnomartina.github.io/quiz-about-veggies-and-fruits)
 
+### Local Deployment
+
+In order to make a local copy of this project, you can clone it using the following command in your IDE terminal of choice:
+
+- `git clone https://github.com/totalnoMartina/quiz-about-veggies-and-fruits.git`
+
+Alternatively, if using Gitpod, you can simply [click here](https://gitpod.io/#https://github.com/totalnoMartina/quiz-about-veggies-and-fruits) to start your own workspace using this repository.
 # Testing
 
 All testing showed no major issues or warnings
+
+## Browser Compatibility
+This webpage is made on Chromebook, Linux, Google Chrome OS, Version 94.0.4606.97 (Official Build) (64-bit), in a Chrome Browser and is fully compatible with it, Chrome screenshot is below ![](assets/readme-images/chrome-screenshot-welcome.png?raw=true)
+ 
+ Next browser tested is Safari on Iphone 6S and is fully compatible, and here is a screenshot ![](assets/readme-images/safari-mobile.jpg?raw=true)
+
+The Ecosia Browser (plant tree for every search)was tried in mobile and desktop versions and both were working smoothly, images are below 
+- Mobile version
+
+![](assets/readme-images/ecosia-mobile.jpg?raw=true) 
+- Desktop version
+
+![](assets/readme-images/ecosia-browser.png?raw=true)
+
+## Responsiveness 
+
+Responsive Image - The webpage has been made taking into consideration three different sizes of the screen, max-width of 650px for mobile screen size, max-width being 850px for tablet devices and laptop screen size max-width being 1024px
+
+![](assets/readme-images/responsiveness-image.png?raw=true)
+
+
+## Lighthouse Reports
 
 Home Page Lighthouse Test
 ![](assets/readme-images/homepage-lighthouse.png?raw=true)
@@ -96,43 +105,43 @@ Highscores Lighthouse
 
 ## Validators Testing
 
-## Main page HTML Validator 
+### Main page HTML Validator 
 ![](assets/readme-images/homepage-html-validator.png?raw=true)
 
-## Main Quiz page HTML Validator
+### Main Quiz page HTML Validator
 ![](assets/readme-images/main-quiz-html-validator.png?raw=true)
 
-## Save score HTML Validator
+### Save score HTML Validator
 ![](assets/readme-images/save-score-html-validator.png?raw=true)
 
-## Highscores page HTML Validator 
+### Highscores page HTML Validator 
 ![](assets/readme-images/highscore-html-validator.png?raw=true)
 
-## Main page CSS Validator
+### Main page CSS Validator
 ![](assets/readme-images/css-validator-index.png?raw=true)
 
-## Main Quiz page CSS Validator
+### Main Quiz page CSS Validator
 ![](assets/readme-images/css-validator-main-quiz.png?raw=true)
 
-## Save score page CSS Validator
+### Save score page CSS Validator
 ![](assets/readme-images/css-validator-save-score.png?raw=true)
 
-## Highscores page CSS Validator
+### Highscores page CSS Validator
 ![](assets/readme-images/css-validator-highscores.png?raw=true)
 
-## Main page - JavaScript JSHint Test 
+### Main page - JavaScript JSHint Test 
 ![](assets/readme-images/js-index.png?raw=true)
 
-## Main Quiz - JavaSCript JSHint Test
+### Main Quiz - JavaSCript JSHint Test
 ![](assets/readme-images/js-quiz.png?raw=true)
 
-## Save score page - JavaScript JSHint Test
+### Save score page - JavaScript JSHint Test
 ![](assets/readme-images/ja-save-score.png?raw=true)
 
-## Highscores page - JavaScript JSHint Test
+### Highscores page - JavaScript JSHint Test
 ![](assets/readme-images/js-highscores.png?raw=true)
 
- ## Bugs / Issues
+## Bugs / Issues
 
 - Some minor difficulties with implementing localStorage.getItem and kept losing a variable since last letter would be accidentally ommitted during code checking and re-arrangements, but with help of my mentor my letter was found, and with hint from tutor support I applied sessionStorage succesfully
 - Mozilla Firefox was originally tested for responsiveness but apparently Mozilla displays black screen at this point, so I tried Ecosia Browser which works well
