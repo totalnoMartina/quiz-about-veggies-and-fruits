@@ -49,7 +49,7 @@ Responsive Image - The webpage has been made taking into consideration three dif
 ![](assets/readme-images/homepage-no-highscores-preview.png?raw=true)
 ![](assets/readme-images/main-page-buttons-input.png?raw=true)
 
-- There is a button to restart the game while in the quiz area, a students github icon for link to github repository and button for home page and clear visibility of correct and incorrect answers when user clicks while answering
+- There is a progress bar filling up as questions are answered, a button to restart the game while in the quiz area, a students github icon for link to github repository and a button for home page, there is clear visibility of correct and incorrect answers when user clicks while answering
 ![](assets/readme-images/quiz-area.png?raw=true)
 - There is an option to save your score, start the quiz again, go to Home page and a Github corner button
 ![](assets/readme-images/save-score-preview.png?raw=true)
@@ -63,15 +63,13 @@ Responsive Image - The webpage has been made taking into consideration three dif
 ![](assets/readme-images/highscores-list.png?raw=true)
 
 
-
-
 ### Features left to implement 
 
 None, all features that were decided to be implemented were succsesfully applied in this quiz
 
 ## Deployment
 
-Github platform is used to deploy this project, in this way: 
+Github platform is used to deploy this project, in these steps: 
 
 - The steps to deploy are as follows: 
   - In the GitHub repository, navigate to the Settings tab 
@@ -81,6 +79,8 @@ Github platform is used to deploy this project, in this way:
 The live link can be found here - https://totalnomartina.github.io/quiz-about-veggies-and-fruits/ 
 
 # Testing
+
+All testing showed no major issues or warnings
 
 Home Page Lighthouse Test
 ![](assets/readme-images/homepage-lighthouse.png?raw=true)
@@ -96,30 +96,43 @@ Highscores Lighthouse
 
 ## Validators Testing
 
-All testing passed succesfully
+## Main page HTML Validator 
+![](assets/readme-images/homepage-html-validator.png?raw=true)
 
- ## Main page HTML Validator 
- ![](assets/readme-images/homepage-html-validator.png?raw=true)
+## Main Quiz page HTML Validator
+![](assets/readme-images/main-quiz-html-validator.png?raw=true)
 
- ## Main Quiz page HTML Validator
- ![](assets/readme-images/main-quiz-html-validator.png?raw=true)
+## Save score HTML Validator
+![](assets/readme-images/save-score-html-validator.png?raw=true)
 
- ## Save score HTML Validator
- ![](assets/readme-images/save-score-html-validator.png?raw=true)
+## Highscores page HTML Validator 
+![](assets/readme-images/highscore-html-validator.png?raw=true)
 
- ## Highscores page HTML Validator 
- ![](assets/readme-images/highscore-html-validator.png?raw=true)
+## Main page CSS Validator
+![](assets/readme-images/css-validator-index.png?raw=true)
 
- ## Main page CSS Validator
- ![](assets/readme-images/css-validator-index.png?raw=true)
- ## Main Quiz page CSS Validator
- ![M](assets/readme-images/css-validator-main-quiz.png?raw=true)
- ## Save score page CSS Validator
- ![](assets/readme-images/css-validator-save-score.png?raw=true)
- ## Highscores page CSS Validator
- ![](assets/readme-images/css-validator-highscores.png?raw=true)
+## Main Quiz page CSS Validator
+![](assets/readme-images/css-validator-main-quiz.png?raw=true)
 
-## Bugs / Issues
+## Save score page CSS Validator
+![](assets/readme-images/css-validator-save-score.png?raw=true)
+
+## Highscores page CSS Validator
+![](assets/readme-images/css-validator-highscores.png?raw=true)
+
+## Main page - JavaScript JSHint Test 
+![](assets/readme-images/js-index.png?raw=true)
+
+## Main Quiz - JavaSCript JSHint Test
+![](assets/readme-images/js-quiz.png?raw=true)
+
+## Save score page - JavaScript JSHint Test
+![](assets/readme-images/ja-save-score.png?raw=true)
+
+## Highscores page - JavaScript JSHint Test
+![](assets/readme-images/js-highscores.png?raw=true)
+
+ ## Bugs / Issues
 
 - Some minor difficulties with implementing localStorage.getItem and kept losing a variable since last letter would be accidentally ommitted during code checking and re-arrangements, but with help of my mentor my letter was found, and with hint from tutor support I applied sessionStorage succesfully
 - Mozilla Firefox was originally tested for responsiveness but apparently Mozilla displays black screen at this point, so I tried Ecosia Browser which works well
