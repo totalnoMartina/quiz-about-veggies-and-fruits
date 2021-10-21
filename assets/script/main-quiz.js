@@ -228,7 +228,7 @@ function getNewQuestion() {
     // Looping through options based on value data of number next to it
     options.forEach(option => {
         // Set number variable to dataset value of option variable based on option-a number
-        const number = option.dataset['number'];
+        const number = option.dataset.number;
         // Set text of the option to the value of current number of the question
         option.innerText = chooseQuestion['option' + number];
     });
