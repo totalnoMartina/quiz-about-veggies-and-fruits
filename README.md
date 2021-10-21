@@ -80,31 +80,34 @@ Highscores Lighthouse
 ![](assets/readme-images/highscores-lighthouse.png?raw=true)
 
 
-## Validators Testing ** update
+## Validators Testing
 
- ## Main Page HTML Validator 
- ![](assets/readme-images/index-html-validator.png?raw=true)
+ ## Main page HTML Validator 
+ ![](assets/readme-images/homepage-html-validator.png?raw=true)
 
- ## Main Quiz Page HTML Validator
+ ## Main Quiz page HTML Validator
  ![](assets/readme-images/main-quiz-html-validator.png?raw=true)
 
- ## Save Score HTML Validator
+ ## Save score HTML Validator
  ![](assets/readme-images/save-score-html-validator.png?raw=true)
 
- ## Highscores Page HTML Validator 
- ![](assets/readme-images/highscores-html-validator.png?raw=true)
+ ## Highscores page HTML Validator 
+ ![](assets/readme-images/highscore-html-validator.png?raw=true)
 
- ## Main Page CSS Validator
- ![](assets/readme-images/main-page-validator-css.png?raw=true)
- ## Main Quiz Page CSS Validator
- ![Main Quiz CSS Validator](assets/readme-images/main-quiz-validator-css.png?raw=true)
- ## Highscores Page CSS Validator
- ![Main Quiz CSS Validator](assets/readme-images/highscores-validator-css.png?raw=true)
+ ## Main page CSS Validator
+ ![](assets/readme-images/css-validator-index.png?raw=true)
+ ## Main Quiz page CSS Validator
+ ![M](assets/readme-images/css-validator-main-quiz.png?raw=true)
+ ## Save score page CSS Validator
+ ![](assets/readme-images/css-validator-save-score.png?raw=true)
+ ## Highscores page CSS Validator
+ ![](assets/readme-images/css-validator-highscores.png?raw=true)
 
 
 ## Bugs / Issues
 
-- Some minor difficulties with implementing localStorage.getItem and kept losing a variable since last letter would be accidentally ommitted during code checking and re-arrangements, but with help of my mentor my letter was found
+- Some minor difficulties with implementing localStorage.getItem and kept losing a variable since last letter would be accidentally ommitted during code checking and re-arrangements, but with help of my mentor my letter was found, and with hint from tutor support I applied sessionStorage succesfully
+- Mozilla Firefox was originally tested for responsiveness but apparently Mozilla displays black screen at this point, so I tried Ecosia Browser which works well
 
 
 ## Credits
