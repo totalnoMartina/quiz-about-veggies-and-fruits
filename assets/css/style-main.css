@@ -64,7 +64,8 @@ a {
 }
 
 .fa-github,
-.fa-linkedin {
+.fa-linkedin,
+.fa-laptop-house {
     text-align: center;
     width: 50px;
     margin: 10px;
@@ -173,7 +174,6 @@ a {
 #highscores-btn {
     background: linear-gradient(45deg, #f58d64d3 10%, #d42008d3 40%, #af3404d3 95%);
 }
-
 
 #final-score {
     font-size: 45px;
