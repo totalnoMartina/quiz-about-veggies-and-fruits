@@ -72,7 +72,7 @@ All testing showed no major issues or warnings
 ## Browser Compatibility
 This webpage is made on Chromebook, Linux, Google Chrome OS, Version 94.0.4606.97 (Official Build) (64-bit), in a Chrome Browser and is fully compatible with it, Chrome screenshot is below ![](assets/readme-images/chrome-screenshot-welcome.png?raw=true)
  
- Next browser tested is Safari on Iphone 6S and is fully compatible, and here is a screenshot ![](assets/readme-images/safari-mobile.jpg?raw=true)
+Next browser tested is Safari on Iphone 6S and is fully compatible, and here is a screenshot ![](assets/readme-images/safari-mobile.jpg?raw=true)
 
 The Ecosia Browser (plant tree for every search)was tried in mobile and desktop versions and both were working smoothly, images are below 
 - Mobile version
@@ -136,7 +136,7 @@ Highscores Lighthouse
 ![](assets/readme-images/js-quiz.png?raw=true)
 
 ### Save score page - JavaScript JSHint Test
-![](assets/readme-images/ja-save-score.png?raw=true)
+![](assets/readme-images/js-save-score.png?raw=true)
 
 ### Highscores page - JavaScript JSHint Test
 ![](assets/readme-images/js-highscores.png?raw=true)

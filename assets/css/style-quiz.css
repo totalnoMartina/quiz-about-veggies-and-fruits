@@ -4,6 +4,8 @@
                     #f9db6d for peach/ orange text and some shades
                     #fae1df for background color of correct answer 
                     #920b16da for background of incorrect answer
+
+Global styles
 */
 
 body {
@@ -89,6 +91,7 @@ body {
     width: 0%;
 }
 
+/* Media query for mobile version up to 600px width */
 @media screen and (max-width: 600px) {
     .option-display {
         width: 70%;
@@ -131,8 +134,8 @@ body {
     }
 }
 
+/* Media query for tablet size of 850px width */
 @media screen and (max-width: 850px) {
-
 
     #quiz {
         max-width: 850px;

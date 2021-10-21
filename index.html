@@ -21,6 +21,7 @@
     <section class="quiz-area flex-column flex-center">
         <!-- Quiz name -->
         <h2 class="quiz-name">A Berry Herbal Quiz</h2>
+        <!-- Introduction text -->
         <p>Interesting facts about <i class="fas fa-lemon"></i>fruits<i class="fas fa-carrot"></i>veggies and
             <i class="fas fa-seedling"></i>herbs</p>
         <p>Welcome to an interactive quiz based on plant-based resources
@@ -28,24 +29,27 @@
             these facts are here to amaze and entertain you!</p>
         <!-- Navigation links to start the quiz or view High Scores -->
         <nav id="home-page" class="flex-column flex-center">
+            <!-- Chose number of questions -->
             <div class="choose-number-quest">
                 <label for="questions-num">Choose number of questions between 7 - 19</label>
                 <br>
                 <input name="questions-num" id="questions-num" type="text" pattern="^[0-9]{1,2}$">
                 <br>
+                <!-- If out of range, a warning is raised -->
                 <span id="warning"></span> <!-- style this-->
             </div>
+            <!-- Main buttons -->
             <a class="btn" id="start-btn"><i class="fas fa-chess"></i>Start</a>
             <a href="highscores-page.html" id="highscores-btn" class="btn"><i class="fas fa-chess-queen"></i>High
                 Scores</a>
         </nav>
     </section>
-    <!-- Footer containing link to Github -->
+    <!-- Footer containing link to Github and LinkedIn -->
     <footer><a href="https://github.com/totalnoMartina" target="_blank"><i class="fab fa-github"></i></a>
         <br>
-        <a href="https://www.linkedin.com/in/martina-grganic/" target="_blank"><i
-                class="fab fa-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/martina-grganic/" target="_blank"><i class="fab fa-linkedin"></i></a>
     </footer>
+    <!-- Link to script -->
     <script src="assets/script/index.js"></script>
 </body>
 
