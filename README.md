@@ -1,11 +1,8 @@
 ## Quiz - A Berry Herbal Quiz 
 
 An interactive webpage - a quiz about vegetables, fruit and herbs to entertain and educate user about some interesting facts that might spark more interest in veggies, fruits and herbs.
-![Main Image](assets/readme-images/chrome-screenshot-welcome.png?raw=true)
+![](assets/readme-images/chrome-screenshot-welcome.png?raw=true)
 
-- Color palette was chosen using [Coolors](https://coolors.co/) 
-
-![](assets/readme-images/pallette.png?raw=true)
 
 ## Technologies used 
 
@@ -13,10 +10,15 @@ An interactive webpage - a quiz about vegetables, fruit and herbs to entertain a
 - JavaScript - for dynamic quiz functions cooperation
 - Github - for code control, record and publishing of webpage
 - Wireframe is made using [Lucidchart](https://www.lucidchart.com/pages/landing/wireframe-software?utm_source=google&utm_medium=cpc&utm_campaign=_chart_en_tier1_mixed_search_brand_bmm_&km_CPC_CampaignId=1490375424&km_CPC_AdGroupID=55688906577&km_CPC_Keyword=%2Blucid%20chart%20%2Bwireframe&km_CPC_MatchType=b&km_CPC_ExtensionID=&km_CPC_Network=g&km_CPC_AdPosition=&km_CPC_Creative=475760219039&km_CPC_TargetID=aud-812368091438:kwd-467383918265&km_CPC_Country=9040163&km_CPC_Device=c&km_CPC_placement=&km_CPC_target=&mkwid=sDmZV3BGx_pcrid_475760219039_pkw_%2Blucid%20chart%20%2Bwireframe_pmt_b_pdv_c_slid__pgrid_55688906577_ptaid_aud-812368091438:kwd-467383918265_&gclid=CjwKCAjw2bmLBhBREiwAZ6ugo5nVAcUCBN04fmpypbxf3fnQoPInv2hcowoTSoJcGXpYbT5lCBpiORoCDtIQAvD_BwE)
+- The icons were taken from [Font Awesome](https://fontawesome.com/)
+- Color palette was chosen using [Coolors](https://coolors.co/) 
+
+![](assets/readme-images/pallette.png?raw=true)
+
 
 ## Wireframes
 
-Original idea for the interactive webpage involved a tarot-kind of entertainment, 'The Voice of Your Soul' was the name, and it was supposed to be giving user cards of inspiration, support, love and kindness, as a spiritual person ans a vegan, I thought vegetables would be more appropriate. However, there is an image of the wireframe of my first idea ![](assets/readme-images/wireframe-the-voice-of-your-soul.png?raw=true)
+Original idea for the interactive webpage involved a tarot-kind of entertainment, 'The Voice of Your Soul' was the name, and it was supposed to be giving user cards of inspiration, support, love and kindness, as a spiritual person and a vegan, I thought vegetables would be more appropriate. Nevertheless, there is an image of the wireframe of the first idea ![](assets/readme-images/wireframe-the-voice-of-your-soul.png?raw=true)
 
 My first idea seemed too spiritual so I decided to go for the second best thing, plant-based resources and interesting facts we never knew about vegetables, fruit or herbs, the image of wireframe for this quiz started like this ![](assets/readme-images/wireframe-quiz.png?raw=true)
 
@@ -42,12 +44,25 @@ Responsive Image - The webpage has been made taking into consideration three dif
 
 ## Features
 
-- Home page offers for user to input value of number of questions, a button to start the quiz, button to see highscores(if any in local storage)
+- Home page offers for user to input value of number of questions, a button to start the quiz, button to see highscores(if any in local storage) and no highscores button if no quiz has been previously played
 
-- There is a button to restart the game while in the quiz questions area, github icon for link to students repository and button for home page
-- There is clear visibility of correct and incorrect answers when user clicks while answering
-- There is an option to save your score, start the quiz again, go to Home page, or check Github repository of the student/coder
-- There is a footer that changes positions for better UX that has Github link that opens in new page and students Linked in while on home page, and home button with Github link while in main quiz area
+![](assets/readme-images/homepage-no-highscores-preview.png?raw=true)
+![](assets/readme-images/main-page-buttons-input.png?raw=true)
+
+- There is a button to restart the game while in the quiz area, a students github icon for link to github repository and button for home page and clear visibility of correct and incorrect answers when user clicks while answering
+![](assets/readme-images/quiz-area.png?raw=true)
+- There is an option to save your score, start the quiz again, go to Home page and a Github corner button
+![](assets/readme-images/save-score-preview.png?raw=true)
+- There is a footer that has Github link that opens in new page and students LinkedIn while on home page, and Home button with Github link while in main quiz area
+
+![](assets/readme-images/footer-preview.png?raw=true) 
+![](assets/readme-images/footer-quiz.png?raw=true)
+
+- There is a highscores list if on local storage and a reset button to clear all data
+
+![](assets/readme-images/highscores-list.png?raw=true)
+
+
 
 
 ### Features left to implement 
@@ -79,8 +94,9 @@ Save Score Lighthouse Test
 Highscores Lighthouse
 ![](assets/readme-images/highscores-lighthouse.png?raw=true)
 
-
 ## Validators Testing
+
+All testing passed succesfully
 
  ## Main page HTML Validator 
  ![](assets/readme-images/homepage-html-validator.png?raw=true)
@@ -103,12 +119,10 @@ Highscores Lighthouse
  ## Highscores page CSS Validator
  ![](assets/readme-images/css-validator-highscores.png?raw=true)
 
-
 ## Bugs / Issues
 
 - Some minor difficulties with implementing localStorage.getItem and kept losing a variable since last letter would be accidentally ommitted during code checking and re-arrangements, but with help of my mentor my letter was found, and with hint from tutor support I applied sessionStorage succesfully
 - Mozilla Firefox was originally tested for responsiveness but apparently Mozilla displays black screen at this point, so I tried Ecosia Browser which works well
-
 
 ## Credits
 
@@ -122,23 +136,19 @@ Highscores Lighthouse
 ### Content 
 
 - The link for some of the questions can be found [here](https://laidbackgardener.blog/2017/03/23/10-strange-facts-about-vegetables/)
-- The hemp seed facts [link](https://www.healthline.com/nutrition/6-health-benefits-of-hemp-seeds#TOC_TITLE_HDR_5) 
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+- The hemp seed facts [link](https://www.healthline.com/nutrition/6-health-benefits-of-hemp-seeds#TOC_TITLE_HDR_5)
 - Some questions and answers are inspired by this [page](https://www.eatfirst.com/en-au/c/blog/fun-facts-about-food)
-
-- Some facts about rosemary I found [here](http://justfunfacts.com/interesting-facts-about-rosemary/)
-
+- Some facts about rosemary were found [here](http://justfunfacts.com/interesting-facts-about-rosemary/)
 - Interesting facts about figs are found [here](https://valleyfig.com/our-story/fig-facts/)
 - I added font style form [Google Fonts](https://fonts.google.com/) 
 - Turmeric facts can be found [here](http://www.drsanderschiropractic.com/blog/16406-five-surprising-facts-about-turmeric)
 - Mushroom facts can be found [here](https://www.goodhousekeeping.com/health/diet-nutrition/a27633487/mushroom-health-benefits/)
 - Some facts about Avocado can be found on this [link](https://www.healthline.com/nutrition/12-proven-benefits-of-avocado#TOC_TITLE_HDR_2) and this [link](https://www.businessinsider.com/avocado-history-word-testicle-2018-6?r=US&IR=T)
-- Some facts about broab beans - fava beans can be found [here](https://www.healthbenefitstimes.com/broad-beans/)
+- Some facts about broad beans - fava beans can be found [here](https://www.healthbenefitstimes.com/broad-beans/)
 - Facts about Artichoke can be found on this [link](https://www.oceanmist.com/blog/8-little-known-facts-about-the-artichoke)
 - Facts about Blueberries can be found on this [link](https://www.wildflower.org/expert/show.php?id=5146&__cf_chl_managed_tk__=pmd_fUkpZwnFiuCVBuyNsZLnmKAiGfS3T4KJ04HYx1Yr5I8-1634429702-0-gqNtZGzNAvujcnBszROR) and also [here](https://www.bcblueberry.com/bc-blueberry-council/news/did-you-know-10-surprising-facts-about-blueberries)
 - Facts about onion can be found on this [link](https://factslegend.org/these-30-exciting-onion-facts-will-amaze-you/)
-
-***Add more 
+ 
 ### Media
 
 The responsive image that contains all three screen sizes is made using [Canva](https://www.canva.com/)
